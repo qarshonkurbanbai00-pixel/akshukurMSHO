@@ -1,0 +1,16 @@
+{# Shared original photo collection; caption provenance kept in data/photos.json. #}
+<section class="section section-alt" id="photo-archive">
+  <div class="container">
+    <h2 class="section-title reveal">Жоба фотоархиві</h2>
+    <p class="section-lead reveal">Бастапқы ZIP-тен қалпына келген материалдар тізілімі. Бұл жинақтың бәрі Ақшұқырдың расталған тарихи фотоархиві емес. Атауы белгісіз суреттер нақты тұлғаға, ғимаратқа немесе тарихи жылға телінбейді; сәйкестендіруді қажет етеді.</p>
+    <p><a class="btn btn-ghost" href="{{ url_for('photo_archive_page') }}">Санаттары бар «Фото архиві» беті →</a></p>
+    <div class="gallery-grid archive-photo-grid">
+      {% for item in photos %}
+      <figure class="gallery-item glass reveal" data-gallery-caption="{{ item.caption }}">
+        {{ photo(item.resolved_image, item.caption) }}
+        <figcaption class="muted small">{{ item.caption }}<br>Жылы: {{ item.year|default('белгісіз', true) }}.<br>Дереккөз: {{ item.provenance }}{% if item.identification == 'unverified' %}<br><span>Сәйкестендіру расталмаған</span><br>Ақшұқырға қатысы мен тарихи кезеңі расталмаған.{% endif %}</figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>

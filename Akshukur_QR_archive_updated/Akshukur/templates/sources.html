@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% from "_macros.html" import badge with context %}
+
+{% block title %}Дереккөздер — ЦИФРЛЫҚ ШЕЖІРЕ{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="container">
+    <p class="hero-kicker reveal">Библиография</p>
+    <h1 class="page-title reveal">Дереккөздер</h1>
+    <p class="page-lead reveal">Жобадағы әр тарихи мәліметтің қайдан алынғаны. Тізім <code>data/sources.json</code> файлы арқылы толықтырылады.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <ol class="source-list">
+      {% for s in sources %}
+      <li class="source-item glass reveal" id="{{ s.id }}">
+        <div class="source-main">
+          <div class="tl-head"><span class="tl-years">{{ s.year }}</span>{{ badge(s.evidence) }}</div>
+          <h3>{{ s.title }}</h3>
+          <p class="muted small">{{ s.type_label }}</p>
+          <p>{{ s.description }}</p>
+          <p><strong>Дереккөз:</strong> {{ s.source_reference }}</p>
+          {% if s.url %}<a class="src-chip" href="{{ s.url }}" target="_blank" rel="noopener">Сілтеме ашу ↗</a>{% endif %}
+          {% if s.file %}<p class="muted small">Файл: {{ s.file }}</p>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+
+    <div class="notice glass reveal">
+      <strong>Библиография ережесі:</strong> сайтқа қосылатын әр жаңа факт осы тізімдегі кемінде бір дереккөзге сілтеме жасауы тиіс. Дереккөзі жоқ мәлімет «Дерек қажет» белгісімен жүргізіледі.
+    </div>
+  </div>
+</section>
+{% endblock %}

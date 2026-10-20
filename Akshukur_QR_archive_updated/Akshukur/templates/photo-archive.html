@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}Фото архиві — Ақшұқыр цифрлық шежіресі{% endblock %}
+{% block content %}
+<section class="page-hero"><div class="container">
+  <p class="hero-kicker">Ауыл жады · Фотоқұжаттар · Дереккөздер</p><h1 class="page-title">Фото архиві</h1>
+  <p class="page-lead">Ақшұқыр ауылының тарихи фотосуреттеріне арналған цифрлық мұрағат. Әр суреттің шығу тегі мен сенімділік мәртебесі бірге көрсетіледі.</p>
+  {% include '_history_nav.html' %}
+</div></section>
+<section class="section"><div class="container">
+  <aside class="glass archive-integrity"><strong>Расталған тарихи фотолар әзірге тіркелмеген.</strong><p>Бастапқы ZIP-тегі суреттердің Ақшұқырға қатысы, авторы немесе түсірілген уақыты толық расталмаған. Сондықтан суреті жоқ үлгі карточкалар көрсетілмейді. Нақты фото қосылады: редактор файл мен деректемені енгізгенде карточка автоматты пайда болады. Қазіргі фото мен жасанды сурет тарихи фото орнына қойылмайды.</p><p>«Сәйкестендіру қажет» санатындағы бастапқы материалдар бөлек берілген. Файл атауындағы дата түсірілген жыл ретінде қолданылмайды. Файлы жоқ жазбалар бастапқы тізілімде сақталып, фотогалереяда көрсетілмейді.</p></aside>
+  <div class="photo-toolbar"><label for="photoQuery">Фото атауы немесе сипаттамасы</label><input type="search" id="photoQuery" placeholder="Фото материалдарынан іздеу…"><div class="filter-bar" id="photoFilters" role="group" aria-label="Фотосурет санаттары">
+    <button type="button" class="filter-btn active" data-photo-category="all" aria-pressed="true">Барлығы</button>
+    {% for key,title,description in photo_categories if catalog|selectattr('category', 'equalto', key)|list %}<button type="button" class="filter-btn" data-photo-category="{{ key }}" aria-pressed="false">{{ title }}</button>{% endfor %}
+    <button type="button" class="filter-btn" data-photo-category="pending" aria-pressed="false">Сәйкестендіру қажет</button>
+  </div><p id="photoCount" class="muted small" role="status" aria-live="polite">{{ catalog|length }} фото · тарихи мерзімі деректемемен тексеріледі</p></div>
+  <div class="photo-catalog" id="photoCatalog">
+    {% for item in catalog %}
+    <article class="photo-record glass reveal" id="{{ item.id }}" data-photo-category="{{ item.category }}" data-photo-search="{{ (item.title ~ ' ' ~ item.description ~ ' ' ~ item.status)|lower }}">
+      <button class="photo-open" type="button" data-photo-open="{{ item.id }}" aria-label="{{ item.title }} — {% if item.image %}фото мен толық сипаттаманы ашу{% else %}толық сипаттаманы ашу{% endif %}">
+      {% if item.image %}<img src="{{ item.image }}" alt="{{ item.title }} — {{ item.status }}" loading="lazy" decoding="async">{% else %}<span class="photo-slot"><span aria-hidden="true">▧</span><strong>{{ item.status }}</strong><span>Нақты тарихи фото емес</span></span>{% endif %}
+      <span class="photo-state">{{ item.status }}</span></button>
+      <div class="photo-record-body"><h2>{{ item.title }}</h2><p class="muted small">Түсірілген жылы: {{ item.year }}</p><p>{{ item.description }}</p><p class="photo-source"><strong>Дереккөз:</strong> {{ item.provenance }}</p><p class="muted small">{{ item.note }}</p><button class="btn btn-ghost btn-sm" data-photo-open="{{ item.id }}" type="button">{% if item.image %}Үлкейту және сипаттама{% else %}Карточканың толық сипаттамасы{% endif %} →</button></div>
+    </article>
+    {% endfor %}
+  </div>
+  <p id="photoEmpty" class="glass content-panel" hidden>Бұл сүзгіге сәйкес фото материал табылмады.</p>
+  <article class="glass content-panel archive-guide" id="photo-guide"><h2>Фотоның деректемесі қалай толтырылады</h2><p>Тексерілген фото қосылғанда оның атауы, белгілі болса шамамен түсірілген жылы, оқиға немесе орын, фото иесі не архив атауы, түпнұсқаның сілтемесі және жариялау рұқсаты тіркеледі. Болжамды дата «шамамен» деп белгіленеді; белгісіз мәліметтер ойдан толықтырылмайды.</p><p>Жеке отбасылық суретті жариялау алдында иесінің келісімі қажет. Бұл бетте жүктеу формасы жоқ: материал жоба редакторы тексергеннен кейін тізілімге қосылады.</p><p>Редакторға: нақты фотоны бұрынғы <code>static/images/</code> папкасына орналастырып, <code>data/photos.json</code> ішіне <code>image</code>, <code>caption</code>, <code>provenance</code> өрістерін енгізіңіз. Белгілі болса <code>year</code>, <code>description</code> және <code>category</code> қосылады. Сәйкестендіру расталмаған жағдайда <code>identification: unverified</code> деп белгілеңіз. Файл бар кезде карточка автоматты көрсетіледі; жоқ файлға бос карточка жасалмайды.</p><a href="{{ url_for('project_page') }}#project-contribute">Жобаға материал дайындау →</a></article>
+</div></section>
+<dialog class="photo-viewer" id="photoViewer" aria-labelledby="photoViewerTitle"><button type="button" class="photo-viewer-close" id="photoViewerClose" aria-label="Фото терезесін жабу">✕</button><div class="photo-viewer-media"><img id="photoViewerImage" alt="Таңдалған фотоның үлкейтілген көрінісі" hidden><p id="photoViewerPlaceholder" class="photo-slot" hidden></p><p id="photoViewerError" hidden>Фото жүктелмеді. Бастапқы файлдың қолжетімділігін тексеріңіз.</p></div><div class="photo-viewer-details"><p class="content-eyebrow" id="photoViewerStatus"></p><h2 id="photoViewerTitle"></h2><p id="photoViewerYear" class="muted"></p><p id="photoViewerDescription"></p><p id="photoViewerSource" class="photo-source"></p><p id="photoViewerNote" class="muted small"></p><div class="photo-viewer-actions"><button class="btn btn-ghost" id="photoPrev" type="button" aria-label="Алдыңғы карточка">← Алдыңғы</button><span id="photoViewerCount" class="muted small"></span><button class="btn btn-ghost" id="photoNext" type="button" aria-label="Келесі карточка">Келесі →</button></div></div></dialog>
+<script type="application/json" id="photoCatalogData">{{ catalog|tojson }}</script>
+{% endblock %}
+{% block page_js %}<script src="{{ url_for('static',filename='js/photo-catalog.js') }}"></script>{% endblock %}

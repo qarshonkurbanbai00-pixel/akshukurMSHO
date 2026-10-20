@@ -1,0 +1,23 @@
+test_all_routes_templates_assets (tests.test_content_update.ContentUpdate.test_all_routes_templates_assets) ... ok
+test_full_text_search_sections (tests.test_content_update.ContentUpdate.test_full_text_search_sections) ... ok
+test_no_fabricated_historical_photos (tests.test_content_update.ContentUpdate.test_no_fabricated_historical_photos) ... ok
+test_preserved_protected_files_and_original_metadata (tests.test_content_update.ContentUpdate.test_preserved_protected_files_and_original_metadata) ... ok
+test_result_pages_and_fragments (tests.test_content_update.ContentUpdate.test_result_pages_and_fragments) ... ok
+test_school_label_consistency (tests.test_content_update.ContentUpdate.test_school_label_consistency) ... ok
+test_school_only_labels_changed (tests.test_content_update.ContentUpdate.test_school_only_labels_changed) ... ok
+test_search_case_multiple_words_single_character_empty_and_no_results (tests.test_content_update.ContentUpdate.test_search_case_multiple_words_single_character_empty_and_no_results) ... ok
+test_search_page_fallback_and_escaping (tests.test_content_update.ContentUpdate.test_search_page_fallback_and_escaping) ... ok
+test_routes_and_rendered_images (tests.test_regression.WebsiteRegression.test_routes_and_rendered_images) ... ok
+test_historical_text_and_persons_unchanged (tests.test_regression.WebsiteRegression.test_historical_text_and_persons_unchanged) ... ok
+test_historic_places_preserved (tests.test_regression.WebsiteRegression.test_historic_places_preserved) ... ok
+test_qoshqar_unique_and_exact (tests.test_regression.WebsiteRegression.test_qoshqar_unique_and_exact) ... ok
+test_search_keeps_both_village_objects (tests.test_regression.WebsiteRegression.test_search_keeps_both_village_objects) ... ok
+test_four_object_schema_and_no_false_photos (tests.test_3d_integrity.ReconstructionIntegrity.test_four_object_schema_and_no_false_photos) ... ok
+test_offline_libraries_and_no_missing_glb_request (tests.test_3d_integrity.ReconstructionIntegrity.test_offline_libraries_and_no_missing_glb_request) ... ok
+test_python_syntax_and_render_templates (tests.test_3d_integrity.ReconstructionIntegrity.test_python_syntax_and_render_templates) ... ok
+test_windows_launcher_static_structure (tests.test_3d_integrity.ReconstructionIntegrity.test_windows_launcher_static_structure) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.957s
+
+OK

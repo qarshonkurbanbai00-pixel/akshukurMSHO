@@ -1,0 +1,182 @@
+{% extends "base.html" %}
+{% from "_macros.html" import badge, photo with context %}
+{% set src_map = {} %}
+{% for s in sources %}{% set _ = src_map.update({s.id: s}) %}{% endfor %}
+
+{% block title %}Ақшұқырдың тарихы — ЦИФРЛЫҚ ШЕЖІРЕ{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="container">
+    <p class="hero-kicker reveal">Интерактивті тарихи тізбек</p>
+    <h1 class="page-title reveal">Ақшұқырдың тарихы</h1>
+    {% include '_history_nav.html' %}
+    <p class="page-lead reveal">Әр кезең дәлелдеме деңгейімен белгіленген. Сүзгі арқылы тек қажетті деңгейдегі деректерді қараңыз.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <!-- Дәлелдеме сүзгісі -->
+    <div class="filter-bar reveal" id="timelineFilters">
+      <button class="filter-btn active" data-filter="all">Барлығы</button>
+      {% for key, ev in evidence_levels.items() %}
+      <button class="filter-btn" data-filter="{{ key }}">{{ ev.icon }} {{ ev.label }}</button>
+      {% endfor %}
+    </div>
+
+    <div class="timeline" id="timeline">
+      {% for era in history %}
+      <article class="tl-item reveal" id="{{ era.id }}" data-evidence="{{ era.evidence }}">
+        <div class="tl-marker" aria-hidden="true"></div>
+        <div class="tl-card glass">
+          <div class="tl-head">
+            <span class="tl-years">{{ era.years }}</span>
+            {{ badge(era.evidence) }}
+          </div>
+          <h2 class="tl-title">{{ era.title }}</h2>
+          <p class="tl-summary">{{ era.summary }}</p>
+          {% if era.image %}
+          <figure class="history-photo">
+            {{ photo(era.image, era.title) }}
+            <figcaption class="muted small">{{ era.image_caption }}</figcaption>
+          </figure>
+          {% else %}
+          <p class="muted small photo-unavailable">Осы кезеңге тиесілі екені расталған фото/құжат архивте жоқ.</p>
+          {% endif %}
+          <details class="tl-details">
+            <summary>Толығырақ оқу</summary>
+            <p>{{ era.description }}</p>
+
+            {% if era.sources %}
+            <div class="tl-sources">
+              <strong>Дереккөздер:</strong>
+              {% for sid in era.sources %}
+                {% set s = src_map.get(sid) %}
+                {% if s %}
+                  <a class="src-chip" href="{{ url_for('sources_page') }}#{{ s.id }}" title="{{ s.source_reference }}">{{ s.title }}</a>
+                {% endif %}
+              {% endfor %}
+            </div>
+            {% else %}
+            <p class="muted small">Дереккөз: зерттеу барысында толықтырылады.</p>
+            {% endif %}
+          </details>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    <p class="muted" id="timelineEmpty" hidden>Бұл сүзгіге сәйкес кезең табылмады.</p>
+  </div>
+</section>
+
+<section class="section section-alt" id="population-growth">
+  <div class="container">
+    <div class="population-header reveal">
+      <p class="hero-kicker">Динамика</p>
+      <h2 class="section-title">Ақшұқыр ауылының халық санының өсу динамикасы</h2>
+    </div>
+
+    <div class="population-grid reveal">
+      <div class="population-card glass" data-target="50">
+        <span class="population-year">1870 ж.</span>
+        <strong class="population-value">0</strong>
+        <span class="population-label">адам</span>
+      </div>
+      <div class="population-card glass" data-target="3347">
+        <span class="population-year">1999 ж.</span>
+        <strong class="population-value">0</strong>
+        <span class="population-label">адам</span>
+      </div>
+      <div class="population-card glass" data-target="6230">
+        <span class="population-year">2009 ж.</span>
+        <strong class="population-value">0</strong>
+        <span class="population-label">адам</span>
+      </div>
+      <div class="population-card glass" data-target="9895">
+        <span class="population-year">2018 ж.</span>
+        <strong class="population-value">0</strong>
+        <span class="population-label">адам</span>
+      </div>
+      <div class="population-card glass" data-target="12279">
+        <span class="population-year">2021 ж.</span>
+        <strong class="population-value">0</strong>
+        <span class="population-label">адам</span>
+      </div>
+      <div class="population-card glass emphasis" data-target="13500">
+        <span class="population-year">2026 ж.</span>
+        <strong class="population-value">0</strong>
+        <span class="population-label">адам +</span>
+      </div>
+    </div>
+
+    <div class="population-chart glass reveal">
+      <div class="population-chart-legend">
+        <span><i class="legend-swatch"></i> Халық саны</span>
+      </div>
+      <div class="population-bars" aria-label="Халық санының өсу графигі">
+        <div class="population-bar-wrap"><span class="population-bar" style="--value: 12%"></span><small>1870</small></div>
+        <div class="population-bar-wrap"><span class="population-bar" style="--value: 37%"></span><small>1999</small></div>
+        <div class="population-bar-wrap"><span class="population-bar" style="--value: 52%"></span><small>2009</small></div>
+        <div class="population-bar-wrap"><span class="population-bar" style="--value: 75%"></span><small>2018</small></div>
+        <div class="population-bar-wrap"><span class="population-bar" style="--value: 92%"></span><small>2021</small></div>
+        <div class="population-bar-wrap"><span class="population-bar" style="--value: 100%"></span><small>2026</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include '_photo_archive.html' %}
+{% include '_qr_videos.html' %}
+{% endblock %}
+
+{% block page_js %}
+<script>
+  function formatPopulation(value, emphasis) {
+    const text = Number(value).toLocaleString('ru-RU');
+    return emphasis ? text + '+' : text;
+  }
+
+  function startPopulationCounters() {
+    const populationCards = document.querySelectorAll('.population-card');
+    populationCards.forEach((card) => {
+      const counter = card.querySelector('.population-value');
+      if (!counter) return;
+
+      const target = Number(card.dataset.target || 0);
+      const hasEmphasis = card.classList.contains('emphasis');
+
+      counter.textContent = formatPopulation(target, hasEmphasis);
+
+      const duration = 1400;
+      const start = performance.now();
+
+      function update(ts) {
+        const progress = Math.min((ts - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = Math.floor(target * eased);
+
+        if (target >= 1000) {
+          counter.textContent = formatPopulation(current, hasEmphasis);
+        } else {
+          counter.textContent = String(current);
+        }
+
+        if (progress < 1) {
+          requestAnimationFrame(update);
+          return;
+        }
+
+        counter.textContent = formatPopulation(target, hasEmphasis);
+      }
+
+      requestAnimationFrame(update);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', startPopulationCounters, { once: true });
+  } else {
+    startPopulationCounters();
+  }
+</script>
+{% endblock %}

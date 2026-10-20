@@ -1,0 +1,364 @@
+test_all_other_routes_byte_identical (test_3d_integrity.ReconstructionIntegrity.test_all_other_routes_byte_identical) ... FAIL
+test_all_rendered_local_assets (test_3d_integrity.ReconstructionIntegrity.test_all_rendered_local_assets) ... ok
+test_four_object_schema_and_no_false_photos (test_3d_integrity.ReconstructionIntegrity.test_four_object_schema_and_no_false_photos) ... ok
+test_offline_libraries_and_no_missing_glb_request (test_3d_integrity.ReconstructionIntegrity.test_offline_libraries_and_no_missing_glb_request) ... ok
+test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) ... 
+  test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='app.py') ... FAIL
+  test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/images/WhatsApp Image 2026-10-12 at 16.19.33.jpeg') ... FAIL
+  test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/images/WhatsApp Image 2026-10-12 at 16.19.35 (1).jpeg') ... FAIL
+  test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/images/WhatsApp Image 2026-10-12 at 16.19.36.jpeg') ... FAIL
+  test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/images/WhatsApp Image 2026-10-12 at 16.19.41.jpeg') ... FAIL
+  test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/images/WhatsApp Image 2026-10-12 at 16.19.42.jpeg') ... FAIL
+  test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/images/WhatsApp Image 2026-10-12 at 16.19.43 (1).jpeg') ... FAIL
+  test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/images/WhatsApp Image 2026-10-12 at 16.19.43 (3).jpeg') ... FAIL
+  test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/images/WhatsApp Image 2026-10-12 at 16.19.44.jpeg') ... FAIL
+  test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/images/WhatsApp Image 2026-10-14 at 19.45.05.jpeg') ... FAIL
+  test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/images/display/qozhashova-balanzhan.png') ... FAIL
+  test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/images/e4d9218c-94a4-48d8-9510-b2ab987c5d54.jpg') ... FAIL
+  test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/images/galery.jpg') ... FAIL
+  test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/js/main.js') ... FAIL
+  test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/js/map.js') ... FAIL
+  test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='templates/_macros.html') ... FAIL
+  test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='templates/_photo_archive.html') ... FAIL
+  test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='templates/base.html') ... FAIL
+  test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='templates/history.html') ... FAIL
+  test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='templates/index.html') ... FAIL
+  test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='templates/map.html') ... FAIL
+  test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='templates/oral-history.html') ... FAIL
+  test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='templates/school.html') ... FAIL
+test_python_syntax_and_render_templates (test_3d_integrity.ReconstructionIntegrity.test_python_syntax_and_render_templates) ... ok
+test_readme_urls_and_windows_commands (test_3d_integrity.ReconstructionIntegrity.test_readme_urls_and_windows_commands) ... ok
+test_windows_launcher_static_structure (test_3d_integrity.ReconstructionIntegrity.test_windows_launcher_static_structure) ... ok
+test_content_3d_smoke (unittest.loader._FailedTest.test_content_3d_smoke) ... ERROR
+test_content_browser (unittest.loader._FailedTest.test_content_browser) ... ERROR
+test_all_routes_templates_assets (test_content_update.ContentUpdate.test_all_routes_templates_assets) ... ok
+test_full_text_search_sections (test_content_update.ContentUpdate.test_full_text_search_sections) ... ok
+test_no_fabricated_historical_photos (test_content_update.ContentUpdate.test_no_fabricated_historical_photos) ... ok
+test_preserved_protected_files_and_original_metadata (test_content_update.ContentUpdate.test_preserved_protected_files_and_original_metadata) ... 
+  test_preserved_protected_files_and_original_metadata (test_content_update.ContentUpdate.test_preserved_protected_files_and_original_metadata) (file='run.bat') ... FAIL
+  test_preserved_protected_files_and_original_metadata (test_content_update.ContentUpdate.test_preserved_protected_files_and_original_metadata) (file='templates/oral-history.html') ... FAIL
+test_result_pages_and_fragments (test_content_update.ContentUpdate.test_result_pages_and_fragments) ... ok
+test_school_label_consistency (test_content_update.ContentUpdate.test_school_label_consistency) ... ok
+test_school_only_labels_changed (test_content_update.ContentUpdate.test_school_only_labels_changed) ... ok
+test_search_case_multiple_words_single_character_empty_and_no_results (test_content_update.ContentUpdate.test_search_case_multiple_words_single_character_empty_and_no_results) ... ok
+test_search_page_fallback_and_escaping (test_content_update.ContentUpdate.test_search_page_fallback_and_escaping) ... ok
+test_all_original_photos_preserved_and_displayed (test_regression.WebsiteRegression.test_all_original_photos_preserved_and_displayed) ... FAIL
+test_api_image_paths_and_legacy_urls (test_regression.WebsiteRegression.test_api_image_paths_and_legacy_urls) ... ok
+test_historic_places_preserved (test_regression.WebsiteRegression.test_historic_places_preserved) ... ok
+test_historical_text_and_persons_unchanged (test_regression.WebsiteRegression.test_historical_text_and_persons_unchanged) ... ok
+test_protected_files_unchanged (test_regression.WebsiteRegression.test_protected_files_unchanged) ... FAIL
+test_qoshqar_unique_and_exact (test_regression.WebsiteRegression.test_qoshqar_unique_and_exact) ... ok
+test_routes_and_rendered_images (test_regression.WebsiteRegression.test_routes_and_rendered_images) ... ok
+test_search_keeps_both_village_objects (test_regression.WebsiteRegression.test_search_keeps_both_village_objects) ... ok
+test_separate_verified_village_objects (test_regression.WebsiteRegression.test_separate_verified_village_objects) ... ok
+
+======================================================================
+ERROR: test_content_3d_smoke (unittest.loader._FailedTest.test_content_3d_smoke)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_content_3d_smoke
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/unittest/loader.py", line 394, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/loader.py", line 337, in _get_module_from_name
+    __import__(name)
+  File "/home/user/akshukur/source/tests/test_content_3d_smoke.py", line 7, in <module>
+    from playwright.sync_api import sync_playwright
+ModuleNotFoundError: No module named 'playwright'
+
+
+======================================================================
+ERROR: test_content_browser (unittest.loader._FailedTest.test_content_browser)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_content_browser
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/unittest/loader.py", line 394, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/loader.py", line 337, in _get_module_from_name
+    __import__(name)
+  File "/home/user/akshukur/source/tests/test_content_browser.py", line 10, in <module>
+    from playwright.sync_api import sync_playwright
+ModuleNotFoundError: No module named 'playwright'
+
+
+======================================================================
+FAIL: test_all_other_routes_byte_identical (test_3d_integrity.ReconstructionIntegrity.test_all_other_routes_byte_identical)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_3d_integrity.py", line 38, in test_all_other_routes_byte_identical
+    self.assertEqual({r.rule for r in app.url_map.iter_rules() if '<' not in r.rule},set(baseline['routes']))
+AssertionError: Items in the first set but not the second:
+'/tarikh/zhoba'
+'/tarikh/foto-arkhivi'
+'/izdeu'
+'/foto-arkhivi'
+'/zhoba'
+
+======================================================================
+FAIL: test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='app.py')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_3d_integrity.py", line 33, in test_original_scope_and_no_deletions
+    self.assertEqual(hashlib.sha256(p.read_bytes()).hexdigest(),info['sha256'],name)
+AssertionError: 'df6337980df1443e500083bd86edc0ba1490f0b7fa5841d828e35c89954f5ae3' != 'a864e1a3bb218b861d91d3c201c561254cc0e14ba8cf451c635f59db6a11f8d8'
+- df6337980df1443e500083bd86edc0ba1490f0b7fa5841d828e35c89954f5ae3
++ a864e1a3bb218b861d91d3c201c561254cc0e14ba8cf451c635f59db6a11f8d8
+ : app.py
+
+======================================================================
+FAIL: test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/images/WhatsApp Image 2026-10-12 at 16.19.33.jpeg')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_3d_integrity.py", line 31, in test_original_scope_and_no_deletions
+    self.assertTrue(p.is_file(),name)
+AssertionError: False is not true : static/images/WhatsApp Image 2026-10-12 at 16.19.33.jpeg
+
+======================================================================
+FAIL: test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/images/WhatsApp Image 2026-10-12 at 16.19.35 (1).jpeg')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_3d_integrity.py", line 31, in test_original_scope_and_no_deletions
+    self.assertTrue(p.is_file(),name)
+AssertionError: False is not true : static/images/WhatsApp Image 2026-10-12 at 16.19.35 (1).jpeg
+
+======================================================================
+FAIL: test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/images/WhatsApp Image 2026-10-12 at 16.19.36.jpeg')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_3d_integrity.py", line 31, in test_original_scope_and_no_deletions
+    self.assertTrue(p.is_file(),name)
+AssertionError: False is not true : static/images/WhatsApp Image 2026-10-12 at 16.19.36.jpeg
+
+======================================================================
+FAIL: test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/images/WhatsApp Image 2026-10-12 at 16.19.41.jpeg')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_3d_integrity.py", line 31, in test_original_scope_and_no_deletions
+    self.assertTrue(p.is_file(),name)
+AssertionError: False is not true : static/images/WhatsApp Image 2026-10-12 at 16.19.41.jpeg
+
+======================================================================
+FAIL: test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/images/WhatsApp Image 2026-10-12 at 16.19.42.jpeg')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_3d_integrity.py", line 31, in test_original_scope_and_no_deletions
+    self.assertTrue(p.is_file(),name)
+AssertionError: False is not true : static/images/WhatsApp Image 2026-10-12 at 16.19.42.jpeg
+
+======================================================================
+FAIL: test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/images/WhatsApp Image 2026-10-12 at 16.19.43 (1).jpeg')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_3d_integrity.py", line 31, in test_original_scope_and_no_deletions
+    self.assertTrue(p.is_file(),name)
+AssertionError: False is not true : static/images/WhatsApp Image 2026-10-12 at 16.19.43 (1).jpeg
+
+======================================================================
+FAIL: test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/images/WhatsApp Image 2026-10-12 at 16.19.43 (3).jpeg')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_3d_integrity.py", line 31, in test_original_scope_and_no_deletions
+    self.assertTrue(p.is_file(),name)
+AssertionError: False is not true : static/images/WhatsApp Image 2026-10-12 at 16.19.43 (3).jpeg
+
+======================================================================
+FAIL: test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/images/WhatsApp Image 2026-10-12 at 16.19.44.jpeg')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_3d_integrity.py", line 31, in test_original_scope_and_no_deletions
+    self.assertTrue(p.is_file(),name)
+AssertionError: False is not true : static/images/WhatsApp Image 2026-10-12 at 16.19.44.jpeg
+
+======================================================================
+FAIL: test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/images/WhatsApp Image 2026-10-14 at 19.45.05.jpeg')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_3d_integrity.py", line 31, in test_original_scope_and_no_deletions
+    self.assertTrue(p.is_file(),name)
+AssertionError: False is not true : static/images/WhatsApp Image 2026-10-14 at 19.45.05.jpeg
+
+======================================================================
+FAIL: test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/images/display/qozhashova-balanzhan.png')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_3d_integrity.py", line 33, in test_original_scope_and_no_deletions
+    self.assertEqual(hashlib.sha256(p.read_bytes()).hexdigest(),info['sha256'],name)
+AssertionError: 'a40e1038bc73a217bc24039befe9d22788b6f80d725d3664c4c68c96767d64dd' != '4c2cc3e030234a2f7566af7f56db2439bf56878591babdd39f7362d8067f10f6'
+- a40e1038bc73a217bc24039befe9d22788b6f80d725d3664c4c68c96767d64dd
++ 4c2cc3e030234a2f7566af7f56db2439bf56878591babdd39f7362d8067f10f6
+ : static/images/display/qozhashova-balanzhan.png
+
+======================================================================
+FAIL: test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/images/e4d9218c-94a4-48d8-9510-b2ab987c5d54.jpg')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_3d_integrity.py", line 31, in test_original_scope_and_no_deletions
+    self.assertTrue(p.is_file(),name)
+AssertionError: False is not true : static/images/e4d9218c-94a4-48d8-9510-b2ab987c5d54.jpg
+
+======================================================================
+FAIL: test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/images/galery.jpg')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_3d_integrity.py", line 31, in test_original_scope_and_no_deletions
+    self.assertTrue(p.is_file(),name)
+AssertionError: False is not true : static/images/galery.jpg
+
+======================================================================
+FAIL: test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/js/main.js')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_3d_integrity.py", line 33, in test_original_scope_and_no_deletions
+    self.assertEqual(hashlib.sha256(p.read_bytes()).hexdigest(),info['sha256'],name)
+AssertionError: '4b70d3aaae2cba34c4c58cf4600b23e2c16a3721f86535f0fcc8b0a5cdfbc21f' != 'f9bfc16690ca7a884dddb819098996d7a36f4681898efe65e923a0678c22df29'
+- 4b70d3aaae2cba34c4c58cf4600b23e2c16a3721f86535f0fcc8b0a5cdfbc21f
++ f9bfc16690ca7a884dddb819098996d7a36f4681898efe65e923a0678c22df29
+ : static/js/main.js
+
+======================================================================
+FAIL: test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='static/js/map.js')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_3d_integrity.py", line 33, in test_original_scope_and_no_deletions
+    self.assertEqual(hashlib.sha256(p.read_bytes()).hexdigest(),info['sha256'],name)
+AssertionError: 'c21a2c0d80e70c18931b0015673f0bb1e4a8b3387115e49083aeeac80a4f975f' != '89837bae40ee8b22c4c0a219a63a2d0647276fc27260835d530c046cc12ae44c'
+- c21a2c0d80e70c18931b0015673f0bb1e4a8b3387115e49083aeeac80a4f975f
++ 89837bae40ee8b22c4c0a219a63a2d0647276fc27260835d530c046cc12ae44c
+ : static/js/map.js
+
+======================================================================
+FAIL: test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='templates/_macros.html')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_3d_integrity.py", line 33, in test_original_scope_and_no_deletions
+    self.assertEqual(hashlib.sha256(p.read_bytes()).hexdigest(),info['sha256'],name)
+AssertionError: '341b795e4ed6e91710ab81da865199033b7f83aa3d9af63a9a2f4b2d395a09e5' != '7dbc32c823ba76c8edede9bb6497faf9dfecd7ccd8ad630a701600f43c7d11db'
+- 341b795e4ed6e91710ab81da865199033b7f83aa3d9af63a9a2f4b2d395a09e5
++ 7dbc32c823ba76c8edede9bb6497faf9dfecd7ccd8ad630a701600f43c7d11db
+ : templates/_macros.html
+
+======================================================================
+FAIL: test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='templates/_photo_archive.html')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_3d_integrity.py", line 33, in test_original_scope_and_no_deletions
+    self.assertEqual(hashlib.sha256(p.read_bytes()).hexdigest(),info['sha256'],name)
+AssertionError: 'e5bbd6f10d0cef09e9045f1fb1f54ccbcd672c092bab7774e577110bd494d031' != '4ec0d98a01aa0d1e5571abe884737dec6ac1cd372b08820500da16e76906d587'
+- e5bbd6f10d0cef09e9045f1fb1f54ccbcd672c092bab7774e577110bd494d031
++ 4ec0d98a01aa0d1e5571abe884737dec6ac1cd372b08820500da16e76906d587
+ : templates/_photo_archive.html
+
+======================================================================
+FAIL: test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='templates/base.html')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_3d_integrity.py", line 33, in test_original_scope_and_no_deletions
+    self.assertEqual(hashlib.sha256(p.read_bytes()).hexdigest(),info['sha256'],name)
+AssertionError: '50f4f9d78155438bb52c92df817ddd27d4033e3d16dea7d0dda18322b94d8101' != '6c765345059044cebb9dbacfc6f131c9b6b2980c1cb89d54a3b586ad6298fe3b'
+- 50f4f9d78155438bb52c92df817ddd27d4033e3d16dea7d0dda18322b94d8101
++ 6c765345059044cebb9dbacfc6f131c9b6b2980c1cb89d54a3b586ad6298fe3b
+ : templates/base.html
+
+======================================================================
+FAIL: test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='templates/history.html')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_3d_integrity.py", line 33, in test_original_scope_and_no_deletions
+    self.assertEqual(hashlib.sha256(p.read_bytes()).hexdigest(),info['sha256'],name)
+AssertionError: '51e5e149702b45fd8152f6631970feba65ecdc8347c915884424672604c22f2e' != 'b16c6a62f4bce6d6c7fa0335d93245f784aa973e0dcbad9b23b797b444867f4d'
+- 51e5e149702b45fd8152f6631970feba65ecdc8347c915884424672604c22f2e
++ b16c6a62f4bce6d6c7fa0335d93245f784aa973e0dcbad9b23b797b444867f4d
+ : templates/history.html
+
+======================================================================
+FAIL: test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='templates/index.html')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_3d_integrity.py", line 33, in test_original_scope_and_no_deletions
+    self.assertEqual(hashlib.sha256(p.read_bytes()).hexdigest(),info['sha256'],name)
+AssertionError: '6e2eb447d2720e3724b66f010921792b6e842b6043e3649ad5fe22120c6789e0' != 'd9ad625cfbac8bb2b8fa4b3d67cb9dbcbf90fd7969fe9c1e5b12830535b1c76a'
+- 6e2eb447d2720e3724b66f010921792b6e842b6043e3649ad5fe22120c6789e0
++ d9ad625cfbac8bb2b8fa4b3d67cb9dbcbf90fd7969fe9c1e5b12830535b1c76a
+ : templates/index.html
+
+======================================================================
+FAIL: test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='templates/map.html')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_3d_integrity.py", line 33, in test_original_scope_and_no_deletions
+    self.assertEqual(hashlib.sha256(p.read_bytes()).hexdigest(),info['sha256'],name)
+AssertionError: '21f5ebc30a50106df8d9a2059cbfc2f48ce56b0680133a275cdada2d31431f9a' != '48586dc6446cf2f4de6fd934eaf312ac41e98ef91943fa51bc6c32ca85944910'
+- 21f5ebc30a50106df8d9a2059cbfc2f48ce56b0680133a275cdada2d31431f9a
++ 48586dc6446cf2f4de6fd934eaf312ac41e98ef91943fa51bc6c32ca85944910
+ : templates/map.html
+
+======================================================================
+FAIL: test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='templates/oral-history.html')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_3d_integrity.py", line 33, in test_original_scope_and_no_deletions
+    self.assertEqual(hashlib.sha256(p.read_bytes()).hexdigest(),info['sha256'],name)
+AssertionError: 'd831c98df6d73a7a9c9caecd5b6b55136c564d26f73bbd8e30dc1704f04679bd' != 'f048845ff1d130fb3cbe180e3a9fdbed8e999c894504be9af201c884d31efba5'
+- d831c98df6d73a7a9c9caecd5b6b55136c564d26f73bbd8e30dc1704f04679bd
++ f048845ff1d130fb3cbe180e3a9fdbed8e999c894504be9af201c884d31efba5
+ : templates/oral-history.html
+
+======================================================================
+FAIL: test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) (file='templates/school.html')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_3d_integrity.py", line 33, in test_original_scope_and_no_deletions
+    self.assertEqual(hashlib.sha256(p.read_bytes()).hexdigest(),info['sha256'],name)
+AssertionError: '7726762fb4b0781a4c45b177b089c2ac92a6708a90a41d1ff4fdd85c3dddb97c' != '3afbee072c932726f45fd065c12c1291bded50440adf843cd6959c3d227f0af0'
+- 7726762fb4b0781a4c45b177b089c2ac92a6708a90a41d1ff4fdd85c3dddb97c
++ 3afbee072c932726f45fd065c12c1291bded50440adf843cd6959c3d227f0af0
+ : templates/school.html
+
+======================================================================
+FAIL: test_preserved_protected_files_and_original_metadata (test_content_update.ContentUpdate.test_preserved_protected_files_and_original_metadata) (file='run.bat')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_content_update.py", line 83, in test_preserved_protected_files_and_original_metadata
+    with self.subTest(file=name):self.assertEqual(hashlib.sha256((ROOT/name).read_bytes()).hexdigest(),sha)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '0c3586b02c336830962b660cf19330f9b98e45ee88e786d100bb827d1c7b40e3' != 'f709981bfebdb8d3c3638ccf9145ffcc453c79f6c5cd4c0b3a4f9f75a5b6ed4d'
+- 0c3586b02c336830962b660cf19330f9b98e45ee88e786d100bb827d1c7b40e3
++ f709981bfebdb8d3c3638ccf9145ffcc453c79f6c5cd4c0b3a4f9f75a5b6ed4d
+
+
+======================================================================
+FAIL: test_preserved_protected_files_and_original_metadata (test_content_update.ContentUpdate.test_preserved_protected_files_and_original_metadata) (file='templates/oral-history.html')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_content_update.py", line 83, in test_preserved_protected_files_and_original_metadata
+    with self.subTest(file=name):self.assertEqual(hashlib.sha256((ROOT/name).read_bytes()).hexdigest(),sha)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'd831c98df6d73a7a9c9caecd5b6b55136c564d26f73bbd8e30dc1704f04679bd' != 'f048845ff1d130fb3cbe180e3a9fdbed8e999c894504be9af201c884d31efba5'
+- d831c98df6d73a7a9c9caecd5b6b55136c564d26f73bbd8e30dc1704f04679bd
++ f048845ff1d130fb3cbe180e3a9fdbed8e999c894504be9af201c884d31efba5
+
+
+======================================================================
+FAIL: test_all_original_photos_preserved_and_displayed (test_regression.WebsiteRegression.test_all_original_photos_preserved_and_displayed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_regression.py", line 102, in test_all_original_photos_preserved_and_displayed
+    self.assertTrue(original.is_file())
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_protected_files_unchanged (test_regression.WebsiteRegression.test_protected_files_unchanged)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/akshukur/source/tests/test_regression.py", line 95, in test_protected_files_unchanged
+    self.assertEqual(hashlib.sha256((ROOT / file).read_bytes()).hexdigest(), sha, file)
+AssertionError: '50f4f9d78155438bb52c92df817ddd27d4033e3d16dea7d0dda18322b94d8101' != '6c765345059044cebb9dbacfc6f131c9b6b2980c1cb89d54a3b586ad6298fe3b'
+- 50f4f9d78155438bb52c92df817ddd27d4033e3d16dea7d0dda18322b94d8101
++ 6c765345059044cebb9dbacfc6f131c9b6b2980c1cb89d54a3b586ad6298fe3b
+ : templates/base.html
+
+----------------------------------------------------------------------
+Ran 28 tests in 1.064s
+
+FAILED (failures=28, errors=2)

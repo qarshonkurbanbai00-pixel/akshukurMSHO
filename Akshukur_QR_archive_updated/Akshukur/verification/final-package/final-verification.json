@@ -1,0 +1,163 @@
+{
+  "environment": "Linux, CPython 3.12.3, clean venv; Windows execution not performed",
+  "startup_command": "python app.py",
+  "templates": [
+    "404.html",
+    "_history_nav.html",
+    "_macros.html",
+    "_photo_archive.html",
+    "_section_archive.html",
+    "archive.html",
+    "base.html",
+    "excursion.html",
+    "history.html",
+    "index.html",
+    "map.html",
+    "mashyryq.html",
+    "oral-history.html",
+    "persons.html",
+    "photo-archive.html",
+    "project.html",
+    "reconstruction.html",
+    "research.html",
+    "school.html",
+    "search.html",
+    "sources.html"
+  ],
+  "template_count": 21,
+  "http_checks": [
+    {
+      "url": "/",
+      "status": 200,
+      "bytes": 23761
+    },
+    {
+      "url": "/tarikh",
+      "status": 200,
+      "bytes": 54111
+    },
+    {
+      "url": "/tulghalar",
+      "status": 200,
+      "bytes": 25730
+    },
+    {
+      "url": "/mashyryq",
+      "status": 200,
+      "bytes": 17554
+    },
+    {
+      "url": "/karta",
+      "status": 200,
+      "bytes": 64410
+    },
+    {
+      "url": "/rekonstrukciya",
+      "status": 200,
+      "bytes": 17289
+    },
+    {
+      "url": "/mektep",
+      "status": 200,
+      "bytes": 26287
+    },
+    {
+      "url": "/muragat",
+      "status": 200,
+      "bytes": 80233
+    },
+    {
+      "url": "/auyzsha-tarikh",
+      "status": 200,
+      "bytes": 17297
+    },
+    {
+      "url": "/eksursiya",
+      "status": 200,
+      "bytes": 22796
+    },
+    {
+      "url": "/zertteu",
+      "status": 200,
+      "bytes": 16131
+    },
+    {
+      "url": "/derek-kozder",
+      "status": 200,
+      "bytes": 32362
+    },
+    {
+      "url": "/zhoba",
+      "status": 200,
+      "bytes": 17273
+    },
+    {
+      "url": "/tarikh/zhoba",
+      "status": 200,
+      "bytes": 17273
+    },
+    {
+      "url": "/foto-arkhivi",
+      "status": 200,
+      "bytes": 70707
+    },
+    {
+      "url": "/tarikh/foto-arkhivi",
+      "status": 200,
+      "bytes": 70707
+    },
+    {
+      "url": "/izdeu",
+      "status": 200,
+      "bytes": 9455
+    },
+    {
+      "url": "/api/history",
+      "status": 200,
+      "bytes": 10501
+    },
+    {
+      "url": "/api/places",
+      "status": 200,
+      "bytes": 7794
+    },
+    {
+      "url": "/api/sources",
+      "status": 200,
+      "bytes": 14489
+    },
+    {
+      "url": "/api/interviews",
+      "status": 200,
+      "bytes": 3426
+    },
+    {
+      "url": "/api/persons",
+      "status": 200,
+      "bytes": 8967
+    },
+    {
+      "url": "/api/search?q=Мектеп",
+      "status": 200,
+      "bytes": 13725
+    }
+  ],
+  "browser": {
+    "page_js_errors": [],
+    "local_http_errors": [],
+    "all_html_pages_rendered": true,
+    "desktop_and_mobile_oral_history": true,
+    "external_network_blocked": true
+  },
+  "acceptance_tests": {
+    "ran": 9,
+    "passed": 9
+  },
+  "existing_content_browser_checks": 43,
+  "existing_3d_browser_checks": 9,
+  "all_input_file_paths_present": true,
+  "optional_missing_original_images": [
+    "images/e4d9218c-94a4-48d8-9510-b2ab987c5d54.jpg",
+    "images/galery.jpg"
+  ]
+}

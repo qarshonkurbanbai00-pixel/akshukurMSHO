@@ -1,0 +1,22 @@
+test_all_other_routes_byte_identical (test_3d_integrity.ReconstructionIntegrity.test_all_other_routes_byte_identical) ... ok
+test_all_rendered_local_assets (test_3d_integrity.ReconstructionIntegrity.test_all_rendered_local_assets) ... ok
+test_four_object_schema_and_no_false_photos (test_3d_integrity.ReconstructionIntegrity.test_four_object_schema_and_no_false_photos) ... ok
+test_offline_libraries_and_no_missing_glb_request (test_3d_integrity.ReconstructionIntegrity.test_offline_libraries_and_no_missing_glb_request) ... ok
+test_original_scope_and_no_deletions (test_3d_integrity.ReconstructionIntegrity.test_original_scope_and_no_deletions) ... ok
+test_python_syntax_and_render_templates (test_3d_integrity.ReconstructionIntegrity.test_python_syntax_and_render_templates) ... ok
+test_readme_urls_and_windows_commands (test_3d_integrity.ReconstructionIntegrity.test_readme_urls_and_windows_commands) ... ok
+test_windows_launcher_static_structure (test_3d_integrity.ReconstructionIntegrity.test_windows_launcher_static_structure) ... ok
+test_all_original_photos_preserved_and_displayed (test_regression.WebsiteRegression.test_all_original_photos_preserved_and_displayed) ... ok
+test_api_image_paths_and_legacy_urls (test_regression.WebsiteRegression.test_api_image_paths_and_legacy_urls) ... ok
+test_historic_places_preserved (test_regression.WebsiteRegression.test_historic_places_preserved) ... ok
+test_historical_text_and_persons_unchanged (test_regression.WebsiteRegression.test_historical_text_and_persons_unchanged) ... ok
+test_protected_files_unchanged (test_regression.WebsiteRegression.test_protected_files_unchanged) ... ok
+test_qoshqar_unique_and_exact (test_regression.WebsiteRegression.test_qoshqar_unique_and_exact) ... ok
+test_routes_and_rendered_images (test_regression.WebsiteRegression.test_routes_and_rendered_images) ... ok
+test_search_keeps_both_village_objects (test_regression.WebsiteRegression.test_search_keeps_both_village_objects) ... ok
+test_separate_verified_village_objects (test_regression.WebsiteRegression.test_separate_verified_village_objects) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.326s
+
+OK

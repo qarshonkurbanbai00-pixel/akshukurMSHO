@@ -1,0 +1,495 @@
+{
+  "environment": "Linux; Playwright Chromium 156; ANGLE SwiftShader (software WebGL); Windows not executed",
+  "url_path": "/rekonstrukciya",
+  "passed": 60,
+  "total": 60,
+  "results": [
+    {
+      "test": "offline_local_boot",
+      "passed": true,
+      "detail": {
+        "blocked": [],
+        "errors": []
+      }
+    },
+    {
+      "test": "four_objects",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "select_mosque",
+      "passed": true,
+      "detail": {
+        "camera": [
+          6,
+          12.999999999999998,
+          25
+        ],
+        "target": [
+          -10,
+          3,
+          7
+        ],
+        "distance": 26.076809620810597,
+        "wire": false,
+        "quality": "full",
+        "autoRotate": false,
+        "selected": "mosque",
+        "tour": 0,
+        "highlighted": true,
+        "frames": 50,
+        "flying": false,
+        "meshCount": 80,
+        "width": 868,
+        "height": 510,
+        "failure": null
+      }
+    },
+    {
+      "test": "card_mosque",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "select_tree",
+      "passed": true,
+      "detail": {
+        "camera": [
+          23.999999999999996,
+          10,
+          23
+        ],
+        "target": [
+          11,
+          3,
+          7
+        ],
+        "distance": 21.77154105707724,
+        "wire": false,
+        "quality": "full",
+        "autoRotate": false,
+        "selected": "tree",
+        "tour": 0,
+        "highlighted": true,
+        "frames": 58,
+        "flying": false,
+        "meshCount": 80,
+        "width": 868,
+        "height": 510,
+        "failure": null
+      }
+    },
+    {
+      "test": "card_tree",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "select_well",
+      "passed": true,
+      "detail": {
+        "camera": [
+          10,
+          8.000000000000002,
+          6.999999999999998
+        ],
+        "target": [
+          0,
+          1,
+          -6
+        ],
+        "distance": 17.832554500127006,
+        "wire": false,
+        "quality": "full",
+        "autoRotate": false,
+        "selected": "well",
+        "tour": 0,
+        "highlighted": true,
+        "frames": 68,
+        "flying": false,
+        "meshCount": 80,
+        "width": 868,
+        "height": 510,
+        "failure": null
+      }
+    },
+    {
+      "test": "card_well",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "select_coast",
+      "passed": true,
+      "detail": {
+        "camera": [
+          22.999999999999996,
+          16,
+          -1.0000000000000036
+        ],
+        "target": [
+          0,
+          0,
+          -23
+        ],
+        "distance": 35.62302626111375,
+        "wire": false,
+        "quality": "full",
+        "autoRotate": false,
+        "selected": "coast",
+        "tour": 0,
+        "highlighted": true,
+        "frames": 76,
+        "flying": false,
+        "meshCount": 80,
+        "width": 868,
+        "height": 510,
+        "failure": null
+      }
+    },
+    {
+      "test": "card_coast",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "reset_selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "overview_camera",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "raycast_mesh_selection",
+      "passed": true,
+      "detail": {
+        "camera": [
+          6,
+          12.999999999999998,
+          25
+        ],
+        "target": [
+          -10,
+          3,
+          7
+        ],
+        "distance": 26.076809620810597,
+        "wire": false,
+        "quality": "full",
+        "autoRotate": false,
+        "selected": "mosque",
+        "tour": 0,
+        "highlighted": true,
+        "frames": 105,
+        "flying": false,
+        "meshCount": 80,
+        "width": 868,
+        "height": 510,
+        "failure": null
+      }
+    },
+    {
+      "test": "scene_label_selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "zoom_in_button",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "zoom_out_button",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "wireframe_on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "wireframe_off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "autorotate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "autorotate_stop",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "keyboard_orbit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "keyboard_zoom",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "keyboard_select",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "keyboard_reset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "mouse_orbit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "mouse_wheel_zoom",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "mouse_pan",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "tour_step_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "tour_step_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "tour_step_4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "tour_step_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "tour_back",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "tour_restart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "comparison_open",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "comparison_refresh",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "comparison_close",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "light_mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "full_mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "fullscreen_enter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "fullscreen_exit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "no_missing_local_assets",
+      "passed": true,
+      "detail": [
+        [
+          "http://127.0.0.1:36291/rekonstrukciya",
+          200
+        ],
+        [
+          "http://127.0.0.1:36291/static/css/style.css",
+          200
+        ],
+        [
+          "http://127.0.0.1:36291/static/images/after.jpeg",
+          200
+        ],
+        [
+          "http://127.0.0.1:36291/static/css/reconstruction.css",
+          200
+        ],
+        [
+          "http://127.0.0.1:36291/static/js/main.js",
+          200
+        ],
+        [
+          "http://127.0.0.1:36291/static/vendor/three-r128/OrbitControls.js",
+          200
+        ],
+        [
+          "http://127.0.0.1:36291/static/js/3d.js",
+          200
+        ],
+        [
+          "http://127.0.0.1:36291/static/vendor/three-r128/three.min.js",
+          200
+        ],
+        [
+          "http://127.0.0.1:36291/static/data/reconstruction.json",
+          200
+        ]
+      ]
+    },
+    {
+      "test": "no_javascript_exceptions",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "test": "mobile_auto_light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "mobile_no_horizontal_overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "mobile_tap_selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "mobile_touch_orbit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "mobile_pinch_zoom",
+      "passed": true,
+      "detail": {
+        "before": 17.832554500127003,
+        "after": 9.09824209190153
+      }
+    },
+    {
+      "test": "mobile_two_finger_pan",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "mobile_menu_remains_closed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "responsive_320",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "responsive_768",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "responsive_1024",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "missing_library_fallback",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "missing_json_fallback",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "invalid_json_structure_fallback",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "webgl_unavailable_fallback",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "context_test_engine_ready",
+      "passed": true,
+      "detail": {
+        "camera": [
+          27.999999999999996,
+          21.99999999999999,
+          33.999999999999986
+        ],
+        "target": [
+          0,
+          1,
+          -2
+        ],
+        "distance": 50.20956084253275,
+        "wire": false,
+        "quality": "full",
+        "autoRotate": false,
+        "selected": null,
+        "tour": 0,
+        "highlighted": false,
+        "frames": 13,
+        "flying": false,
+        "meshCount": 80,
+        "width": 868,
+        "height": 510,
+        "failure": null
+      }
+    },
+    {
+      "test": "webgl_context_lost_fallback",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "retry_button",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "reduced_motion",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

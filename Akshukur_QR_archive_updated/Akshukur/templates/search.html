@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}Іздеу — Ақшұқыр цифрлық шежіресі{% endblock %}
+{% block content %}
+<section class="page-hero"><div class="container"><p class="hero-kicker">Барлық бөлімдер мен материалдар</p><h1 class="page-title">Іздеу</h1><p class="page-lead">Сайт мәтіндері, жоба, мектеп, фото сипаттамалары, тұлғалар және дереккөздер бойынша іздеу.</p></div></section>
+<section class="section"><div class="container search-page-content"><form action="{{ url_for('search_page') }}" method="get" class="search-page-form"><label for="pageSearch">Сөз немесе сөйлем</label><div><input id="pageSearch" type="search" name="q" value="{{ query }}" maxlength="200" placeholder="Іздеу сөзі немесе сөйлемі…"><button class="btn btn-gold" type="submit">Іздеу</button></div></form>
+{% if query %}<p class="muted" role="status">«{{ query }}» — {{ hits|length }} нәтиже</p>{% endif %}
+{% if not query %}<p class="glass content-panel">Іздеу үшін сөз немесе сөйлем енгізіңіз.</p>{% elif not hits %}<p class="glass content-panel">Іздеу бойынша нәтиже табылмады</p>{% else %}<div class="search-page-results">{% for hit in hits %}<a class="search-hit glass" href="{{ hit.url }}"><span class="hit-sec">{{ hit.section }}</span><h2 class="hit-title">{{ hit.title }}</h2><span class="hit-snippet">{{ hit.snippet }}</span></a>{% endfor %}</div>{% endif %}
+<p class="muted small">Іздеу сайтта қолжетімді мәтіндер мен фотосурет сипаттамаларын қамтиды. Сурет ішіндегі жазуларға автоматты мәтін тану қолданылмайды.</p></div></section>
+{% endblock %}

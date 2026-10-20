@@ -1,0 +1,42 @@
+{
+  "modified": [
+    "app.py",
+    "data/history.json",
+    "data/places.json",
+    "data/sources.json",
+    "static/css/style.css",
+    "static/js/map.js",
+    "templates/_macros.html",
+    "templates/archive.html",
+    "templates/excursion.html",
+    "templates/history.html",
+    "templates/index.html",
+    "templates/map.html",
+    "templates/mashyryq.html",
+    "templates/persons.html",
+    "templates/school.html"
+  ],
+  "added": [
+    "data/photos.json",
+    "static/images/display/WhatsApp Image 2026-10-12 at 16.19.35 (1).png",
+    "static/images/display/WhatsApp Image 2026-10-12 at 16.19.35.png",
+    "static/images/display/WhatsApp Image 2026-10-12 at 16.19.36.png",
+    "static/images/display/WhatsApp Image 2026-10-12 at 16.19.41.png",
+    "static/images/display/WhatsApp Image 2026-10-12 at 16.19.42.png",
+    "static/images/display/nurbaev-omirzaq.png",
+    "static/images/display/qozhashova-balanzhan.png",
+    "static/images/display/sarsenov-burkitbay.png",
+    "templates/_photo_archive.html",
+    "tests/baseline.json",
+    "tests/test_regression.py",
+    "verification/REPORT_KK.txt",
+    "verification/browser-results.json",
+    "verification/changed-files.json",
+    "verification/coordinate-evidence.json",
+    "verification/screenshots/desktop-map.png",
+    "verification/screenshots/history-qoshqar.png",
+    "verification/screenshots/mobile-map.png",
+    "verification/screenshots/persons.png",
+    "verification/unit-tests.txt"
+  ]
+}

@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% from "_macros.html" import badge, photo with context %}
+
+{% block title %}Виртуалды экскурсия — ЦИФРЛЫҚ ШЕЖІРЕ{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="container">
+    <p class="hero-kicker reveal">Интерактивті маршрут</p>
+    <h1 class="page-title reveal">Виртуалды экскурсия</h1>
+    <p class="page-lead reveal">Ақшұқыр бойынша тарихи саяхат: «Ары қарай» батырмасымен маршрут нүктелерін ретімен аралаңыз.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <!-- Маршрут желісі -->
+    <div class="route-line reveal" id="routeLine">
+      <span class="route-node route-start">START</span>
+      {% for p in route %}
+      <span class="route-arrow">↓</span>
+      <button type="button" class="route-node" data-step="{{ loop.index0 }}">{{ p.name }}</button>
+      {% endfor %}
+    </div>
+
+    <!-- Қадам карточкасы -->
+    <div class="tour-card glass reveal" id="tourCard">
+      <div class="tour-progress"><div class="tour-progress-bar" id="tourProgress"></div></div>
+      <div class="tour-body">
+        <div class="tour-visual" id="tourVisual"></div>
+        <div class="tour-info">
+          <p class="tour-step-label" id="tourStepLabel"></p>
+          <h2 id="tourName"></h2>
+          <p id="tourSummary"></p>
+          <p id="tourDesc" class="muted"></p>
+          <div id="tourBadge" class="badge-row"></div>
+          <div id="tourLoc" class="muted small"></div>
+        </div>
+      </div>
+      <div class="tour-nav">
+        <button type="button" class="btn btn-ghost" id="tourPrev">← Артқа</button>
+        <span class="tour-counter" id="tourCounter"></span>
+        <button type="button" class="btn btn-gold" id="tourNext">Ары қарай →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Экскурсия деректері JS-ке серверден беріледі -->
+<script id="routeData" type="application/json">{{ route | tojson }}</script>
+{% endblock %}
+
+{% block page_js %}
+<script>
+(function () {
+  const route = JSON.parse(document.getElementById('routeData').textContent);
+  const evLevels = {{ evidence_levels | tojson }};
+  const els = {
+    name: document.getElementById('tourName'), summary: document.getElementById('tourSummary'),
+    desc: document.getElementById('tourDesc'), badge: document.getElementById('tourBadge'),
+    loc: document.getElementById('tourLoc'), label: document.getElementById('tourStepLabel'),
+    counter: document.getElementById('tourCounter'), bar: document.getElementById('tourProgress'),
+    visual: document.getElementById('tourVisual'),
+    prev: document.getElementById('tourPrev'), next: document.getElementById('tourNext'),
+  };
+  let i = 0;
+  function render() {
+    const p = route[i];
+    const ev = evLevels[p.evidence] || evLevels.needs_data;
+    els.label.textContent = `${i + 1}-нүкте / барлығы ${route.length}`;
+    els.name.textContent = p.name;
+    els.summary.textContent = p.summary;
+    els.desc.textContent = p.description;
+    els.badge.innerHTML = `<span class="ev-badge" style="--ev:${ev.color}"><span class="ev-dot">${ev.icon}</span>${ev.label}</span>`;
+    els.loc.textContent = (p.lat !== null && p.lng !== null)
+      ? `Координаталары: ${p.lat}, ${p.lng} — «Тарихи орындар» картасында көрсетілген`
+      : 'Координатасы нақтыланбаған — зерттеу барысында енгізіледі';
+    const imageSrc = p.image_url;
+    els.visual.innerHTML = imageSrc
+      ? `<img src="${imageSrc}" alt="${p.name}">`
+      : `<div class="img-placeholder"><span>${p.photo_note || 'Расталған фото жоқ'}</span></div>`;
+    els.counter.textContent = `${i + 1} / ${route.length}`;
+    els.bar.style.width = `${((i + 1) / route.length) * 100}%`;
+    els.prev.disabled = i === 0;
+    els.next.disabled = i === route.length - 1;
+    document.querySelectorAll('.route-node[data-step]').forEach(n =>
+      n.classList.toggle('active', +n.dataset.step === i));
+  }
+  els.prev.addEventListener('click', () => { if (i > 0) { i--; render(); } });
+  els.next.addEventListener('click', () => { if (i < route.length - 1) { i++; render(); } });
+  document.getElementById('routeLine').addEventListener('click', e => {
+    const n = e.target.closest('[data-step]'); if (n) { i = +n.dataset.step; render(); }
+  });
+  render();
+})();
+</script>
+{% endblock %}

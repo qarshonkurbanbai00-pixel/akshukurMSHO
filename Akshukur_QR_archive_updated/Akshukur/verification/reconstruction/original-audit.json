@@ -1,0 +1,439 @@
+{
+  "source_zip": "MSHO_completed.zip",
+  "source_files": {
+    "README.md": {
+      "bytes": 6867,
+      "sha256": "2a3281239a28d84259dcad7fb57d13c33b8607e87eb1107520d74d53feeecb63",
+      "lines": 101
+    },
+    "app.py": {
+      "bytes": 21818,
+      "sha256": "a864e1a3bb218b861d91d3c201c561254cc0e14ba8cf451c635f59db6a11f8d8",
+      "lines": 356
+    },
+    "data/history.json": {
+      "bytes": 11328,
+      "sha256": "9b94d11468268edbcb14cd0a5e43872d58cd06bac39f6902ec2aa62d4eb58a4b",
+      "lines": 150
+    },
+    "data/interviews.json": {
+      "bytes": 3715,
+      "sha256": "4e6d7f6261c9895a833de23f1bc8e90690f0b17eb6cb6d92afed5c5266694d6a",
+      "lines": 53
+    },
+    "data/photos.json": {
+      "bytes": 11593,
+      "sha256": "47db93fbf42a2a80ff6b23c193d07d5bb8905be55a74b142c28807eb69317b05",
+      "lines": 194
+    },
+    "data/places.json": {
+      "bytes": 8374,
+      "sha256": "d4b342a3673592678f915e2713a797ef8af45a1834812438cd41290dbdc7f577",
+      "lines": 141
+    },
+    "data/sources.json": {
+      "bytes": 15744,
+      "sha256": "7a730ca9d04f990598161aa0ec9da56bdede9c174674d033b8565c62e7972c51",
+      "lines": 230
+    },
+    "requirements.txt": {
+      "bytes": 16,
+      "sha256": "572e8cf701d957aeb0501403ef1780ddcd090c9f7d305c1974fe669274c2728b",
+      "lines": 1
+    },
+    "run.bat": {
+      "bytes": 293,
+      "sha256": "bf34005cfc94a7558ac4759b56d2a5d68e83173420c1795dbb37bb862d60cdf2",
+      "lines": 10
+    },
+    "screenshots/README.txt": {
+      "bytes": 507,
+      "sha256": "8018e666143e375c6e0f87175d203cd69c45128454a95fda81e1bea47626b1bf",
+      "lines": 10
+    },
+    "static/audio/README.txt": {
+      "bytes": 397,
+      "sha256": "18b132836e8dda0cb4a1ceec8b5788f86924d3dc8e4e3a88df61a98cf78126f3",
+      "lines": 6
+    },
+    "static/css/style.css": {
+      "bytes": 30049,
+      "sha256": "b7775969fe0c3b7896db6dc9fec63c54dd3acb7d23184e285f32e42eb9b74065",
+      "lines": 521
+    },
+    "static/images/Koshkar-Ata-2.jpg": {
+      "bytes": 384208,
+      "sha256": "fc2e8da219ded787843530135291eae54e7f80d706722378b301939819b7aa29"
+    },
+    "static/images/WhatsApp Image 2026-10-12 at 16.19.33.jpeg": {
+      "bytes": 131843,
+      "sha256": "807a780b5a042ef7bf0e8e43e6ae5c32b10bd240a38a620934c05e54cc99e452"
+    },
+    "static/images/WhatsApp Image 2026-10-12 at 16.19.35 (1).jpeg": {
+      "bytes": 104969,
+      "sha256": "7786430cbae6df142becfce87b5b7781e9cf971db3faa628d639b51cc7e45f51"
+    },
+    "static/images/WhatsApp Image 2026-10-12 at 16.19.35.jpeg": {
+      "bytes": 189480,
+      "sha256": "af34e26e017e9225fd1aff16e87172c62fa807fa0d36af54b9046770df0b0ae1"
+    },
+    "static/images/WhatsApp Image 2026-10-12 at 16.19.36.jpeg": {
+      "bytes": 114379,
+      "sha256": "63edbc6df56cca4a2de099d112f2fef3cb2e69947455614ed69a922f354df485"
+    },
+    "static/images/WhatsApp Image 2026-10-12 at 16.19.41.jpeg": {
+      "bytes": 134185,
+      "sha256": "a75e25b647a60a3291dc17cdae65fe1213fc95b47ddd5cdd0df59002bd8c6952"
+    },
+    "static/images/WhatsApp Image 2026-10-12 at 16.19.42.jpeg": {
+      "bytes": 90901,
+      "sha256": "6f4d4315d4e95228620b5b026662ff9f6b108ff40b4f776d2e2b3abe6d6bcbe5"
+    },
+    "static/images/WhatsApp Image 2026-10-12 at 16.19.43 (1).jpeg": {
+      "bytes": 86414,
+      "sha256": "fdcfd304abf15f68d01af99646fe4ed8eaa4c029153bb56acfa40ac178a45d9d"
+    },
+    "static/images/WhatsApp Image 2026-10-12 at 16.19.43 (3).jpeg": {
+      "bytes": 47295,
+      "sha256": "221ac1a4a9c4b926d35a2f5babef3ef1e1ab1afb3c75097a7516b351dd2223b2"
+    },
+    "static/images/WhatsApp Image 2026-10-12 at 16.19.44.jpeg": {
+      "bytes": 128913,
+      "sha256": "8a15f450640fdd26b13ad2f362d11076b88a18d57b35ee41344b1948d686596a"
+    },
+    "static/images/WhatsApp Image 2026-10-14 at 19.45.05.jpeg": {
+      "bytes": 55833,
+      "sha256": "6478b443707d27cb3a63c3946bda705544940e34ca815c978443f6295f41bc90"
+    },
+    "static/images/after.jpeg": {
+      "bytes": 327892,
+      "sha256": "1866198fb98cba79d3942f19f1e82c801a8e15da7023de1ba66ff7ff299c6509"
+    },
+    "static/images/anar-shamshadinova.jpg": {
+      "bytes": 273698,
+      "sha256": "388a66ab745c1b67de04ab50cbdfbfc864adbb34115b2e180450712ad61d5ecd"
+    },
+    "static/images/b14fde01-4c2f-4b31-8946-ac22f61af7cb.jpg": {
+      "bytes": 221892,
+      "sha256": "4f429ce0dacf709113d7d75efa39ec423b51896679422b1204aa328db27685f3"
+    },
+    "static/images/before.jpeg": {
+      "bytes": 55833,
+      "sha256": "6478b443707d27cb3a63c3946bda705544940e34ca815c978443f6295f41bc90"
+    },
+    "static/images/display/WhatsApp Image 2026-10-12 at 16.19.35 (1).png": {
+      "bytes": 982500,
+      "sha256": "6a98e6875f5443510dac8c972bc6ff3a6804de2fa8b3445395c612c2278e3899"
+    },
+    "static/images/display/WhatsApp Image 2026-10-12 at 16.19.35.png": {
+      "bytes": 1811762,
+      "sha256": "d2767f5af94a4602582c2319dc64c746d806f6fd01ee2b9c2943ab390eff39b3"
+    },
+    "static/images/display/WhatsApp Image 2026-10-12 at 16.19.36.png": {
+      "bytes": 1081946,
+      "sha256": "19259d4742d83e592a5f87ebf3ee2de71d2e3d3fca54e5c360b6f8d69dd0ec5a"
+    },
+    "static/images/display/WhatsApp Image 2026-10-12 at 16.19.41.png": {
+      "bytes": 1315839,
+      "sha256": "922ac7c86594faba3acebfda2ec0ddca11eee59d6239f67eecaab8005b510729"
+    },
+    "static/images/display/WhatsApp Image 2026-10-12 at 16.19.42.png": {
+      "bytes": 935411,
+      "sha256": "78c2fdb04cf5a92b6634bf9cc2bf2fddafc6333f2d6bab35aa70ce45619cb655"
+    },
+    "static/images/display/nurbaev-omirzaq.png": {
+      "bytes": 1460106,
+      "sha256": "a2f8e710915fb41146d41395f6426c5dbb407ae2734505382e1b46c1b53ee2ba"
+    },
+    "static/images/display/qozhashova-balanzhan.png": {
+      "bytes": 1848691,
+      "sha256": "4c2cc3e030234a2f7566af7f56db2439bf56878591babdd39f7362d8067f10f6"
+    },
+    "static/images/display/sarsenov-burkitbay.png": {
+      "bytes": 1800391,
+      "sha256": "83080e57e9378533c61d165661c366334afe4d65fc45b6d9839258877d59ebdb"
+    },
+    "static/images/e4d9218c-94a4-48d8-9510-b2ab987c5d54.jpg": {
+      "bytes": 302740,
+      "sha256": "2e8bffb2ce456ceef0d9e56cd8fa016e635d2e0bfe99847aba8d64b14743dc28"
+    },
+    "static/images/galery.jpg": {
+      "bytes": 321518,
+      "sha256": "28c709dd2567a67aeae2636c200f943c3cd84038de564edde741d3885cff9d40"
+    },
+    "static/images/marshal-abdihalikov.jpg": {
+      "bytes": 230602,
+      "sha256": "dd15dbb6889a327b9bcfe80144c9ad3b464444f351d6601195342656a0c912a8"
+    },
+    "static/images/nurbaev-omirzaq.jpg": {
+      "bytes": 196132,
+      "sha256": "c5856b8705ebacae1f57eb5ae5775894f82167b4ca3fdec1adf8d1dd00bc7079"
+    },
+    "static/images/qozhashova-balanzhan.jpg": {
+      "bytes": 264954,
+      "sha256": "b0f1bf1825335f683180e823f5beb96396ffdef9fe64619f97343e60ce8ced26"
+    },
+    "static/images/sarsenov-burkitbay.jpg": {
+      "bytes": 243739,
+      "sha256": "e0ef0e6e3470970d2d90a09ba3d04a69d0127053f9c149b4413be4387359faaa"
+    },
+    "static/images/tamara-asar.jpg": {
+      "bytes": 24490,
+      "sha256": "c5b610ac0f87267e818d91bcbc56f744f561c06c59717b8c05d32a994f1a1b21"
+    },
+    "static/js/3d.js": {
+      "bytes": 13828,
+      "sha256": "288b40910874612d2fa2d1491dc8556f897c7daf84bf43bdf82ef07b42cb28e9",
+      "lines": 278
+    },
+    "static/js/main.js": {
+      "bytes": 7201,
+      "sha256": "f9bfc16690ca7a884dddb819098996d7a36f4681898efe65e923a0678c22df29",
+      "lines": 159
+    },
+    "static/js/map.js": {
+      "bytes": 6350,
+      "sha256": "89837bae40ee8b22c4c0a219a63a2d0647276fc27260835d530c046cc12ae44c",
+      "lines": 132
+    },
+    "static/js/timeline.js": {
+      "bytes": 1499,
+      "sha256": "0139d044c046a98e260907c1491a6a6600415998f730c3706cfd3ff5f46283ad",
+      "lines": 40
+    },
+    "static/models/README.txt": {
+      "bytes": 1135,
+      "sha256": "f319e3ee4a436d2d20938e635aec14ce22a76135981597355aae0f2fb8483fbc",
+      "lines": 21
+    },
+    "templates/404.html": {
+      "bytes": 474,
+      "sha256": "647f60dc74b286f37ccad255a098024f8292835eb6a9c0fb3df4c7b0fa1b63ae",
+      "lines": 13
+    },
+    "templates/_macros.html": {
+      "bytes": 1048,
+      "sha256": "7dbc32c823ba76c8edede9bb6497faf9dfecd7ccd8ad630a701600f43c7d11db",
+      "lines": 22
+    },
+    "templates/_photo_archive.html": {
+      "bytes": 1029,
+      "sha256": "4ec0d98a01aa0d1e5571abe884737dec6ac1cd372b08820500da16e76906d587",
+      "lines": 15
+    },
+    "templates/archive.html": {
+      "bytes": 4216,
+      "sha256": "3b89ee3ca7224b06874ffb541e5942234726ba4c50bb6a88352c4ef58bbb3d65",
+      "lines": 87
+    },
+    "templates/base.html": {
+      "bytes": 7413,
+      "sha256": "6c765345059044cebb9dbacfc6f131c9b6b2980c1cb89d54a3b586ad6298fe3b",
+      "lines": 141
+    },
+    "templates/excursion.html": {
+      "bytes": 4627,
+      "sha256": "bae089c907c6cac81107fd86fa7bd07a477597ec906ba4de4cc91f73ddab8bc2",
+      "lines": 97
+    },
+    "templates/history.html": {
+      "bytes": 3245,
+      "sha256": "b16c6a62f4bce6d6c7fa0335d93245f784aa973e0dcbad9b23b797b444867f4d",
+      "lines": 76
+    },
+    "templates/index.html": {
+      "bytes": 9587,
+      "sha256": "d9ad625cfbac8bb2b8fa4b3d67cb9dbcbf90fd7969fe9c1e5b12830535b1c76a",
+      "lines": 139
+    },
+    "templates/map.html": {
+      "bytes": 4298,
+      "sha256": "48586dc6446cf2f4de6fd934eaf312ac41e98ef91943fa51bc6c32ca85944910",
+      "lines": 83
+    },
+    "templates/mashyryq.html": {
+      "bytes": 7367,
+      "sha256": "d0f4c23b07c81d36f5b31c2fe025904a35a6cb7dacb1b1ac01639b84c5afbda0",
+      "lines": 110
+    },
+    "templates/oral-history.html": {
+      "bytes": 4007,
+      "sha256": "f048845ff1d130fb3cbe180e3a9fdbed8e999c894504be9af201c884d31efba5",
+      "lines": 72
+    },
+    "templates/persons.html": {
+      "bytes": 2360,
+      "sha256": "e0d4494cd2e6e8fe8e970a451da428cb26c4b7571f39bfd58e41708c58b2708b",
+      "lines": 54
+    },
+    "templates/reconstruction.html": {
+      "bytes": 4450,
+      "sha256": "601015a07215c9a34e994307112b37762b7f3680e688fd65b1fa343e33431e60",
+      "lines": 59
+    },
+    "templates/research.html": {
+      "bytes": 3801,
+      "sha256": "8436499e4a893b6b6b6738fc2aaef1170df748dc31020ce07f94c63e299d4e12",
+      "lines": 73
+    },
+    "templates/school.html": {
+      "bytes": 4162,
+      "sha256": "3afbee072c932726f45fd065c12c1291bded50440adf843cd6959c3d227f0af0",
+      "lines": 63
+    },
+    "templates/sources.html": {
+      "bytes": 1813,
+      "sha256": "68bdf1f3c9292504f6872dcf45e95d908b1eb68e7ad8169fd387283bd7cb7266",
+      "lines": 38
+    },
+    "tests/baseline.json": {
+      "bytes": 22272,
+      "sha256": "3489811db4e1cc68d7ba6fbcb549384ca90bd30f42e81bebd24d665ac5821897",
+      "lines": 278
+    },
+    "tests/test_regression.py": {
+      "bytes": 5436,
+      "sha256": "5db0658b1d26f177de3e1f2a1e7d25ca2dcf97f97a90f28196611069d5716f6c",
+      "lines": 122
+    },
+    "verification/REPORT_KK.txt": {
+      "bytes": 19116,
+      "sha256": "a23e8392269f7fbdbd707a71e66900911546b8322e8c73a9992501011a07abc2",
+      "lines": 154
+    },
+    "verification/browser-results.json": {
+      "bytes": 34213,
+      "sha256": "bbc2c1ff7355a927bda147cf0cf66053a77e4c722f81e2db2824573ede770d6b",
+      "lines": 1516
+    },
+    "verification/changed-files.json": {
+      "bytes": 1465,
+      "sha256": "7ff3190d3e4b43b567411d3cb97e586fe7733545e3ef2d0df44c83462edb85f2",
+      "lines": 42
+    },
+    "verification/coordinate-evidence.json": {
+      "bytes": 760,
+      "sha256": "9194d4f34e2e51662fcc4fb26949fbe2a479926fd7705bcfc030fe584aa4f840",
+      "lines": 24
+    },
+    "verification/screenshots/desktop-map.png": {
+      "bytes": 413320,
+      "sha256": "c97f504dde8c2a98e526c3f3b495b19657bdeb1e3dc6925085f5094dd892f222"
+    },
+    "verification/screenshots/history-qoshqar.png": {
+      "bytes": 505576,
+      "sha256": "86cc02c9c238bd9a605062dfa411ba2d933498a1fd2108c76e56e8d5c9077db6"
+    },
+    "verification/screenshots/mobile-map.png": {
+      "bytes": 136824,
+      "sha256": "a6bae62060d8ca1c12733d0ed5d94670cd6342662f909eded89340e307e78b82"
+    },
+    "verification/screenshots/persons.png": {
+      "bytes": 641938,
+      "sha256": "5a04abc083f3675b46942baf0c582c8412ea5849b578fef62508b52141ef80cc"
+    },
+    "verification/unit-tests.txt": {
+      "bytes": 1147,
+      "sha256": "644d00828c6af5ab0cec2d486c3073a78758136c3d4da47bb7e1fc028d0ac649",
+      "lines": 14
+    }
+  },
+  "routes": {
+    "/": {
+      "status": 200,
+      "sha256": "dce09d2da57816c3fef71e123badea213c6c8c5285d85e1c6fa1dbe40ef26305"
+    },
+    "/tarikh": {
+      "status": 200,
+      "sha256": "dd355ed366eab1b06e492202a332f57e07f29a1844ab5eb2139791610ccfa12a"
+    },
+    "/tulghalar": {
+      "status": 200,
+      "sha256": "b1fedfe6895b5a271bbc4a38aba156b028c578457151969b8df606ecd29784bd"
+    },
+    "/mashyryq": {
+      "status": 200,
+      "sha256": "73fc7497b395364e37781aab46ba0970f46770999077bdc3be264b7d0cc3da46"
+    },
+    "/karta": {
+      "status": 200,
+      "sha256": "9558e9dea6e34b4f1ba4d7ea44425d28fb0b118d496072481a7d45c0ed751caa"
+    },
+    "/rekonstrukciya": {
+      "status": 200,
+      "sha256": "09a4610bb16860a46807e9e85cbd2d95d23d21976a5825840c255b33d39b133e"
+    },
+    "/mektep": {
+      "status": 200,
+      "sha256": "db4a67958ef94353b873995953ee70f97b81ae68a0f323fc54222d3a60499367"
+    },
+    "/muragat": {
+      "status": 200,
+      "sha256": "6f69b25cedd277a8fd40c675749797c659f701908d0a1ad1f9949cbf101d0538"
+    },
+    "/auyzsha-tarikh": {
+      "status": 200,
+      "sha256": "23f839918dc1a57fa535d96273bdddae6627b2a8c337e9bbc4425090cf65f33c"
+    },
+    "/eksursiya": {
+      "status": 200,
+      "sha256": "02e41ec04612b24579491b7639cfea959adf1b47603b504fcd8bf0ab07c65f84"
+    },
+    "/zertteu": {
+      "status": 200,
+      "sha256": "213f384ab412a06bf2d58018eac744345ed47d98e494155d56e3d14070306599"
+    },
+    "/derek-kozder": {
+      "status": 200,
+      "sha256": "544d2fa81e2fd4709a917eb84b81bfe76f040070ad395132c6af3e3eda3db5a9"
+    },
+    "/api/history": {
+      "status": 200,
+      "sha256": "94bf8a6ff0c04289e96306ad22bc04d8e7f7b086b8489831ceb52509ac789c59"
+    },
+    "/api/places": {
+      "status": 200,
+      "sha256": "fa3431fadb9aef6b1c72e8c78a11f7f13b401b709f71850baf1f962bba25f9c4"
+    },
+    "/api/sources": {
+      "status": 200,
+      "sha256": "5d00aa52269ff538e08d6dacfc606d8d986ba4bc69ec2c6496b8f060f9a76616"
+    },
+    "/api/interviews": {
+      "status": 200,
+      "sha256": "0eeac5d15dd577d6cb6b36a929c41c4055e7eaa1abe670a491eb22af7160eade"
+    },
+    "/api/persons": {
+      "status": 200,
+      "sha256": "8e73f5ca63c8f95d98549ade680f7943a74e5db42191166a05cd6da116b812b9"
+    },
+    "/api/search": {
+      "status": 200,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    }
+  },
+  "render_templates": [
+    "index.html",
+    "history.html",
+    "persons.html",
+    "mashyryq.html",
+    "map.html",
+    "reconstruction.html",
+    "school.html",
+    "archive.html",
+    "oral-history.html",
+    "excursion.html",
+    "research.html",
+    "sources.html",
+    "404.html"
+  ],
+  "missing_glb": true,
+  "notes": [
+    "Original nine regression tests passed",
+    "3D uses remote CDN libraries and requests absent mashyryq.glb",
+    "No per-object picking or information cards in original 3D",
+    "run.bat does not set working directory or handle installation failure",
+    "Flask is only runtime Python dependency; requires Python 3.10+ because str.removeprefix",
+    "Previous verification reports belong to the supplied archive, not this update"
+  ]
+}

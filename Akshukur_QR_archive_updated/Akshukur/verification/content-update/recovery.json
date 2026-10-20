@@ -1,0 +1,21 @@
+{
+  "input_zip_missing_bytes": 2162688,
+  "missing_original_images": [
+    "images/WhatsApp Image 2026-10-12 at 16.19.33.jpeg",
+    "images/WhatsApp Image 2026-10-12 at 16.19.35 (1).jpeg",
+    "images/WhatsApp Image 2026-10-12 at 16.19.36.jpeg",
+    "images/WhatsApp Image 2026-10-12 at 16.19.41.jpeg",
+    "images/WhatsApp Image 2026-10-12 at 16.19.42.jpeg",
+    "images/WhatsApp Image 2026-10-12 at 16.19.43 (1).jpeg",
+    "images/WhatsApp Image 2026-10-12 at 16.19.43 (3).jpeg",
+    "images/WhatsApp Image 2026-10-12 at 16.19.44.jpeg",
+    "images/WhatsApp Image 2026-10-14 at 19.45.05.jpeg",
+    "images/e4d9218c-94a4-48d8-9510-b2ab987c5d54.jpg",
+    "images/galery.jpg"
+  ],
+  "restored_duplicate": "first-school-1943.jpeg = before.jpeg",
+  "restored_rotations": [
+    "qozhashova-balanzhan.png",
+    "sarsenov-burkitbay.png"
+  ]
+}

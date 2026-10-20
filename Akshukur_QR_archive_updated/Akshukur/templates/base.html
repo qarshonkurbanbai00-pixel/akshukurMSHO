@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ақшұқыр ауылының интерактивті цифрлық тарихи зерттеу жобасы">
+  <title>{% block title %}АҚШҰҚЫР — ЦИФРЛЫҚ ШЕЖІРЕ{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/content-update.css') }}">
+  {% block page_css %}{% endblock %}
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕌</text></svg>">
+  <noscript><style>#loader{display:none!important}.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+  <noscript><p class="container" style="padding-top:100px"><a href="{{ url_for('search_page') }}">Сайт бойынша іздеу</a> · <a href="{{ url_for('project_page') }}">Жоба</a> · <a href="{{ url_for('photo_archive_page') }}">Фото архиві</a></p></noscript>
+
+  <!-- Loading animation -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-mark">А</div>
+    <div class="loader-text">АҚШҰҚЫР — ЦИФРЛЫҚ ШЕЖІРЕ</div>
+  </div>
+
+  <!-- Негізгі навигация -->
+  <header class="navbar" id="navbar">
+    <a class="brand" href="{{ url_for('index') }}">
+      <span class="brand-mark">А</span>
+      <span class="brand-text">АҚШҰҚЫР<small>ЦИФРЛЫҚ ШЕЖІРЕ</small></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Негізгі мәзір">
+      <a href="{{ url_for('index') }}" class="{{ 'active' if request.endpoint == 'index' }}">Басты бет</a>
+      <a href="{{ url_for('history') }}" class="{{ 'active' if request.endpoint in ['history', 'project_page', 'photo_archive_page'] }}">Тарих</a>
+      <a href="{{ url_for('persons') }}" class="{{ 'active' if request.endpoint == 'persons' }}">Тұлғалар</a>
+      <a href="{{ url_for('mashyryq') }}" class="{{ 'active' if request.endpoint == 'mashyryq' }}">Машырық қажы</a>
+      <a href="{{ url_for('map_page') }}" class="{{ 'active' if request.endpoint == 'map_page' }}">Тарихи орындар</a>
+      <a href="{{ url_for('reconstruction') }}" class="{{ 'active' if request.endpoint == 'reconstruction' }}">3D реконструкция</a>
+      <a href="{{ url_for('school') }}" class="{{ 'active' if request.endpoint == 'school' }}">Мектеп</a>
+      <div class="nav-dropdown">
+        <button class="dropdown-toggle" type="button" aria-haspopup="true">Тағы ▾</button>
+        <div class="dropdown-menu">
+          <a href="{{ url_for('project_page') }}">Жоба</a>
+          <a href="{{ url_for('photo_archive_page') }}">Фото архиві</a>
+          <a href="{{ url_for('archive') }}">Цифрлық архив</a>
+          <a href="{{ url_for('oral_history') }}">Ауылдың ауызша тарихы</a>
+          <a href="{{ url_for('excursion') }}">Виртуалды экскурсия</a>
+          <a href="{{ url_for('research') }}">Зерттеу</a>
+          <a href="{{ url_for('sources_page') }}">Дереккөздер</a>
+        </div>
+      </div>
+      <button class="search-btn" id="searchBtn" type="button" aria-label="Іздеу" aria-controls="searchOverlay" aria-expanded="false">⌕ Іздеу</button>
+    </nav>
+
+    <button class="search-btn mobile-search-btn" id="mobileSearchBtn" type="button" aria-label="Сайт бойынша іздеу" aria-controls="searchOverlay" aria-expanded="false">⌕ Іздеу</button>
+    <button class="burger" id="burger" type="button" aria-label="Мәзір" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Мобильді мәзір -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="{{ url_for('index') }}">Басты бет</a>
+    <a href="{{ url_for('history') }}">Тарих</a>
+    <a href="{{ url_for('persons') }}">Тұлғалар</a>
+    <a href="{{ url_for('mashyryq') }}">Машырық қажы</a>
+    <a href="{{ url_for('map_page') }}">Тарихи орындар</a>
+    <a href="{{ url_for('reconstruction') }}">3D реконструкция</a>
+    <a href="{{ url_for('school') }}">Мектеп</a>
+    <a href="{{ url_for('project_page') }}">Жоба</a>
+          <a href="{{ url_for('photo_archive_page') }}">Фото архиві</a>
+          <a href="{{ url_for('archive') }}">Цифрлық архив</a>
+    <a href="{{ url_for('oral_history') }}">Ауылдың ауызша тарихы</a>
+    <a href="{{ url_for('excursion') }}">Виртуалды экскурсия</a>
+    <a href="{{ url_for('research') }}">Зерттеу</a>
+    <a href="{{ url_for('sources_page') }}">Дереккөздер</a>
+  </div>
+
+  <!-- Сайттың барлық мәтіндері бойынша іздеу -->
+  <div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-labelledby="searchHeading" aria-hidden="true">
+    <div class="search-box glass">
+      <h2 id="searchHeading">Сайт бойынша іздеу</h2>
+      <p class="muted small" id="searchHelp">Тарих, жоба, мектеп, фото, тұлға немесе дереккөз туралы сөз не сөйлем енгізіңіз.</p>
+      <form class="search-head" id="siteSearchForm" action="{{ url_for('search_page') }}" method="get">
+        <label class="sr-only" for="searchInput">Іздеу сөзі немесе сөйлемі</label>
+        <input type="search" id="searchInput" name="q" placeholder="Сөз немесе сөйлем…" autocomplete="off" maxlength="200" aria-describedby="searchHelp">
+        <button type="submit" class="search-submit" aria-label="Іздеу нәтижелерін көрсету">Іздеу</button>
+        <button type="button" id="searchClose" aria-label="Жабу">✕</button>
+      </form>
+      <p id="searchStatus" class="muted small" role="status" aria-live="polite">Іздеу үшін сөз немесе сөйлем енгізіңіз.</p>
+      <div class="search-results" id="searchResults"></div>
+      <a class="small" id="fullSearchLink" href="{{ url_for('search_page') }}">Іздеуді жеке бетте ашу →</a>
+    </div>
+  </div>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="brand footer-brand"><span class="brand-mark">А</span>
+          <span class="brand-text">АҚШҰҚЫР<small>ЦИФРЛЫҚ ШЕЖІРЕ</small></span>
+        </div>
+        <p class="muted">Маңғыстау облысы, Түпқараған ауданы, Ақшұқыр ауылының тарихын зерттейтін мектеп жобасы. Машырық қажыдан бүгінгі Ақшұқырға дейін.</p>
+      </div>
+      <div>
+        <h4>Бөлімдер</h4>
+        <a href="{{ url_for('history') }}">Тарих</a>
+        <a href="{{ url_for('persons') }}">Тұлғалар</a>
+        <a href="{{ url_for('mashyryq') }}">Машырық қажы</a>
+        <a href="{{ url_for('map_page') }}">Тарихи орындар</a>
+        <a href="{{ url_for('reconstruction') }}">3D реконструкция</a>
+      </div>
+      <div>
+        <h4>Зерттеу</h4>
+        <a href="{{ url_for('project_page') }}">Жоба</a>
+          <a href="{{ url_for('photo_archive_page') }}">Фото архиві</a>
+          <a href="{{ url_for('archive') }}">Цифрлық архив</a>
+        <a href="{{ url_for('oral_history') }}">Ауылдың ауызша тарихы</a>
+        <a href="{{ url_for('excursion') }}">Виртуалды экскурсия</a>
+        <a href="{{ url_for('research') }}">Зерттеу әдістемесі</a>
+        <a href="{{ url_for('sources_page') }}">Дереккөздер</a>
+      </div>
+      <div>
+        <h4>Дәлелдеме деңгейлері</h4>
+        <p class="muted small">
+          🟢 Жазба дерек · 🔵 Архив дерегі · 🟡 Ауызша дерек<br>
+          🟠 Зерттеу материалы · 🟣 3D реконструкция · ⚪ Дерек қажет
+        </p>
+        <p class="muted small">Бұл жобада нақты дәлелденбеген мәлімет факт ретінде көрсетілмейді.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© {{ current_year }} «Ақшұқыр — цифрлық шежіре» зерттеу жобасы</span>
+      <span>«Өлкенің цифрлық шежіресі» номинациясына арналған</span>
+    </div>
+  </footer>
+
+  <!-- Жалпы модальды терезе -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-card glass">
+      <button class="modal-close" type="button" data-modal-close aria-label="Жабу">✕</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Жоғарыға оралу -->
+  <button id="backToTop" type="button" aria-label="Жоғарыға оралу">↑</button>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/site-search.js') }}"></script>
+  {% block page_js %}{% endblock %}
+</body>
+</html>

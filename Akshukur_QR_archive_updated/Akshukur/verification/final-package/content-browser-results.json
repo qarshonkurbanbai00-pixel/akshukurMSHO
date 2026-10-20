@@ -1,0 +1,275 @@
+{
+  "engine": "Chromium headless, Linux",
+  "checks": [
+    {
+      "test": "project_text_and_real_current_photo",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "desktop_search_opens_and_focuses",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "search_full_page_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "exact_empty_result_message",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "search_markup_not_executed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "search_hit_opens_correct_page",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "server_rendered_nojs_results",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "nojs_no_results",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "five_placeholder_categories",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "no_broken_catalog_images",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "category_filter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "placeholder_detail_dialog",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "native_dialog_escape_closes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "real_input_photo_large_view_and_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "photo_next_navigation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "combined_filter_empty_state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "search_focus_trap",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "search_escape_restores_focus",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "network_error_state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "no_horizontal_overflow_320_/tarikh/zhoba",
+      "passed": true,
+      "detail": {
+        "scroll": 320,
+        "width": 320
+      }
+    },
+    {
+      "test": "no_horizontal_overflow_320_/tarikh/foto-arkhivi",
+      "passed": true,
+      "detail": {
+        "scroll": 320,
+        "width": 320
+      }
+    },
+    {
+      "test": "no_horizontal_overflow_320_/izdeu",
+      "passed": true,
+      "detail": {
+        "scroll": 320,
+        "width": 320
+      }
+    },
+    {
+      "test": "no_horizontal_overflow_390_/tarikh/zhoba",
+      "passed": true,
+      "detail": {
+        "scroll": 390,
+        "width": 390
+      }
+    },
+    {
+      "test": "no_horizontal_overflow_390_/tarikh/foto-arkhivi",
+      "passed": true,
+      "detail": {
+        "scroll": 390,
+        "width": 390
+      }
+    },
+    {
+      "test": "no_horizontal_overflow_390_/izdeu",
+      "passed": true,
+      "detail": {
+        "scroll": 390,
+        "width": 390
+      }
+    },
+    {
+      "test": "no_horizontal_overflow_768_/tarikh/zhoba",
+      "passed": true,
+      "detail": {
+        "scroll": 768,
+        "width": 768
+      }
+    },
+    {
+      "test": "no_horizontal_overflow_768_/tarikh/foto-arkhivi",
+      "passed": true,
+      "detail": {
+        "scroll": 768,
+        "width": 768
+      }
+    },
+    {
+      "test": "no_horizontal_overflow_768_/izdeu",
+      "passed": true,
+      "detail": {
+        "scroll": 768,
+        "width": 768
+      }
+    },
+    {
+      "test": "no_horizontal_overflow_1024_/tarikh/zhoba",
+      "passed": true,
+      "detail": {
+        "scroll": 1024,
+        "width": 1024
+      }
+    },
+    {
+      "test": "no_horizontal_overflow_1024_/tarikh/foto-arkhivi",
+      "passed": true,
+      "detail": {
+        "scroll": 1024,
+        "width": 1024
+      }
+    },
+    {
+      "test": "no_horizontal_overflow_1024_/izdeu",
+      "passed": true,
+      "detail": {
+        "scroll": 1024,
+        "width": 1024
+      }
+    },
+    {
+      "test": "no_horizontal_overflow_1280_/tarikh/zhoba",
+      "passed": true,
+      "detail": {
+        "scroll": 1280,
+        "width": 1280
+      }
+    },
+    {
+      "test": "no_horizontal_overflow_1280_/tarikh/foto-arkhivi",
+      "passed": true,
+      "detail": {
+        "scroll": 1280,
+        "width": 1280
+      }
+    },
+    {
+      "test": "no_horizontal_overflow_1280_/izdeu",
+      "passed": true,
+      "detail": {
+        "scroll": 1280,
+        "width": 1280
+      }
+    },
+    {
+      "test": "no_horizontal_overflow_1440_/tarikh/zhoba",
+      "passed": true,
+      "detail": {
+        "scroll": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "test": "no_horizontal_overflow_1440_/tarikh/foto-arkhivi",
+      "passed": true,
+      "detail": {
+        "scroll": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "test": "no_horizontal_overflow_1440_/izdeu",
+      "passed": true,
+      "detail": {
+        "scroll": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "test": "mobile_search_and_results",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "mobile_history_project_navigation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "mobile_photo_dialog",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "school_previous_period_filter_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "historic_places_cards_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "no_javascript_exceptions",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "javascript_errors": []
+}

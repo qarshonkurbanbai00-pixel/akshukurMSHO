@@ -1,0 +1,61 @@
+{
+  "exact_hash_restored": [
+    {
+      "restored": "images/WhatsApp Image 2026-10-12 at 16.19.33.jpeg",
+      "from": "images/archive (4).jpeg",
+      "sha256": "807a780b5a042ef7bf0e8e43e6ae5c32b10bd240a38a620934c05e54cc99e452"
+    },
+    {
+      "restored": "images/WhatsApp Image 2026-10-12 at 16.19.35 (1).jpeg",
+      "from": "images/archive (3).jpeg",
+      "sha256": "7786430cbae6df142becfce87b5b7781e9cf971db3faa628d639b51cc7e45f51"
+    },
+    {
+      "restored": "images/WhatsApp Image 2026-10-12 at 16.19.36.jpeg",
+      "from": "images/archive (2).jpeg",
+      "sha256": "63edbc6df56cca4a2de099d112f2fef3cb2e69947455614ed69a922f354df485"
+    },
+    {
+      "restored": "images/WhatsApp Image 2026-10-12 at 16.19.41.jpeg",
+      "from": "images/archiv (3).jpeg",
+      "sha256": "a75e25b647a60a3291dc17cdae65fe1213fc95b47ddd5cdd0df59002bd8c6952"
+    },
+    {
+      "restored": "images/WhatsApp Image 2026-10-12 at 16.19.42.jpeg",
+      "from": "images/archiv (4).jpeg",
+      "sha256": "6f4d4315d4e95228620b5b026662ff9f6b108ff40b4f776d2e2b3abe6d6bcbe5"
+    },
+    {
+      "restored": "images/WhatsApp Image 2026-10-12 at 16.19.43 (1).jpeg",
+      "from": "images/archiv (2).jpeg",
+      "sha256": "fdcfd304abf15f68d01af99646fe4ed8eaa4c029153bb56acfa40ac178a45d9d"
+    },
+    {
+      "restored": "images/WhatsApp Image 2026-10-12 at 16.19.43 (3).jpeg",
+      "from": "images/archive.jpeg",
+      "sha256": "221ac1a4a9c4b926d35a2f5babef3ef1e1ab1afb3c75097a7516b351dd2223b2"
+    },
+    {
+      "restored": "images/WhatsApp Image 2026-10-12 at 16.19.44.jpeg",
+      "from": "images/archiv.jpeg",
+      "sha256": "8a15f450640fdd26b13ad2f362d11076b88a18d57b35ee41344b1948d686596a"
+    },
+    {
+      "restored": "images/WhatsApp Image 2026-10-14 at 19.45.05.jpeg",
+      "from": "images/first-school-1943.jpeg",
+      "sha256": "6478b443707d27cb3a63c3946bda705544940e34ca815c978443f6295f41bc90"
+    }
+  ],
+  "unavailable_optional_originals": [
+    {
+      "file": "images/e4d9218c-94a4-48d8-9510-b2ab987c5d54.jpg",
+      "status": "not supplied in input ZIP",
+      "handling": "existing missing-photo placeholder; no fabricated replacement"
+    },
+    {
+      "file": "images/galery.jpg",
+      "status": "not supplied in input ZIP",
+      "handling": "existing missing-photo placeholder; no fabricated replacement"
+    }
+  ]
+}

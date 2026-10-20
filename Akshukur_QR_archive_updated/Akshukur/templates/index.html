@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% from "_macros.html" import badge, photo with context %}
+
+{% block content %}
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-dunes" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="hero-kicker reveal">Маңғыстау · Түпқараған ауданы · зерттеу жобасы</p>
+    <h1 class="hero-title reveal">АҚШҰҚЫР</h1>
+    <h2 class="hero-subtitle reveal">ЦИФРЛЫҚ ШЕЖІРЕ</h2>
+    <p class="hero-tagline reveal">Машырық қажыдан бүгінгі Ақшұқырға дейін</p>
+    <div class="hero-actions reveal">
+      <a href="{{ url_for('history') }}" class="btn btn-gold">Шежірені бастау</a>
+      <a href="{{ url_for('excursion') }}" class="btn btn-ghost">Виртуалды экскурсия</a>
+    </div>
+  </div>
+  <a class="scroll-hint" href="#intro" aria-label="Төмен түсу">⌄</a>
+</section>
+
+<!-- ============ КІРІСПЕ ============ -->
+<section class="section" id="intro">
+  <div class="container two-col">
+    <div class="reveal">
+      <h2 class="section-title">Ақшұқыр туралы</h2>
+      <p>Ақшұқыр — Маңғыстау облысы, Түпқараған ауданындағы ауыл, Ақшұқыр ауылдық округінің орталығы. Бұл жоба — ауыл тарихын жай тізімдейтін сайт емес, <strong>интерактивті цифрлық тарихи зерттеу</strong>: кезеңдер тізбегі, интерактивті карта, 3D реконструкция, цифрлық архив және ауызша тарих жинағы.</p>
+      <p>Әр мәлімет <strong>дәлелдеме деңгейімен</strong> белгіленеді: жазба дерек, архив дерегі, ауызша дерек, зерттеу материалы. Нақты дәлелденбеген ештеңе факт ретінде берілмейді — мұндай жерлер «Дерек қажет» деп ашық белгіленеді.</p>
+      <div class="badge-row">{{ badge('written') }}{{ badge('archive') }}{{ badge('oral') }}{{ badge('research') }}{{ badge('needs_data') }}</div>
+    </div>
+    <div class="reveal">
+      {{ photo('images/after.jpeg', 'Ақшұқыр ауылының қазіргі көрінісі', 'Ақшұқыр ауылының қазіргі фотосы') }}
+    </div>
+  </div>
+</section>
+
+<!-- ============ СТАТИСТИКА ============ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="stats-grid">
+      {% for s in stats %}
+      <div class="stat-card glass reveal">
+        <div class="stat-value" data-count="{{ s.value }}">{{ s.value }}</div>
+        <div class="stat-label">{{ s.label }}</div>
+        {{ badge(s.evidence) }}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============ ТАРИХИ КЕЗЕҢДЕР (шолу) ============ -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title reveal">Негізгі тарихи кезеңдер</h2>
+    <p class="section-lead reveal">Ауылдың қалыптасуынан қазіргі заманға дейінгі жол — толық нұсқасы <a href="{{ url_for('history') }}">«Тарих»</a> бетінде.</p>
+    <div class="era-strip">
+      {% for era in history %}
+      <a class="era-chip glass reveal" href="{{ url_for('history') }}#{{ era.id }}">
+        <span class="era-years">{{ era.years }}</span>
+        <span class="era-name">{{ era.title }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============ БӨЛІМДЕРГЕ НАВИГАЦИЯ ============ -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title reveal">Зерттеу бөлімдері</h2>
+    <div class="cards-grid">
+      <a class="nav-card glass reveal" href="{{ url_for('history') }}"><span class="nav-card-icon">📜</span><h3>Ақшұқырдың тарихы</h3><p>Интерактивті timeline: қалыптасудан бүгінге дейін.</p></a>
+      <a class="nav-card glass reveal" href="{{ url_for('mashyryq') }}"><span class="nav-card-icon">🕌</span><h3>Машырық қажы</h3><p>Мешіт, медресе, білім дәуірі — деректер талдауы.</p></a>
+      <a class="nav-card glass reveal" href="{{ url_for('map_page') }}"><span class="nav-card-icon">🗺️</span><h3>Тарихи орындар</h3><p>Интерактивті карта: қорым, медресе, мектеп нүктелері.</p></a>
+      <a class="nav-card glass reveal" href="{{ url_for('reconstruction') }}"><span class="nav-card-icon">🏛️</span><h3>3D реконструкция</h3><p>Мешіт/медресенің болжамды 3D көрінісі.</p></a>
+      <a class="nav-card glass reveal" href="{{ url_for('school') }}"><span class="nav-card-icon">🏫</span><h3>Мектеп</h3><p>1943 жылдан басталатын білім шежіресі.</p></a>
+      <a class="nav-card glass reveal" href="{{ url_for('archive') }}"><span class="nav-card-icon">🗄️</span><h3>Цифрлық архив</h3><p>Құжаттар, мақалалар, фотолар, карталар.</p></a>
+      <a class="nav-card glass reveal" href="{{ url_for('oral_history') }}"><span class="nav-card-icon">🎙️</span><h3>Ақшұқырдың дауысы</h3><p>Үлкендердің естеліктері мен сұхбаттар.</p></a>
+      <a class="nav-card glass reveal" href="{{ url_for('research') }}"><span class="nav-card-icon">🔎</span><h3>Зерттеу әдістемесі</h3><p>Біз ақпаратты қалай жинадық және тексердік.</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ КЕШЕ ЖӘНЕ БҮГІН ============ -->
+<section class="section" id="keshe-bugin">
+  <div class="container">
+    <h2 class="section-title reveal">Кеше және бүгін</h2>
+    <p class="section-lead reveal">Ескі және қазіргі Ақшұқырды салыстырыңыз — слайдерді сүйреңіз. Нақты фотолар енгізілгенше placeholder көрсетіледі.</p>
+    <div class="ba-wrap glass reveal">
+      <div class="ba-container" id="baContainer">
+        <div class="ba-layer ba-after">
+          <div class="ba-ph ba-ph-now">
+            <span class="ba-tag">БҮГІН</span>
+            {{ photo('after.jpeg', 'Қазіргі Ақшұқыр', 'Қазіргі Ақшұқыр ауылы') }}
+          </div>
+        </div>
+        <div class="ba-layer ba-before" id="baBefore">
+          <div class="ba-ph ba-ph-old">
+            <span class="ba-tag">КЕШЕ</span>
+            {{ photo('before.jpeg', 'Архивтік ғимарат — атауы мен жылы нақтылануда', 'Архивтік ғимарат') }}
+          </div>
+        </div>
+        <div class="ba-handle" id="baHandle"><span>⇔</span></div>
+        <input type="range" min="0" max="100" value="50" id="baSlider" aria-label="Кеше және бүгін салыстыру слайдері">
+      </div>
+    </div>
+    <p class="muted small reveal">Фотоларды қалай қою керегі README.md файлының 3-бөлімінде жазылған.</p>
+  </div>
+</section>
+
+<!-- ============ ГАЛЕРЕЯ ============ -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title reveal">Фотогалерея</h2>
+    <p class="section-lead reveal">Жоба архивіндегі тарихи және қазіргі фотосуреттер. Атауы расталмаған материалдар бөлек белгіленген.</p>
+    <div class="gallery-grid">
+      {% set gallery_images = ['images/after.jpeg', 'images/Koshkar-Ata-2.jpg', 'images/before.jpeg', 'images/WhatsApp Image 2026-10-12 at 16.19.43 (1).jpeg', 'images/b14fde01-4c2f-4b31-8946-ac22f61af7cb.jpg', 'images/WhatsApp Image 2026-10-12 at 16.19.36.jpeg'] %}
+      {% for caption in ['Ауыл көрінісі', 'Қошқар ата қорымы', 'Архивтік ғимарат — атауы нақтылануда', 'Архивтік топтық сурет — адамдар нақтылануда', 'Тарихи топтық фотолар коллажы', 'Архивтік тұрмыстық көрініс — адамдар нақтылануда'] %}
+      <div class="gallery-item glass reveal" data-gallery-caption="{{ caption }}">
+        {{ photo(gallery_images[loop.index0], caption, caption) }}
+        <p class="muted small">{{ caption }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section cta-section">
+  <div class="container center reveal">
+    <h2 class="section-title">Зерттеуге қосылыңыз</h2>
+    <p>Қолыңызда ескі фото, құжат немесе естелік бар ма? «Зерттеу әдістемесі» бөлімінде деректерді қалай жеткізу керегі жазылған.</p>
+    <div class="hero-actions">
+      <a href="{{ url_for('research') }}" class="btn btn-gold">Зерттеу әдістемесі</a>
+      <a href="{{ url_for('sources_page') }}" class="btn btn-ghost">Дереккөздер</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% from "_macros.html" import badge with context %}
+{% block title %}3D тарихи орта — Ақшұқыр{% endblock %}
+{% block page_css %}<link rel="stylesheet" href="{{ url_for('static', filename='css/reconstruction.css') }}">{% endblock %}
+{% block content %}
+<section class="page-hero page-hero-gold"><div class="container">
+  <p class="hero-kicker reveal">ӨЛКЕНІҢ ЦИФРЛЫҚ ШЕЖІРЕСІ / 3D</p>
+  <h1 class="page-title reveal">Тарихи кеңістікке саяхат</h1>
+  <p class="page-lead reveal">Мешіт, ескі ағаш, құдық және Каспий жағалауы. Нысанды таңдап, оның түсіндірмесі мен дерек шектеулерін зерттеңіз.</p>
+  <div class="badge-row reveal">{{ badge('reconstruction') }} <span class="muted small">Иллюстрациялық модельдер · нақты карта емес</span></div>
+</div></section>
+<section class="section recon-section" id="reconstruction" data-config="{{ url_for('static', filename='data/reconstruction.json') }}" data-static="{{ url_for('static', filename='') }}">
+<div class="container">
+ <div class="recon-notice"><strong>Дерек пен болжамды ажыратамыз.</strong> Модельдердің пішіні, жасы және орналасуы расталмаған. Нақты 3D сканерлеу мен тарихи фотолар берілмеген.</div>
+ <div class="recon-shell" id="reconShell">
+  <div class="recon-stage">
+   <div class="recon-stagebar"><span>АҚШҰҚЫР <small>ШАРТТЫ ТАРИХИ ОРТА</small></span><span id="modelStatus" role="status">Жүктелуде…</span></div>
+   <div class="recon-canvas-wrap">
+    <div id="viewer3d" tabindex="0" role="region" aria-label="3D көрініс. Бағыт пернелері — айналдыру, плюс пен минус — масштаб, 1–4 — нысан таңдау, Home — шолу."></div>
+    <div id="reconLabels" class="recon-labels" aria-label="Сахнадағы нысандар"></div>
+    <div class="recon-compass" aria-hidden="true">↑<small>ШАРТТЫ БАҒЫТ<br>МАСШТАБСЫЗ</small></div>
+    <div class="recon-fallback" id="viewerFallback" role="alert" hidden><h3>3D көрініс қолжетімсіз</h3><p id="fallbackMessage">Браузерде JavaScript пен WebGL қосылғанын тексеріңіз. Төмендегі нысандардың деректерін оқуға болады.</p><button type="button" id="btnRetry">Қайта жүктеу</button></div>
+    <noscript><div class="recon-fallback"><h3>JavaScript өшірулі</h3><p>3D үшін JavaScript қажет. Бұл сахна — нақты орны мен пішіні расталмаған мешіт, ағаш, құдық және жағалаудың иллюстрациясы. Деректер: <a href="{{ url_for('sources_page') }}">Дереккөздер</a>.</p></div></noscript>
+   </div>
+   <div class="recon-toolbar" aria-label="Камера және модель басқаруы">
+    <button type="button" id="btnReset" data-engine>⌂ Бастапқы</button><button type="button" id="btnOverview" data-engine>◎ Барлық нысан</button>
+    <button type="button" id="btnZoomIn" data-engine aria-label="Жақындату">＋</button><button type="button" id="btnZoomOut" data-engine aria-label="Алыстату">−</button>
+    <button type="button" id="btnRotate" data-engine aria-pressed="false">⟳ Айналдыру</button><button type="button" id="btnWire" data-engine aria-pressed="false">▦ Каркас</button><button type="button" id="btnFull" data-engine>⛶ Толық экран</button>
+    <label class="recon-quality">Сапа <select id="quality" data-engine><option value="full">Толық</option><option value="light">Жеңіл</option></select></label>
+   </div>
+   <p class="recon-help">Сүйреу — айналдыру · доңғалақ / екі саусақ — масштаб · оң батырма / екі саусақ — жылжыту. Көрініске фокус қойып: ← ↑ ↓ →, + / −, 1–4, Home. Esc — толық экраннан шығу.</p>
+  </div>
+  <aside class="recon-sidebar" aria-label="Нысандар мен деректер">
+   <div class="recon-sidebar-head"><p class="hero-kicker">НЫСАНДАР КАТАЛОГЫ</p><h2>Кеңістікті зерттеу</h2></div>
+   <div class="recon-objects" id="objectList">
+    <button type="button" data-object="mosque" aria-pressed="false"><span>01</span> Мешіт / медресе <small>Иллюстрация</small></button>
+    <button type="button" data-object="tree" aria-pressed="false"><span>02</span> Ескі ағаш <small>Дерек қажет</small></button>
+    <button type="button" data-object="well" aria-pressed="false"><span>03</span> Құдық <small>Дерек қажет</small></button>
+    <button type="button" data-object="coast" aria-pressed="false"><span>04</span> Каспий жағалауы <small>Шартты сызық</small></button>
+   </div>
+   <article class="recon-card" id="objectCard" aria-live="polite"><p class="hero-kicker" id="cardLabel">ТАНЫСУ</p><h3 id="cardTitle">Төрт нысан — бір орта</h3><p id="cardDescription">Сахнадағы белгіге, модельге немесе тізімдегі нысанға басыңыз. Камера таңдалған нысанға бағытталады.</p>
+    <figure id="cardPhoto" hidden><img id="cardImage" alt=""><figcaption id="cardPhotoCaption"></figcaption></figure>
+    <p class="recon-photo-note" id="cardPhotoNote">Нақты модельдер мен осы төрт нысанның расталған фотолары архивте жоқ.</p>
+    <h4>Дерек негізі</h4><p id="cardSource">Бастапқы жоба материалдары. Әр нысанның дерек деңгейі бөлек түсіндіріледі.</p><a id="cardSourceLink" hidden>Жоба дерегін ашу →</a>
+    <h4>Белгісіз тұстары</h4><p id="cardUnknown">Нысандардың өзара орналасуы, өлшемдері мен кезеңі расталмаған.</p>
+   </article>
+  </aside>
+ </div>
+ <div class="recon-route glass"><div><p class="hero-kicker">БЕС КЕЗЕҢДІК ТАНЫСТЫРУ</p><h3 id="tourTitle">01 / 05 · Кеңістікті шолу</h3><p id="tourText" aria-live="polite">Бұл орта — өлшенген тарихи мекен емес. Алдымен дерек пен иллюстрацияның айырмасын есте сақтаңыз.</p></div><div class="recon-route-controls"><button type="button" id="tourPrev" data-engine disabled>← Артқа</button><span id="tourProgress">1 / 5</span><button type="button" id="tourNext" data-engine>Келесі →</button></div></div>
+ <section class="recon-compare glass" aria-labelledby="compareTitle"><div class="recon-compare-head"><div><p class="hero-kicker">ДЕРЕКПЕН САЛЫСТЫРУ</p><h2 id="compareTitle">Қазіргі материал және реконструкция</h2></div><button type="button" id="btnCompare" data-engine aria-expanded="false">Салыстыруды ашу</button></div>
+ <p class="muted small">Нақты бір нүктенің «кеше / бүгін» фотожұбы жоқ. Салыстыру — қазіргі ауыл фотоколлажы мен шартты 3D ортаны қатар қарау, фотограмметриялық дәлел емес.</p>
+ <div class="recon-comparison" id="comparisonPanel" hidden><figure><img src="{{ url_for('static', filename='images/after.jpeg') }}" alt="Бастапқы архивтегі қазіргі Ақшұқыр фотоколлажы"><figcaption><strong>Қазіргі материал.</strong> Бастапқы data/photos.json: «Ақшұқыр ауылының қазіргі көрінісі — фотоколлаж». Автор мен күн көрсетілмеген; төрт нысанмен сәйкестендірілмеген.</figcaption></figure><figure><img id="comparisonRender" alt="Таңдалған камерадан алынған иллюстрациялық 3D көрініс"><figcaption><strong>Иллюстрациялық реконструкция.</strong> Салыстыруды ашқан сәттегі 3D кадр. <button type="button" id="btnCapture" data-engine>Кадрды жаңарту</button></figcaption></figure></div>
+ </section>
+ <p class="muted small recon-footnote">Нақты тарихи материалды қарау: <a href="{{ url_for('mashyryq') }}#derik-1887">Машырық қажы туралы бөлім</a> · <a href="{{ url_for('sources_page') }}">Дереккөздер</a>. Бұл бөлім интернетсіз жұмыс істейді; WebGL қолдайтын браузер қажет.</p>
+</div></section>
+{% endblock %}
+{% block page_js %}
+<script src="{{ url_for('static', filename='vendor/three-r128/three.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendor/three-r128/OrbitControls.js') }}"></script>
+<script src="{{ url_for('static', filename='js/3d.js') }}"></script>
+{% endblock %}

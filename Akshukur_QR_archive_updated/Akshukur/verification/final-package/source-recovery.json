@@ -1,0 +1,817 @@
+[
+  {
+    "file": "README.md",
+    "status": "ok",
+    "actual_offset": 0,
+    "offset_shift": 262144
+  },
+  {
+    "file": "app.py",
+    "status": "ok",
+    "actual_offset": 6851,
+    "offset_shift": 262144
+  },
+  {
+    "file": "data/history.json",
+    "status": "ok",
+    "actual_offset": 13470,
+    "offset_shift": 262144
+  },
+  {
+    "file": "data/interviews.json",
+    "status": "ok",
+    "actual_offset": 16490,
+    "offset_shift": 262144
+  },
+  {
+    "file": "data/photos.json",
+    "status": "ok",
+    "actual_offset": 17605,
+    "offset_shift": 262144
+  },
+  {
+    "file": "data/places.json",
+    "status": "ok",
+    "actual_offset": 19853,
+    "offset_shift": 262144
+  },
+  {
+    "file": "data/sources.json",
+    "status": "ok",
+    "actual_offset": 22281,
+    "offset_shift": 262144
+  },
+  {
+    "file": "requirements.txt",
+    "status": "ok",
+    "actual_offset": 26207,
+    "offset_shift": 262144
+  },
+  {
+    "file": "run.bat",
+    "status": "ok",
+    "actual_offset": 26271,
+    "offset_shift": 262144
+  },
+  {
+    "file": "screenshots/README.txt",
+    "status": "ok",
+    "actual_offset": 26989,
+    "offset_shift": 262144
+  },
+  {
+    "file": "section_archive.py",
+    "status": "ok",
+    "actual_offset": 27376,
+    "offset_shift": 262144
+  },
+  {
+    "file": "site_content.py",
+    "status": "ok",
+    "actual_offset": 29802,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/audio/README.txt",
+    "status": "ok",
+    "actual_offset": 33239,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/css/content-update.css",
+    "status": "ok",
+    "actual_offset": 33586,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/css/reconstruction.css",
+    "status": "ok",
+    "actual_offset": 35684,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/css/section-archive.css",
+    "status": "ok",
+    "actual_offset": 37598,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/css/style.css",
+    "status": "ok",
+    "actual_offset": 39050,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/data/reconstruction.json",
+    "status": "ok",
+    "actual_offset": 46391,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/Koshkar-Ata-2.jpeg",
+    "status": "ok",
+    "actual_offset": 48210,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/Koshkar-Ata-2.jpg",
+    "status": "ok",
+    "actual_offset": 174392,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/WhatsApp Image 2026-10-12 at 16.19.35.jpeg",
+    "status": "ok",
+    "actual_offset": 557624,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/after.jpeg",
+    "status": "ok",
+    "actual_offset": 746455,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/akshukur-culture-house.jpeg",
+    "status": "ok",
+    "actual_offset": 1072105,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/akshukur-school.jpeg",
+    "status": "ok",
+    "actual_offset": 2335457,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/anar-shamshadinova.jpg",
+    "status": "ok",
+    "actual_offset": 3545174,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/archiv (2).jpeg",
+    "status": "ok",
+    "actual_offset": 3809072,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/archiv (3).jpeg",
+    "status": "ok",
+    "actual_offset": 3894940,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/archiv (4).jpeg",
+    "status": "ok",
+    "actual_offset": 4028487,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/archiv.jpeg",
+    "status": "ok",
+    "actual_offset": 4118716,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/archive (2).jpeg",
+    "status": "ok",
+    "actual_offset": 4245841,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/archive (2).jpg",
+    "status": "ok",
+    "actual_offset": 4359476,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/archive (3).jpeg",
+    "status": "ok",
+    "actual_offset": 4499799,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/archive (4).jpeg",
+    "status": "ok",
+    "actual_offset": 4604378,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/archive.jpeg",
+    "status": "ok",
+    "actual_offset": 4735404,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/archive.jpg",
+    "status": "ok",
+    "actual_offset": 4781306,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/b14fde01-4c2f-4b31-8946-ac22f61af7cb.jpg",
+    "status": "ok",
+    "actual_offset": 5094106,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/before.jpeg",
+    "status": "ok",
+    "actual_offset": 5311889,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/display/WhatsApp Image 2026-10-12 at 16.19.35 (1).png",
+    "status": "ok",
+    "actual_offset": 5365039,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/display/WhatsApp Image 2026-10-12 at 16.19.35.png",
+    "status": "ok",
+    "actual_offset": 6346824,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/display/WhatsApp Image 2026-10-12 at 16.19.36.png",
+    "status": "ok",
+    "actual_offset": 8159002,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/display/WhatsApp Image 2026-10-12 at 16.19.41.png",
+    "status": "ok",
+    "actual_offset": 9240097,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/display/WhatsApp Image 2026-10-12 at 16.19.42.png",
+    "status": "ok",
+    "actual_offset": 10556282,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/display/nurbaev-omirzaq.png",
+    "status": "ok",
+    "actual_offset": 11490685,
+    "offset_shift": 262144
+  },
+  {
+    "file": "static/images/display/qozhashova-balanzhan.png",
+    "status": "FAILED",
+    "error": "Error -3 while decompressing data: too many length or distance symbols"
+  },
+  {
+    "file": "static/images/display/sarsenov-burkitbay.png",
+    "status": "ok",
+    "actual_offset": 14511363,
+    "offset_shift": 0
+  },
+  {
+    "file": "static/images/first-school-1943.jpeg",
+    "status": "ok",
+    "actual_offset": 16300158,
+    "offset_shift": 0
+  },
+  {
+    "file": "static/images/marshal-abdihalikov.jpg",
+    "status": "ok",
+    "actual_offset": 16353319,
+    "offset_shift": 0
+  },
+  {
+    "file": "static/images/nurbaev-omirzaq.jpg",
+    "status": "ok",
+    "actual_offset": 16584044,
+    "offset_shift": 0
+  },
+  {
+    "file": "static/images/qozhashova-balanzhan.jpg",
+    "status": "ok",
+    "actual_offset": 16779507,
+    "offset_shift": 0
+  },
+  {
+    "file": "static/images/sarsenov-burkitbay.jpg",
+    "status": "ok",
+    "actual_offset": 17043570,
+    "offset_shift": 0
+  },
+  {
+    "file": "static/images/school.jpeg",
+    "status": "ok",
+    "actual_offset": 17286500,
+    "offset_shift": 0
+  },
+  {
+    "file": "static/images/tamara-asar.jpg",
+    "status": "ok",
+    "actual_offset": 18423510,
+    "offset_shift": 0
+  },
+  {
+    "file": "static/js/3d.js",
+    "status": "ok",
+    "actual_offset": 18447955,
+    "offset_shift": 0
+  },
+  {
+    "file": "static/js/main.js",
+    "status": "ok",
+    "actual_offset": 18457924,
+    "offset_shift": 0
+  },
+  {
+    "file": "static/js/map.js",
+    "status": "ok",
+    "actual_offset": 18459995,
+    "offset_shift": 0
+  },
+  {
+    "file": "static/js/photo-catalog.js",
+    "status": "ok",
+    "actual_offset": 18463851,
+    "offset_shift": 0
+  },
+  {
+    "file": "static/js/section-archive.js",
+    "status": "ok",
+    "actual_offset": 18465298,
+    "offset_shift": 0
+  },
+  {
+    "file": "static/js/site-search.js",
+    "status": "ok",
+    "actual_offset": 18466906,
+    "offset_shift": 0
+  },
+  {
+    "file": "static/js/timeline.js",
+    "status": "ok",
+    "actual_offset": 18468522,
+    "offset_shift": 0
+  },
+  {
+    "file": "static/models/README.txt",
+    "status": "ok",
+    "actual_offset": 18469281,
+    "offset_shift": 0
+  },
+  {
+    "file": "static/vendor/three-r128/LICENSE",
+    "status": "ok",
+    "actual_offset": 18469914,
+    "offset_shift": 0
+  },
+  {
+    "file": "static/vendor/three-r128/OrbitControls.js",
+    "status": "ok",
+    "actual_offset": 18470618,
+    "offset_shift": 0
+  },
+  {
+    "file": "static/vendor/three-r128/three.min.js",
+    "status": "ok",
+    "actual_offset": 18476074,
+    "offset_shift": 0
+  },
+  {
+    "file": "templates/404.html",
+    "status": "ok",
+    "actual_offset": 18625325,
+    "offset_shift": 0
+  },
+  {
+    "file": "templates/_history_nav.html",
+    "status": "ok",
+    "actual_offset": 18625709,
+    "offset_shift": 0
+  },
+  {
+    "file": "templates/_macros.html",
+    "status": "ok",
+    "actual_offset": 18626031,
+    "offset_shift": 0
+  },
+  {
+    "file": "templates/_photo_archive.html",
+    "status": "ok",
+    "actual_offset": 18626674,
+    "offset_shift": 0
+  },
+  {
+    "file": "templates/_section_archive.html",
+    "status": "ok",
+    "actual_offset": 18627538,
+    "offset_shift": 0
+  },
+  {
+    "file": "templates/archive.html",
+    "status": "ok",
+    "actual_offset": 18628420,
+    "offset_shift": 0
+  },
+  {
+    "file": "templates/base.html",
+    "status": "ok",
+    "actual_offset": 18630266,
+    "offset_shift": 0
+  },
+  {
+    "file": "templates/excursion.html",
+    "status": "ok",
+    "actual_offset": 18633040,
+    "offset_shift": 0
+  },
+  {
+    "file": "templates/history.html",
+    "status": "ok",
+    "actual_offset": 18634939,
+    "offset_shift": 0
+  },
+  {
+    "file": "templates/index.html",
+    "status": "ok",
+    "actual_offset": 18636311,
+    "offset_shift": 0
+  },
+  {
+    "file": "templates/map.html",
+    "status": "ok",
+    "actual_offset": 18639294,
+    "offset_shift": 0
+  },
+  {
+    "file": "templates/mashyryq.html",
+    "status": "ok",
+    "actual_offset": 18641923,
+    "offset_shift": 0
+  },
+  {
+    "file": "templates/oral-history.html",
+    "status": "ok",
+    "actual_offset": 18644214,
+    "offset_shift": 0
+  },
+  {
+    "file": "templates/persons.html",
+    "status": "ok",
+    "actual_offset": 18645897,
+    "offset_shift": 0
+  },
+  {
+    "file": "templates/photo-archive.html",
+    "status": "ok",
+    "actual_offset": 18647027,
+    "offset_shift": 0
+  },
+  {
+    "file": "templates/project.html",
+    "status": "ok",
+    "actual_offset": 18649525,
+    "offset_shift": 0
+  },
+  {
+    "file": "templates/reconstruction.html",
+    "status": "ok",
+    "actual_offset": 18652588,
+    "offset_shift": 0
+  },
+  {
+    "file": "templates/research.html",
+    "status": "ok",
+    "actual_offset": 18655984,
+    "offset_shift": 0
+  },
+  {
+    "file": "templates/school.html",
+    "status": "ok",
+    "actual_offset": 18657495,
+    "offset_shift": 0
+  },
+  {
+    "file": "templates/search.html",
+    "status": "ok",
+    "actual_offset": 18660722,
+    "offset_shift": 0
+  },
+  {
+    "file": "templates/sources.html",
+    "status": "ok",
+    "actual_offset": 18661662,
+    "offset_shift": 0
+  },
+  {
+    "file": "tests/baseline.json",
+    "status": "ok",
+    "actual_offset": 18662586,
+    "offset_shift": 0
+  },
+  {
+    "file": "tests/test_3d_integrity.py",
+    "status": "ok",
+    "actual_offset": 18668559,
+    "offset_shift": 0
+  },
+  {
+    "file": "tests/test_content_3d_smoke.py",
+    "status": "ok",
+    "actual_offset": 18670732,
+    "offset_shift": 0
+  },
+  {
+    "file": "tests/test_content_browser.py",
+    "status": "ok",
+    "actual_offset": 18672027,
+    "offset_shift": 0
+  },
+  {
+    "file": "tests/test_content_update.py",
+    "status": "ok",
+    "actual_offset": 18675232,
+    "offset_shift": 0
+  },
+  {
+    "file": "tests/test_reconstruction_browser.py",
+    "status": "ok",
+    "actual_offset": 18677415,
+    "offset_shift": 0
+  },
+  {
+    "file": "tests/test_regression.py",
+    "status": "ok",
+    "actual_offset": 18681905,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/REPORT_KK.txt",
+    "status": "ok",
+    "actual_offset": 18684038,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/browser-results.json",
+    "status": "ok",
+    "actual_offset": 18689485,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/changed-files.json",
+    "status": "ok",
+    "actual_offset": 18691954,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/content-update/3d-mobile-smoke.png",
+    "status": "ok",
+    "actual_offset": 18692458,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/content-update/3d-smoke-results.json",
+    "status": "ok",
+    "actual_offset": 18770152,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/content-update/3d-smoke-run.log",
+    "status": "ok",
+    "actual_offset": 18770448,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/content-update/REPORT_KK.txt",
+    "status": "ok",
+    "actual_offset": 18770748,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/content-update/archive-desktop.png",
+    "status": "ok",
+    "actual_offset": 18774332,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/content-update/archive-mobile.png",
+    "status": "ok",
+    "actual_offset": 20407576,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/content-update/browser-results.json",
+    "status": "ok",
+    "actual_offset": 21648167,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/content-update/browser-run.log",
+    "status": "ok",
+    "actual_offset": 21648922,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/content-update/changes.json",
+    "status": "ok",
+    "actual_offset": 21650289,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/content-update/extracted-3d-smoke-run.log",
+    "status": "ok",
+    "actual_offset": 21650918,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/content-update/extracted-browser-run.log",
+    "status": "ok",
+    "actual_offset": 21651221,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/content-update/extracted-unit-tests.txt",
+    "status": "ok",
+    "actual_offset": 21652595,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/content-update/input-hashes.json",
+    "status": "ok",
+    "actual_offset": 21652990,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/content-update/original-protected-hashes.json",
+    "status": "ok",
+    "actual_offset": 21658163,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/content-update/project-desktop.png",
+    "status": "ok",
+    "actual_offset": 21661713,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/content-update/reconstruction-browser-run.log",
+    "status": "ok",
+    "actual_offset": 22727079,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/content-update/recovery.json",
+    "status": "ok",
+    "actual_offset": 22728988,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/content-update/retained-image-validation.json",
+    "status": "ok",
+    "actual_offset": 22729339,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/content-update/school-original-hash.json",
+    "status": "ok",
+    "actual_offset": 22729803,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/content-update/search-mobile.png",
+    "status": "ok",
+    "actual_offset": 22729953,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/content-update/tested-runtime-manifest.json",
+    "status": "ok",
+    "actual_offset": 24135637,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/content-update/unit-tests.txt",
+    "status": "ok",
+    "actual_offset": 24139793,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/coordinate-evidence.json",
+    "status": "ok",
+    "actual_offset": 24140419,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/reconstruction/CHANGES_KK.md",
+    "status": "ok",
+    "actual_offset": 24140866,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/reconstruction/REPORT_KK.md",
+    "status": "ok",
+    "actual_offset": 24142395,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/reconstruction/archive-validation.json",
+    "status": "ok",
+    "actual_offset": 24145220,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/reconstruction/browser-results.json",
+    "status": "ok",
+    "actual_offset": 24146037,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/reconstruction/changed-files.json",
+    "status": "ok",
+    "actual_offset": 24147439,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/reconstruction/comparison.png",
+    "status": "ok",
+    "actual_offset": 24149241,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/reconstruction/desktop.png",
+    "status": "ok",
+    "actual_offset": 24447080,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/reconstruction/extracted-startup.txt",
+    "status": "ok",
+    "actual_offset": 24583246,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/reconstruction/extracted-unit-tests.txt",
+    "status": "ok",
+    "actual_offset": 24583839,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/reconstruction/fallback.png",
+    "status": "ok",
+    "actual_offset": 24584417,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/reconstruction/fresh-install.txt",
+    "status": "ok",
+    "actual_offset": 24669124,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/reconstruction/mobile.png",
+    "status": "ok",
+    "actual_offset": 24669692,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/reconstruction/original-audit.json",
+    "status": "ok",
+    "actual_offset": 24863251,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/reconstruction/unit-tests.txt",
+    "status": "ok",
+    "actual_offset": 24868944,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/screenshots/desktop-map.png",
+    "status": "ok",
+    "actual_offset": 24869512,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/screenshots/history-qoshqar.png",
+    "status": "ok",
+    "actual_offset": 25278247,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/screenshots/mobile-map.png",
+    "status": "ok",
+    "actual_offset": 25780174,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/screenshots/persons.png",
+    "status": "ok",
+    "actual_offset": 25915862,
+    "offset_shift": 0
+  },
+  {
+    "file": "verification/unit-tests.txt",
+    "status": "ok",
+    "actual_offset": 26552837,
+    "offset_shift": 0
+  }
+]

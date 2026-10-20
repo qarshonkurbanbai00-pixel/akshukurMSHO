@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% from "_macros.html" import badge, photo with context %}
+
+{% block title %}Машырық қажы — ЦИФРЛЫҚ ШЕЖІРЕ{% endblock %}
+
+{% block content %}
+<section class="page-hero page-hero-gold">
+  <div class="container">
+    <p class="hero-kicker reveal">Рухани және білім дәуірі</p>
+    <h1 class="page-title reveal">Машырық қажы</h1>
+    <p class="page-lead reveal">Ақшұқыр тарихындағы мешіт пен медресемен, білім берумен байланыстырылатын тұлға туралы зерттеу.</p>
+    <div class="notice glass reveal">
+      <strong>Зерттеу әдебиеті туралы ескерту:</strong> бұл бөлімде нақты дәлелденбеген мәліметтер факт ретінде көрсетілмейді. Әр блок дәлелдеме деңгейімен белгіленген; жауабы әлі табылмаған сұрақтар ашық айтылады.
+    </div>
+  </div>
+</section>
+
+<!-- Зерттеу тұжырымы -->
+<section class="section">
+  <div class="container two-col">
+    <div class="reveal">
+      <h2 class="section-title">Машырық қажы туралы зерттеу</h2>
+      <p>Жергілікті ауызша деректер мен зерттеу материалдары Машырық қажы есімін Ақшұқыр өңіріндегі <strong>мешіт, медресе және білім беру дәуірімен</strong> байланыстырады. Бұл — жобаның орталық тұлғасы, бірақ зерттеушілік адалдық талабы бойынша:</p>
+      <ul class="check-list">
+        <li>Тұлғаның <strong>өмір жылдары</strong> — дерек қажет (жазба көзбен расталған жоқ);</li>
+        <li>Мешіт пен медресенің <strong>нақты орны</strong> — зерттеу барысында нақтыланады;</li>
+        <li>Медресенің <strong>болғаны</strong> — 1887 жылғы жазба дерекпен расталады (төмендегі архив картасын қараңыз).</li>
+      </ul>
+      <div class="badge-row">{{ badge('oral') }}{{ badge('archive') }}{{ badge('research') }}</div>
+    </div>
+    <div class="reveal">
+      {{ photo(none, 'Машырық қажы', 'Машырық қажыға тиесілі екені расталған портрет немесе фото архивте жоқ') }}
+    </div>
+  </div>
+</section>
+
+<!-- Тақырыптық блоктар -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title reveal">Зерттеу бағыттары</h2>
+    <div class="cards-grid">
+      <div class="nav-card glass reveal">
+        <span class="nav-card-icon">🕌</span><h3>Мешіт</h3>
+        <p>Ауылда мешіт болғаны туралы деректер жинақталуда. Орны мен ғимарат сипаты — дерек қажет.</p>
+        {{ badge('needs_data') }}
+      </div>
+      <div class="nav-card glass reveal">
+        <span class="nav-card-icon">📖</span><h3>Медресе</h3>
+        <p>1887 жылғы статистикалық деректе Ақшұқырда медресе болғаны көрсетілген. Төмендегі архив картасын қараңыз.</p>
+        {{ badge('archive') }}
+      </div>
+      <div class="nav-card glass reveal">
+        <span class="nav-card-icon">✒️</span><h3>Білім беру</h3>
+        <p>Медресе арқылы жүргізілген оқытудың мазмұны, оқытушылар мен шәкірттер туралы деректер зерттелуде.</p>
+        {{ badge('research') }}
+      </div>
+      <div class="nav-card glass reveal">
+        <span class="nav-card-icon">💧</span><h3>Құдық</h3>
+        <p>Машырық қажымен байланыстырылатын құдық туралы ауызша деректер бар. Нақты орны расталған жоқ.</p>
+        {{ badge('oral') }}
+      </div>
+      <div class="nav-card glass reveal">
+        <span class="nav-card-icon">🌿</span><h3>Бақ</h3>
+        <p>Тұлғамен байланыстырылатын бақ туралы мәліметтер ауызша тарих деңгейінде — кросс-тексеру қажет.</p>
+        {{ badge('oral') }}
+      </div>
+      <div class="nav-card glass reveal">
+        <span class="nav-card-icon">🧭</span><h3>Жергілікті тарихи деректер</h3>
+        <p>Ақсақалдар естеліктері, отбасылық шежірелер мен жергілікті зерттеушілердің материалдары жинақталуда.</p>
+        {{ badge('research') }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 1887 ЖЫЛҒЫ ДЕРЕК -->
+<section class="section" id="derik-1887">
+  <div class="container">
+    <h2 class="section-title reveal">1887 жылғы дерек</h2>
+    <div class="archive-doc-card glass reveal">
+      <div class="doc-visual">
+        <div class="doc-paper" aria-hidden="true">
+          <span class="doc-year">1887</span>
+          <span class="doc-lines"></span><span class="doc-lines short"></span>
+          <span class="doc-stamp">АРХИВ</span>
+        </div>
+      </div>
+      <div class="doc-info">
+        <div class="badge-row">{{ badge('archive') }}<span class="doc-type">Дерек түрі: <strong>жазба тарихи дерек</strong></span></div>
+        <h3>Ақшұқырда медресе болғаны туралы статистикалық дерек</h3>
+        <p>1887 жылғы статистикалық материалда Ақшұқырда <strong>медресенің болғаны</strong> туралы ақпарат кездеседі. Бұл — ауылдағы жүйелі білім берудің ең ерте жазба дәлелі.</p>
+        <p class="muted small">Нақты архив деректемесі (архив, қор, тізім, бет нөмірі) зерттеу барысында енгізіледі — <code>data/sources.json</code> ішіндегі <code>src-1887-medrese</code> жазбасы арқылы.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="{{ url_for('sources_page') }}#src-1887-medrese">Дереккөз карточкасы</a>
+          <a class="btn btn-ghost" href="{{ url_for('reconstruction') }}">3D реконструкцияны көру</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3D сілтеме -->
+<section class="section section-alt">
+  <div class="container center reveal">
+    <h2 class="section-title">Болжамды 3D көрініс</h2>
+    <p>Мешіт/медресенің тарихи деректерге сүйенген болжамды 3D реконструкциясын көріңіз. Бұл сақталған нақты ғимарат емес — зерттеу визуализациясы.</p>
+    <a class="btn btn-gold" href="{{ url_for('reconstruction') }}">3D viewer ашу</a>
+  </div>
+</section>
+{% endblock %}

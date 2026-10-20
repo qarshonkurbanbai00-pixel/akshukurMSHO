@@ -1,0 +1,24 @@
+[
+  {
+    "id": "place-school-now",
+    "url": "https://yandex.ru/maps/org/shkola_gimnaziya_imeni_marshala_abdykhalykova/42851569916/",
+    "verified_on": "2026-10-18",
+    "extracted_html": "data-coordinates=\"51.070312,43.778691\"",
+    "leaflet_lat_lng": [
+      43.778691,
+      51.070312
+    ],
+    "source_html_sha256": "6bbaf752ccd4328290ce8ecb0f4cca45d253dcd8c972f658cb13a315c5eb6a5b"
+  },
+  {
+    "id": "place-culture",
+    "url": "https://yandex.kz/maps/org/madeniet_uyi/205713452398/",
+    "verified_on": "2026-10-18",
+    "extracted_html": "data-coordinates=\"51.061553,43.781322\"",
+    "leaflet_lat_lng": [
+      43.781322,
+      51.061553
+    ],
+    "source_html_sha256": "971f8944650ced2b3fba6e5ba287ef6ca29464e9ef71af0b830ca0cd043e4d5f"
+  }
+]

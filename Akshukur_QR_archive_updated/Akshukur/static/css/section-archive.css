@@ -1,0 +1,65 @@
+/* Loaded exclusively on /karta and /mektep; reuse the site's original tokens. */
+.heritage-section [hidden] { display: none !important; }
+.heritage-section .heritage-heading { margin-top: 50px; }
+.heritage-section .heritage-subheading { margin: 18px 0 10px; }
+.heritage-section .heritage-note { margin-top: 16px; }
+.heritage-section .heritage-status { margin-bottom: 16px; min-height: 1.65em; }
+.heritage-section .heritage-side-title { font-size: 1.2rem; margin-bottom: 12px; }
+.heritage-section .heritage-photo { margin: 0 0 16px; min-width: 0; }
+.heritage-section .heritage-zoom { position: relative; display: block; width: 100%; padding: 0; border: 1px solid var(--glass-brd); border-radius: var(--r); overflow: hidden; background: var(--bg-2); cursor: zoom-in; color: var(--gold); font: inherit; }
+.heritage-section .heritage-zoom img { display: block; width: 100%; height: 240px; object-fit: contain; }
+.heritage-section .heritage-zoom-label { display: block; padding: 7px 12px; font-size: .8rem; border-top: 1px solid var(--line); }
+.heritage-section figcaption { padding: 10px 0; font-size: .85rem; overflow-wrap: anywhere; }
+.heritage-section figcaption small { display: block; color: var(--muted); margin-top: 6px; line-height: 1.5; }
+.heritage-section .heritage-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.heritage-section .archive-selected { border-color: var(--gold); box-shadow: 0 0 0 2px var(--line); }
+.heritage-section .place-card { scroll-margin-top: 110px; cursor: pointer; min-width: 0; }
+.heritage-section .place-card details, .heritage-section .place-card p { overflow-wrap: anywhere; }
+.heritage-section .place-item { flex-wrap: wrap; }
+.heritage-section .place-noloc { flex-basis: 100%; margin-left: 24px; }
+.heritage-section .place-card details { cursor: auto; }
+.heritage-section .place-card details p { margin-top: 12px; }
+.heritage-section .heritage-pending { margin-top: 42px; }
+.heritage-section .heritage-pending-photo { max-width: 420px; margin-top: 20px; }
+.heritage-section .heritage-period-line { display: flex; align-items: center; gap: 22px; margin: 28px 0; }
+.heritage-section .heritage-period-line a { flex: 0 1 260px; }
+.heritage-section .heritage-period-line strong { display: block; font-size: clamp(1.2rem, 3vw, 1.8rem); }
+.heritage-section .heritage-period-line span { color: var(--muted); font-size: .85rem; }
+.heritage-section .heritage-period-connector { flex: 1; height: 2px; min-width: 24px; background: var(--gold); }
+.heritage-section .heritage-period-controls { margin: 0 0 18px; }
+.heritage-section .heritage-school-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.heritage-section .heritage-school-grid.is-single { grid-template-columns: minmax(0, 1fr); max-width: 800px; margin-inline: auto; }
+.heritage-section .heritage-school-card { padding: 26px; min-width: 0; scroll-margin-top: 110px; }
+.heritage-section .heritage-school-card h2 { margin: 10px 0 20px; }
+.heritage-section .heritage-school-card p { margin-bottom: 16px; }
+.heritage-section .heritage-school-card .heritage-zoom img { height: 340px; }
+.heritage-section .heritage-old-placeholder { min-height: 340px; aspect-ratio: auto; margin-bottom: 20px; }
+.heritage-section .heritage-archive-item { padding: 18px; min-width: 0; }
+.heritage-section .heritage-archive-item h3 { margin: 12px 0 8px; }
+.heritage-section .heritage-source { padding: 22px 0; border-bottom: 1px solid var(--line); overflow-wrap: anywhere; }
+.heritage-section .heritage-source h3 { margin-bottom: 10px; }
+.heritage-section #schoolSources { scroll-margin-top: 110px; }
+.heritage-section .heritage-viewer { width: min(1000px, 94vw); max-height: 92dvh; margin: auto; padding: 22px; border: 1px solid var(--glass-brd); border-radius: var(--r); background: var(--bg); color: var(--ink); font-family: var(--font); box-shadow: var(--shadow); overflow: auto; }
+.heritage-section .heritage-viewer::backdrop { background: var(--bg); opacity: .94; }
+.heritage-section .heritage-viewer-head, .heritage-section .heritage-viewer-controls { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+.heritage-section .heritage-viewer-head h2 { font-size: 1.15rem; }
+.heritage-section .heritage-viewer > img { display: block; width: 100%; height: min(58dvh, 650px); object-fit: contain; margin-bottom: 16px; }
+.heritage-section .heritage-viewer p { margin: 10px 0; }
+.heritage-section .heritage-viewer-controls { margin-top: 18px; flex-wrap: wrap; }
+.heritage-section .heritage-viewer [disabled] { opacity: .45; cursor: default; }
+.heritage-section :is(button, a, summary, .place-card):focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
+.heritage-section .heritage-school-gallery { align-items: start; }
+@media (max-width: 700px) {
+  .heritage-section .heritage-school-grid { grid-template-columns: minmax(0, 1fr); }
+  .heritage-section .heritage-school-card { padding: 20px; }
+  .heritage-section .heritage-school-card .heritage-zoom img { height: 290px; }
+  .heritage-section .heritage-old-placeholder { min-height: 240px; }
+  .heritage-section .heritage-period-line { gap: 12px; }
+  .heritage-section .heritage-period-line a { flex: 1; }
+  .heritage-section .heritage-period-connector { flex: .2; }
+  .heritage-section .heritage-viewer { padding: 14px; }
+  .heritage-section .heritage-viewer > img { height: 48dvh; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .heritage-section * { scroll-behavior: auto !important; transition: none !important; }
+}

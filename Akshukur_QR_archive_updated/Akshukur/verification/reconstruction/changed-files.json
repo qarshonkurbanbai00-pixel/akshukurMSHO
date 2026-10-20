@@ -1,0 +1,66 @@
+{
+  "original_file_count": 74,
+  "unchanged_original_files": 68,
+  "modified": [
+    {
+      "path": "README.md",
+      "reason": "Пайдаланушының тікелей талабы: Windows командалары, 3D URL, офлайн жұмыс, шектеулер және тесттер. Басқа тарихи мәтін өзгермеді.",
+      "before_sha256": "2a3281239a28d84259dcad7fb57d13c33b8607e87eb1107520d74d53feeecb63",
+      "after_sha256": "3e7a8cd224b987516cece3633788531b52cc77c936ec63a692e232afdffe1f1e"
+    },
+    {
+      "path": "run.bat",
+      "reason": "Пайдаланушының тікелей талабы: өз папкасына ауысу, Python тексеру, Flask орнату ұсынысы және қате кезінде pause.",
+      "before_sha256": "bf34005cfc94a7558ac4759b56d2a5d68e83173420c1795dbb37bb862d60cdf2",
+      "after_sha256": "f709981bfebdb8d3c3638ccf9145ffcc453c79f6c5cd4c0b3a4f9f75a5b6ed4d"
+    },
+    {
+      "path": "static/js/3d.js",
+      "reason": "Процедуралық иллюстрациялық орта, raycast таңдау, камера, сенсор/пернетақта, сапа, қате өңдеу. Жоқ GLB және CDN сұраулары алынды.",
+      "before_sha256": "288b40910874612d2fa2d1491dc8556f897c7daf84bf43bdf82ef07b42cb28e9",
+      "after_sha256": "18bd914f7f208bd618402067d1e82d734af6336894052c260600dae84868a9cb"
+    },
+    {
+      "path": "static/models/README.txt",
+      "reason": "Жоқ GLB автоматты жүктеледі деген ескі нұсқаулық түзетілді; нақты модель мен иллюстрация ажыратылды.",
+      "before_sha256": "f319e3ee4a436d2d20938e635aec14ce22a76135981597355aae0f2fb8483fbc",
+      "after_sha256": "8bf925dd4ed1c6bb226690a9cb7e7713d2a368577a5c927ed829bcd6a0a1ba25"
+    },
+    {
+      "path": "templates/reconstruction.html",
+      "reason": "Тек 3D беті: төрт нысан, карточкалар, басқару, маршрут және салыстыру; base.html өзгермеді.",
+      "before_sha256": "601015a07215c9a34e994307112b37762b7f3680e688fd65b1fa343e33431e60",
+      "after_sha256": "0e22c22addacf8af8a90bde1c69f5450792fec71158790df25d2b815fd13bcbf"
+    },
+    {
+      "path": "tests/test_regression.py",
+      "reason": "Тек 3D/run.bat өзгерістеріне қатысты ескі хэш тексеруі ерекшеленді; JS кейін src беретін жасырын img тегі қауіпсіз оқылады. Қалған файлдар жаңа толық SHA-256 тексеруімен қорғалған.",
+      "before_sha256": "5db0658b1d26f177de3e1f2a1e7d25ca2dcf97f97a90f28196611069d5716f6c",
+      "after_sha256": "c4925dced4813b48fde2ecff08ad1ef846e663628d0f1b7162212f4d74d79bb2"
+    }
+  ],
+  "added": [
+    "static/css/reconstruction.css",
+    "static/data/reconstruction.json",
+    "static/vendor/three-r128/LICENSE",
+    "static/vendor/three-r128/OrbitControls.js",
+    "static/vendor/three-r128/three.min.js",
+    "tests/test_3d_integrity.py",
+    "tests/test_reconstruction_browser.py",
+    "verification/reconstruction/CHANGES_KK.md",
+    "verification/reconstruction/REPORT_KK.md",
+    "verification/reconstruction/archive-validation.json",
+    "verification/reconstruction/browser-results.json",
+    "verification/reconstruction/changed-files.json",
+    "verification/reconstruction/comparison.png",
+    "verification/reconstruction/desktop.png",
+    "verification/reconstruction/extracted-startup.txt",
+    "verification/reconstruction/extracted-unit-tests.txt",
+    "verification/reconstruction/fallback.png",
+    "verification/reconstruction/fresh-install.txt",
+    "verification/reconstruction/mobile.png",
+    "verification/reconstruction/original-audit.json",
+    "verification/reconstruction/unit-tests.txt"
+  ],
+  "deleted": []
+}

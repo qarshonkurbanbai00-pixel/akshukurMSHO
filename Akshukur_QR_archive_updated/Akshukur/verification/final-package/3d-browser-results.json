@@ -1,0 +1,41 @@
+{
+  "environment": "Linux Chromium SwiftShader, 390x844, reduced motion",
+  "checks": [
+    {
+      "test": "3d_engine_ready_offline",
+      "passed": true
+    },
+    {
+      "test": "four_objects_preserved",
+      "passed": true
+    },
+    {
+      "test": "select_mosque",
+      "passed": true
+    },
+    {
+      "test": "select_tree",
+      "passed": true
+    },
+    {
+      "test": "select_well",
+      "passed": true
+    },
+    {
+      "test": "select_coast",
+      "passed": true
+    },
+    {
+      "test": "reset_control",
+      "passed": true
+    },
+    {
+      "test": "mobile_no_overflow",
+      "passed": true
+    },
+    {
+      "test": "no_js_errors",
+      "passed": true
+    }
+  ]
+}

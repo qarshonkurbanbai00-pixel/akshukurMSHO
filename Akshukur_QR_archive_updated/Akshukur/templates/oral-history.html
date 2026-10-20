@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% from "_macros.html" import badge, photo with context %}
+
+{% block title %}Ауылдың ауызша тарихы — ЦИФРЛЫҚ ШЕЖІРЕ{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="container">
+    <p class="hero-kicker reveal">Ауызша тарих жинағы</p>
+    <h1 class="page-title reveal">Ауылдың ауызша тарихы</h1>
+    <p class="muted">Ақшұқырдың дауысы — тұрғындардың естеліктер жинағы</p>
+    <p class="page-lead reveal">Жергілікті үлкендерден алынған сұхбаттар. Ауызша деректер факт емес — тексеруді қажет ететін құнды материал ретінде белгіленеді.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="notice glass reveal">
+      <strong>Әдістемелік ескерту:</strong> әр естелік мүмкіндігінше екінші бір тәуелсіз дерекпен (құжат, басқа естелік) кросс-тексеріледі. Расталмаған естеліктер 🟡 «Ауызша дерек» ретінде қала береді.
+    </div>
+
+    <div class="cards-grid">
+      {% for it in interviews %}
+      <article id="{{ it.id }}" class="nav-card glass interview-card reveal">
+        {% if it.status == 'placeholder' %}<p class="muted small"><strong>Үлгі карточка — нақты сұхбат әлі қосылған жоқ.</strong></p>{% endif %}
+        <div class="interview-head">
+          <div class="avatar-placeholder" aria-hidden="true">{{ (it.name or 'А')[0] }}</div>
+          <div>
+            <h3>{{ it.name }}</h3>
+            <p class="muted small">Жасы: {{ it.age if it.age else 'дерек қажет' }}{% if it.recorded_date %} · Жазылған күні: {{ it.recorded_date }}{% endif %}</p>
+          </div>
+        </div>
+        <p class="interview-topic"><strong>Тақырыбы:</strong> {{ it.topic }}</p>
+        {% if it.description %}<p class="muted small">{{ it.description }}</p>{% endif %}
+        <blockquote class="quote">{{ it.quote }}</blockquote>
+        <p>{{ it.memory }}</p>
+
+        {% if it.media %}
+          {% if it.media_type == 'video' %}
+            <video controls preload="none" src="{{ url_for('static', filename=it.media) }}" style="width:100%;border-radius:12px"></video>
+          {% else %}
+            <audio controls preload="none" src="{{ url_for('static', filename=it.media) }}" style="width:100%"></audio>
+          {% endif %}
+        {% else %}
+          <div class="media-placeholder">
+            <span>🎙️ Аудио жазбасын қосу қажет</span>
+            <span class="muted small">Файлды <code>static/audio/</code> папкасына салып, <code>data/interviews.json</code> ішінде <code>"media": "audio/fayl.mp3"</code> деп жазыңыз</span>
+          </div>
+        {% endif %}
+
+        {% if it.transcript %}
+        <details class="tl-details">
+          <summary>📝 Транскрипция</summary>
+          <p>{{ it.transcript }}</p>
+        </details>
+        {% endif %}
+        {% if it.evidence_note %}<p class="muted small">{{ it.evidence_note }}</p>{% endif %}
+        {{ badge(it.evidence) }}
+      </article>
+      {% endfor %}
+    </div>
+
+    <div class="glass panel reveal">
+      <h3>Сұхбат қалай өткізіледі?</h3>
+      <ol class="check-list">
+        <li>Алдын ала сұрақтар тізбесін дайындау (ауыл туралы естеліктер, мектеп, тарихи орындар);</li>
+        <li>Қатысушының келісімін алып, жазуды (аудио/видео) жүргізу, жазылған күнін тіркеу;</li>
+        <li>Жазбаны мәтінге аударып (транскрипт), нақты фактілерді құжаттармен салыстыру;</li>
+        <li>Аудионы <code>static/audio/</code> папкасына салып, цитата мен транскриптті <code>data/interviews.json</code> арқылы осы бетке қою.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+{% include '_qr_videos.html' %}
+{% endblock %}

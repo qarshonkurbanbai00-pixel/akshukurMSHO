@@ -1,0 +1,40 @@
+{
+  "changed": [
+    "README.md",
+    "app.py",
+    "site_content.py",
+    "static/css/content-update.css",
+    "static/css/style.css",
+    "static/js/main.js",
+    "static/js/photo-catalog.js",
+    "templates/_photo_archive.html",
+    "templates/archive.html",
+    "templates/history.html",
+    "templates/map.html",
+    "templates/oral-history.html",
+    "templates/photo-archive.html"
+  ],
+  "added": [
+    "CHANGES_KK.txt",
+    "data/qr_videos.json",
+    "templates/_qr_videos.html",
+    "tests/check_qr_archive_browser.py",
+    "tests/test_qr_archive_update.py",
+    "verification/qr-archive-3d-mobile.png",
+    "verification/qr-archive-3d-results.json",
+    "verification/qr-archive-browser-results.json",
+    "verification/qr-archive-browser-run.txt",
+    "verification/qr-archive-changed-files.json",
+    "verification/qr-archive-codes-1440.png",
+    "verification/qr-archive-codes-390.png",
+    "verification/qr-archive-decode-report.json",
+    "verification/qr-archive-photos-1440.png",
+    "verification/qr-archive-photos-390.png",
+    "verification/qr-archive-protected.json",
+    "verification/qr-archive-route-baseline.json",
+    "verification/qr-archive-routes.json",
+    "verification/qr-archive-unit-tests.txt"
+  ],
+  "original_photos_preserved": true,
+  "new_directories": []
+}

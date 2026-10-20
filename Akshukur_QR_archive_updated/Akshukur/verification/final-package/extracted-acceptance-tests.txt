@@ -1,0 +1,14 @@
+test_complete_template_tree (test_final_package.FinalPackage.test_complete_template_tree) ... ok
+test_error_template (test_final_package.FinalPackage.test_error_template) ... ok
+test_every_page_and_local_asset (test_final_package.FinalPackage.test_every_page_and_local_asset) ... ok
+test_local_3d_dependencies (test_final_package.FinalPackage.test_local_3d_dependencies) ... ok
+test_oral_history_and_navigation (test_final_package.FinalPackage.test_oral_history_and_navigation) ... ok
+test_original_photo_integrity_and_honest_unavailable_records (test_final_package.FinalPackage.test_original_photo_integrity_and_honest_unavailable_records) ... ok
+test_python_and_json_syntax (test_final_package.FinalPackage.test_python_and_json_syntax) ... ok
+test_search_preserved (test_final_package.FinalPackage.test_search_preserved) ... ok
+test_windows_launcher (test_final_package.FinalPackage.test_windows_launcher) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.384s
+
+OK

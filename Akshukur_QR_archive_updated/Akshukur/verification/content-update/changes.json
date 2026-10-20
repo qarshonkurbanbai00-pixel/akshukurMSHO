@@ -1,0 +1,182 @@
+[
+  {
+    "file": "README.md",
+    "status": "modified"
+  },
+  {
+    "file": "app.py",
+    "status": "modified"
+  },
+  {
+    "file": "templates/index.html",
+    "status": "modified"
+  },
+  {
+    "file": "templates/history.html",
+    "status": "modified"
+  },
+  {
+    "file": "templates/base.html",
+    "status": "modified"
+  },
+  {
+    "file": "templates/_macros.html",
+    "status": "modified"
+  },
+  {
+    "file": "templates/school.html",
+    "status": "modified"
+  },
+  {
+    "file": "templates/_photo_archive.html",
+    "status": "modified"
+  },
+  {
+    "file": "static/js/main.js",
+    "status": "modified"
+  },
+  {
+    "file": "static/images/display/qozhashova-balanzhan.png",
+    "status": "modified"
+  },
+  {
+    "file": "site_content.py",
+    "status": "added"
+  },
+  {
+    "file": "templates/search.html",
+    "status": "added"
+  },
+  {
+    "file": "templates/project.html",
+    "status": "added"
+  },
+  {
+    "file": "templates/_history_nav.html",
+    "status": "added"
+  },
+  {
+    "file": "templates/photo-archive.html",
+    "status": "added"
+  },
+  {
+    "file": "tests/test_content_browser.py",
+    "status": "added"
+  },
+  {
+    "file": "tests/test_content_3d_smoke.py",
+    "status": "added"
+  },
+  {
+    "file": "tests/test_content_update.py",
+    "status": "added"
+  },
+  {
+    "file": "verification/content-update/archive-desktop.png",
+    "status": "added"
+  },
+  {
+    "file": "verification/content-update/recovery.json",
+    "status": "added"
+  },
+  {
+    "file": "verification/content-update/changes.json",
+    "status": "added"
+  },
+  {
+    "file": "verification/content-update/browser-results.json",
+    "status": "added"
+  },
+  {
+    "file": "verification/content-update/school-original-hash.json",
+    "status": "added"
+  },
+  {
+    "file": "verification/content-update/search-mobile.png",
+    "status": "added"
+  },
+  {
+    "file": "verification/content-update/extracted-3d-smoke-run.log",
+    "status": "added"
+  },
+  {
+    "file": "verification/content-update/archive-mobile.png",
+    "status": "added"
+  },
+  {
+    "file": "verification/content-update/unit-tests.txt",
+    "status": "added"
+  },
+  {
+    "file": "verification/content-update/3d-smoke-results.json",
+    "status": "added"
+  },
+  {
+    "file": "verification/content-update/project-desktop.png",
+    "status": "added"
+  },
+  {
+    "file": "verification/content-update/extracted-unit-tests.txt",
+    "status": "added"
+  },
+  {
+    "file": "verification/content-update/REPORT_KK.txt",
+    "status": "added"
+  },
+  {
+    "file": "verification/content-update/tested-runtime-manifest.json",
+    "status": "added"
+  },
+  {
+    "file": "verification/content-update/reconstruction-browser-run.log",
+    "status": "added"
+  },
+  {
+    "file": "verification/content-update/browser-run.log",
+    "status": "added"
+  },
+  {
+    "file": "verification/content-update/extracted-browser-run.log",
+    "status": "added"
+  },
+  {
+    "file": "verification/content-update/3d-mobile-smoke.png",
+    "status": "added"
+  },
+  {
+    "file": "verification/content-update/retained-image-validation.json",
+    "status": "added"
+  },
+  {
+    "file": "verification/content-update/input-hashes.json",
+    "status": "added"
+  },
+  {
+    "file": "verification/content-update/3d-smoke-run.log",
+    "status": "added"
+  },
+  {
+    "file": "verification/content-update/original-protected-hashes.json",
+    "status": "added"
+  },
+  {
+    "file": "static/css/content-update.css",
+    "status": "added"
+  },
+  {
+    "file": "static/images/first-school-1943.jpeg",
+    "status": "added"
+  },
+  {
+    "file": "static/js/site-search.js",
+    "status": "added"
+  },
+  {
+    "file": "static/js/photo-catalog.js",
+    "status": "added"
+  },
+  {
+    "file": "static/images/display/sarsenov-burkitbay.png",
+    "status": "added"
+  }
+]

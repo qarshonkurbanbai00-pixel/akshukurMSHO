@@ -1,0 +1,35 @@
+{# QR files are local, prepared assets stored in static/images. #}
+{% set cards = qr_videos|selectattr('category', 'equalto', qr_category)|list if qr_category is defined else qr_videos %}
+{% if cards %}
+<section class="section qr-section" id="video-qr" aria-labelledby="videoQrTitle">
+  <div class="container">
+    <h2 class="section-title reveal" id="videoQrTitle">QR-код арқылы бейнематериалдар</h2>
+    <p class="section-lead reveal">Ауылдың ауызша тарихы мен мәдени мұраларын толықтыруға арналған дайын QR-кодтар. Суреттерді үзбей, телефон камерасымен сканерлеңіз.</p>
+    <div class="qr-grid">
+    {% for item in cards %}
+      {% set links = item.youtube_urls if item.youtube_urls is defined else ([item.youtube_url] if item.youtube_url else []) %}
+      <article class="qr-card glass reveal">
+        <h3>{{ item.title }}</h3>
+        <p class="muted small">{{ item.description }}</p>
+        <a class="qr-original" href="{{ url_for('static', filename=item.image) }}" target="_blank" rel="noopener" aria-label="{{ item.title }} — QR-код суретін үлкен форматта ашу">
+          <img src="{{ url_for('static', filename=item.image) }}" alt="{{ item.title }} QR-код" loading="lazy" decoding="async">
+        </a>
+        <p class="qr-instruction">Телефон камерасымен сканерлеңіз</p>
+        {% if item.status == 'prepared' %}
+        <p class="qr-status">Дайын сурет: QR-код анық көрініп, сканерлеуге жарамды.</p>
+        {% else %}
+        <p class="qr-status">Сілтеме анықталмады. QR-кодты камерамен тексерген кезде нәтижені жеке бақылаңыз.</p>
+        {% endif %}
+        {% if links %}
+          <div class="qr-links">
+            {% for link in links %}
+              <a class="btn btn-gold btn-sm" href="{{ link }}" target="_blank" rel="noopener noreferrer">Видеоны ашу ↗</a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </article>
+    {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

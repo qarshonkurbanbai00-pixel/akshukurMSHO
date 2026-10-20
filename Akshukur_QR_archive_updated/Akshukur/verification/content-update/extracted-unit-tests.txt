@@ -1,0 +1,14 @@
+test_all_routes_templates_assets (tests.test_content_update.ContentUpdate.test_all_routes_templates_assets) ... ok
+test_full_text_search_sections (tests.test_content_update.ContentUpdate.test_full_text_search_sections) ... ok
+test_no_fabricated_historical_photos (tests.test_content_update.ContentUpdate.test_no_fabricated_historical_photos) ... ok
+test_preserved_protected_files_and_original_metadata (tests.test_content_update.ContentUpdate.test_preserved_protected_files_and_original_metadata) ... ok
+test_result_pages_and_fragments (tests.test_content_update.ContentUpdate.test_result_pages_and_fragments) ... ok
+test_school_label_consistency (tests.test_content_update.ContentUpdate.test_school_label_consistency) ... ok
+test_school_only_labels_changed (tests.test_content_update.ContentUpdate.test_school_only_labels_changed) ... ok
+test_search_case_multiple_words_single_character_empty_and_no_results (tests.test_content_update.ContentUpdate.test_search_case_multiple_words_single_character_empty_and_no_results) ... ok
+test_search_page_fallback_and_escaping (tests.test_content_update.ContentUpdate.test_search_page_fallback_and_escaping) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.815s
+
+OK

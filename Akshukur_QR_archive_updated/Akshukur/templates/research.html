@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}Біздің зерттеуіміз — ЦИФРЛЫҚ ШЕЖІРЕ{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="container">
+    <p class="hero-kicker reveal">Әдістеме және қорытынды</p>
+    <h1 class="page-title reveal">Біздің зерттеуіміз</h1>
+    <p class="page-lead reveal">Ақпаратты қалай жинадық, қалай тексердік және қандай қорытындыға келдік.</p>
+  </div>
+</section>
+
+<!-- ӘДІСТЕМЕ -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title reveal">Зерттеу әдістемесі</h2>
+    <div class="method-grid">
+      {% for icon, title, text in methods %}
+      <div class="method-card glass reveal">
+        <span class="method-num">{{ loop.index }}</span>
+        <span class="nav-card-icon">{{ icon }}</span>
+        <h3>{{ title }}</h3>
+        <p>{{ text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ҚОРЫТЫНДЫ -->
+<section class="section section-alt" id="qorytyndy">
+  <div class="container">
+    <h2 class="section-title reveal">Зерттеу қорытындысы</h2>
+
+    <div class="cards-grid">
+      <div class="nav-card glass reveal">
+        <h3>Біз не анықтадық?</h3>
+        <p>Ақшұқыр — Түпқараған ауданындағы ауылдық округ орталығы; ауыл шетінде Қошқар ата қорымы орналасқан; 1887 жылғы жазба деректе ауылда медресе болғаны көрсетілген; 1943 жылы алғашқы мектеп ашылған.</p>
+      </div>
+      <div class="nav-card glass reveal">
+        <h3>Қай кезеңдер маңызды?</h3>
+        <p>Машырық қажы дәуірі (рухани-білім қалыптасуы), 1887 жылғы дерек (ең ерте жазба дәлел), 1943 жыл (жаңа заман білімінің бастауы) және тәуелсіздік жылдары (қазіргі даму).</p>
+      </div>
+      <div class="nav-card glass reveal">
+        <h3>Қандай деректер дәлел бола алады?</h3>
+        <p>Архив деректемесі бар құжаттар, ресми дереккөздер мен басылым материалдары. Ауызша естеліктер тек кросс-тексеруден кейін дереккөз ретінде қолданылады.</p>
+      </div>
+      <div class="nav-card glass reveal">
+        <h3>Қай ақпарат ауызша тарихқа жатады?</h3>
+        <p>Машырық қажының құдығы мен бағы, алғашқы қоныстану естеліктері, алғашқы мұғалім туралы мәліметтер — бұл деректер ауызша дерек белгісімен жүргізіліп, расталуын күтеді.</p>
+      </div>
+    </div>
+
+    <!-- Дәлелдеме легендасы -->
+    <div class="glass panel reveal legend-panel">
+      <h3>Деректердің дәлелдеме деңгейлері</h3>
+      <div class="legend-grid">
+        {% for key, ev in evidence_levels.items() %}
+        <div class="legend-item">
+          <span class="ev-badge" style="--ev:{{ ev.color }}"><span class="ev-dot">{{ ev.icon }}</span>{{ ev.label }}</span>
+          <p class="muted small">{{ ev.desc }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="center reveal">
+      <a class="btn btn-gold" href="{{ url_for('sources_page') }}">Барлық дереккөздерді көру</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

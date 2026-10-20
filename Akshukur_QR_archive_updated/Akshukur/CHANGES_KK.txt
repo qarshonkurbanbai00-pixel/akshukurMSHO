@@ -1,0 +1,117 @@
+АҚШҰҚЫР — QR / ФОТОАРХИВ / ЖЕҢІЛ АНИМАЦИЯ
+
+ІСКЕ ҚОСУ
+ZIP-ті толық шығарыңыз. Akshukur папкасында app.py және templates/ қатар тұрады.
+Python 3.10+ керек. Windows: run.bat файлын ашуға болады.
+Терминалда:
+  python -m pip install -r requirements.txt
+  python app.py
+Браузер: http://127.0.0.1:5000/
+Тоқтату: Ctrl+C.
+templates/ ішіндегі барлық 22 HTML шаблон ZIP-ке енгізілді.
+
+НЕ ӨЗГЕРДІ
+- Бұрынғы static/images/ ішіндегі 3 жеке QR суреті карточкаларға қосылды.
+  Файл атаулары нақты дискіден тексерілді, файл байттары өзгертілмеді.
+  QR блогы: Тарих, Цифрлық архив, Ауызша тарих. Қошқар ата QR-ы
+  Тарихи орындар бетінде де көрсетіледі.
+- QR айналмайды, үлкеймейді және анимацияланбайды. Ақ шекара,
+  бейімделетін үлкен сурет, alt, атау, сипаттама, нұсқаулық және
+  түпнұсқа өлшемін ашатын сілтеме берілген. Телефондағы толық
+  өлшемді суретті басқа құрылғыдан сканерлеуге болады.
+- Маңызды: үш QR файлындағы YouTube сілтемелері ZXing-C++, OpenCV және
+  ZBar арқылы оқылмады. Видео тақырыптары тек файл атауынан шартты
+  берілген, мазмұны расталмаған. Сайтта бұл шектеу ашық жазылған.
+  youtube_url=null қалдырылды; жалған YouTube сілтемелері жоқ.
+  Сондықтан видеоны ашу/QR сканерлеу нәтижесіне кепілдік берілмейді.
+  Нақты сілтеме немесе жұмыс істейтін түпнұсқа QR қажет.
+  school.jpeg ішінен me-qr.com-ға апаратын 5 кіріктірілген QR оқылды;
+  бұлар жеке видео QR-лары емес, YouTube бағыттары расталмаған.
+  Мектеп суреті мен бөлімі өзгермеді.
+- Фотоархивтің 20 қолжетімді фотосы сақталды. 5 бос үлгі карточка
+  және файлы жоқ 2 карточка көрсетілімнен алынды. photos.json бастапқы
+  жазбалары сақталған; жоғалған файлдар жалған фотоға ауыстырылмады.
+  Қазіргі фотолар расталған тарихи фото ретінде ұсынылмайды.
+- Галереяның адаптивті торы, alt, іздеу, сүзгілер, үлкейту және
+  жыл/дереккөз ескертулері сақталды. Қолжетімсіз фотоға 404 сұрауы жоқ.
+- Reveal 10px/0.4s, ұсақ hover/көлеңке, CSS ауысулар және reduced-motion
+  қолдауы бар. JS өшсе негізгі контент көрінеді; QR бұғатталмайды.
+  Жаңа ауыр кітапхана немесе сайт тәуелділігі қосылған жоқ.
+
+САҚТАЛҒАН БӨЛІМДЕР
+Flask маршруттар жиыны өзгермеді: 23 нақты бет/API бағыты жұмыс істейді.
+Мектеп шаблоны мен school_view, картаның JS-і мен нысандар деректері,
+3D шаблоны, 3D JS/CSS, модельдер, Three.js, реконструкция деректері,
+бастапқы фото байттары хэш бойынша өзгермеген.
+Тарихи орындар шаблонына тек Қошқар ата QR блогы және QR файлы бұрын
+жоқ деген қате мәтіннің түзетуі енгізілді. География өзгермеді.
+
+НАҚТЫ ФОТО ҚОСУ
+1. Шынайы фотоны бұрынғы static/images/ папкасына салыңыз.
+2. data/photos.json массивіне жазба қосыңыз. Мысал — схема ғана:
+   {"image":"images/actual-photo.jpg",
+    "caption":"Нақты фотоның сипаттамасы",
+    "identification":"unverified",
+    "provenance":"Нақты архив/ие, түпнұсқа сілтеме, жариялау рұқсаты",
+    "year":"Белгісіз", "category":"pending"}
+   actual-photo.jpg — мысал атауы, ондай фото ZIP ішінде жасалған жоқ.
+3. Белгілі мерзімді year, түсіндірмені description өрісінде көрсетіңіз.
+   category: village, buildings, school, culture, people немесе pending.
+   Расталмаған сәйкестендіруді unverified деп сақтаңыз. Фото иесінің
+   келісімінсіз жеке отбасылық материалды жарияламаңыз.
+4. Файл бар болса, карточка автоматты шығады; файл жоқ болса — шықпайды.
+   Қолданыстағы жоқ файлды қалпына келтірсеңіз, оның caption/provenance
+   деректемесін де тексеріңіз. Серверлік жүктеу формасы қосылған жоқ.
+
+ТЕКСЕРУ
+  python -m unittest discover -s tests -p test_qr_archive_update.py -v
+Осы нұсқаның 8 acceptance тесті өтті: шаблондар, маршруттар, жергілікті
+сурет/CSS/JS жолдары, архив, QR, іздеу және қорғалған файлдар.
+Chromium-да 1440, 390 және 320 px ендерінде 114 тексеру өтті:
+overflow, сурет жүктелуі, іздеу/сүзгі, үлкейту, QR өлшемі, мобильді
+мәзір, JavaScript жоқ режим және reduced-motion.
+3D офлайн Chromium/SwiftShader тесті: 9 тексеру өтті, төрт нысанды
+таңдау, reset, мобильді көрініс және JS қатесінің болмауы.
+Нақты физикалық телефон камерасымен немесе барлық браузерде тексерілді
+деп мәлімделмейді. QR сілтемелері анықталмаған күйде қалды.
+Карта бұрынғы сыртқы Leaflet/CDN және карта тайлдарына тәуелді.
+Қосымша браузер тексеруі әзірлеушіге ғана: README.md қараңыз.
+Алдыңғы тарихи tests/ және verification/ сақталған. Олардың ескі HTML
+хэштерін немесе бос үлгі карточкаларды күтуі осы нұсқаға қолданылмайды.
+Қазіргі есептер: verification/qr-archive-*.json және *.txt.
+
+ӨЗГЕРГЕН ФАЙЛДАР (бастапқы ZIP-пен салыстыру)
+- README.md
+- app.py
+- site_content.py
+- static/css/content-update.css
+- static/css/style.css
+- static/js/main.js
+- static/js/photo-catalog.js
+- templates/_photo_archive.html
+- templates/archive.html
+- templates/history.html
+- templates/map.html
+- templates/oral-history.html
+- templates/photo-archive.html
+
+ҚОСЫЛҒАН ФАЙЛДАР
+- CHANGES_KK.txt
+- data/qr_videos.json
+- templates/_qr_videos.html
+- tests/check_qr_archive_browser.py
+- tests/test_qr_archive_update.py
+- verification/qr-archive-3d-mobile.png
+- verification/qr-archive-3d-results.json
+- verification/qr-archive-browser-results.json
+- verification/qr-archive-browser-run.txt
+- verification/qr-archive-changed-files.json
+- verification/qr-archive-codes-1440.png
+- verification/qr-archive-codes-390.png
+- verification/qr-archive-decode-report.json
+- verification/qr-archive-photos-1440.png
+- verification/qr-archive-photos-390.png
+- verification/qr-archive-protected.json
+- verification/qr-archive-route-baseline.json
+- verification/qr-archive-routes.json
+- verification/qr-archive-unit-tests.txt

@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% from "_macros.html" import badge with context %}
+{% from "_section_archive.html" import archive_image, archive_viewer %}
+{% block title %}Мектеп — ЦИФРЛЫҚ ШЕЖІРЕ{% endblock %}
+{% block page_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/section-archive.css') }}">
+{% endblock %}
+{% block content %}
+<div class="heritage-section">
+<section class="page-hero">
+  <div class="container">
+    <p class="hero-kicker reveal">Білім шежіресі · Кеше мен бүгін</p>
+    <h1 class="page-title reveal">Мектеп</h1>
+    <p class="page-lead reveal">Алғашқы мектеп туралы қолда бар материалдар мен қазіргі мектептің көрінісі. Нақтыланбаған даталар мен фотолар расталған деректерден бөлек берілген.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <h2 class="section-title reveal">Кеше және бүгін</h2>
+    <div class="heritage-period-line" aria-label="1943 — қосымша дерек қажет; қазіргі кезең">
+      <a href="#schoolYesterday" data-period-link="yesterday"><strong>1943*</strong><span>Кеше · Қосымша дерек қажет</span></a>
+      <span class="heritage-period-connector" aria-hidden="true"></span>
+      <a href="#schoolToday" data-period-link="today"><strong>Қазіргі кезең</strong><span>Бүгін · Фото және дереккөз</span></a>
+    </div>
+    <div id="schoolPeriodControls" class="filter-bar heritage-period-controls" role="group" aria-label="Мектеп кезеңін көрсету" hidden>
+      <button type="button" class="filter-btn active" data-period="all" aria-pressed="true" aria-controls="schoolYesterday schoolToday">Екі кезең</button>
+      <button type="button" class="filter-btn" data-period="yesterday" aria-pressed="false" aria-controls="schoolYesterday">Кеше</button>
+      <button type="button" class="filter-btn" data-period="today" aria-pressed="false" aria-controls="schoolToday">Бүгін</button>
+    </div>
+    <p id="schoolPeriodStatus" class="muted small heritage-status" role="status">Екі кезең көрсетілген.</p>
+    <div class="heritage-school-grid" id="schoolPeriods">
+      <article id="schoolYesterday" class="glass heritage-school-card" data-school-period="yesterday">
+        <p class="hero-kicker">Кеше</p>
+        <h2>Алғашқы мектеп туралы материал</h2>
+        <div class="img-placeholder heritage-old-placeholder">Алғашқы мектептің расталған фотосы жоқ.<br>Қосымша дерек қажет.</div>
+        <p><strong>1943*</strong> — бастапқы жобада алғашқы мектептің ашылу жылы ретінде берілген. Бірақ бұл датаға қатысты архив құжаты немесе нақты дереккөз тіркелмеген. Сондықтан ол әзірге расталған тарихи факт ретінде көрсетілмейді.</p>
+        <p>Мектептің ауыл өміріндегі рөлін ашу үшін алғашқы сыныптар, оқу жағдайлары және тұрғындар естеліктері туралы материалдар қажет. Мұндай деректер қолдағы архивте толық берілмеген.</p>
+        {{ badge('needs_data') }}
+        <details class="tl-details">
+          <summary>Толығырақ: зерттелетін сұрақтар</summary>
+          <p>Ашылу бұйрығы, алғашқы ғимараттың мекенжайы, алғашқы оқушылар мен мұғалімдер туралы мәліметтер құжатпен расталуы тиіс. Есімдер, статистика мен жетістіктер ойдан қосылған жоқ.</p>
+          <p><a href="#schoolSources">Мектеп мұрағатының мәртебесін қарау →</a></p>
+        </details>
+      </article>
+      <article id="schoolToday" class="glass heritage-school-card" data-school-period="today">
+        <p class="hero-kicker">Бүгін</p>
+        <h2>Қазіргі мектеп</h2>
+        {{ archive_image(school_archive.building, 'school-current') }}
+        <p>Бастапқы дереккөздер тізілімінде Ақшұқырдағы оқу орны «Маршал Әбдіхалықов атындағы мектеп-гимназия» деп көрсетілген.</p>
+        <p class="muted small">Карта карточкасындағы мекенжай: Сахиева көшесі, 350. Бұл бүгінгі мектеп нысаны; алғашқы мектеп ғимаратымен теңестірілмейді.</p>
+        {{ badge('written') }}
+        <p><a href="#schoolSources">Ресми сайт пен карта дереккөзі →</a></p>
+        <details class="tl-details">
+          <summary>Толығырақ: білім беру ортасы</summary>
+          <p>Қолда бар фото мектеп ғимаратының бір бөлігін және Маршал Әбдіхалықов ескерткішін көрсетеді. Төмендегі стенд — мектеп ортасының тағы бір көрінісі; ол қазіргі басшылық құрамын немесе қызмет жылдарын растамайды.</p>
+          {{ archive_image(school_archive.display, 'school-current', true) }}
+          <p class="muted small">Оқушы саны, жабдықталу деңгейі және жетістіктер туралы расталған материал тіркелмеген. Қосымша дерек қажет.</p>
+        </details>
+      </article>
+    </div>
+    <p class="muted small heritage-note">* 1943 жыл бастапқы history.json жазбасында бар, алайда сол жазбаның sources тізімі бос. Дата тарихи контекст ретінде ғана сақталды.</p>
+  </div>
+</section>
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title reveal">Мектеп тарихының уақыт сызығы</h2>
+    <div class="timeline">
+      {% for era in school_periods %}
+      <article class="tl-item reveal" id="school-{{ era.id }}">
+        <div class="tl-marker" aria-hidden="true"></div>
+        <div class="tl-card glass">
+          <div class="tl-head"><span class="tl-years">{{ era.years }} · нақтылануда</span>{{ badge('needs_data') }}</div>
+          <h3>{{ 'Алғашқы мектеп туралы бастапқы жазба' if era.id == 'era-08' else era.title }}</h3>
+          <p class="muted">{{ 'Бастапқы жобада 1943 жыл аталған; оны растайтын құжат тіркелмеген. Қосымша дерек қажет.' if era.id == 'era-08' else 'Осы кезеңнің мектепке қатысты құжаттары мен нақты оқиғалары тіркелмеген. Қосымша дерек қажет.' }}</p>
+        </div>
+      </article>
+      {% endfor %}
+      <article class="tl-item reveal">
+        <div class="tl-marker" aria-hidden="true"></div>
+        <div class="tl-card glass"><span class="tl-years">Қазіргі кезең</span><h3>Мектептің бүгінгі көрінісі</h3><p>Жобадағы фотолар және тіркелген мектеп дереккөздері. Фотоның түсірілген күні белгісіз.</p><a href="#schoolToday" data-period-link="today">«Бүгін» карточкасын ашу →</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <h2 class="section-title reveal">Архивтік фотогалерея</h2>
+    <p class="section-lead reveal">Тексеруді қажет ететін материалдар. Архивтік файлдың болуы оның нысанын немесе датасын автоматты түрде растамайды.</p>
+    <div class="gallery-grid heritage-school-gallery">
+      <div class="glass heritage-archive-item">{{ archive_image(school_archive.candidate, 'school-archive') }}</div>
+      <div class="glass heritage-archive-item"><div class="img-placeholder">Алғашқы сыныптың расталған фотосы жоқ.<br>Қосымша дерек қажет.</div><h3>Алғашқы оқушылар</h3><p class="muted small">Есімдер мен оқу жылдары құжатпен расталғанда ғана енгізіледі.</p></div>
+      <div class="glass heritage-archive-item"><div class="img-placeholder">Ашылу бұйрығының сканы жоқ.<br>Қосымша дерек қажет.</div><h3>Мектеп құжаттары</h3><p class="muted small">Архив атауы, қор, тізім, іс және бет нөмірі қажет.</p></div>
+    </div>
+    <section class="glass panel heritage-pending" id="schoolSources" aria-labelledby="schoolSourcesHeading">
+      <h2 id="schoolSourcesHeading">Тарихи деректер мен дереккөздер</h2>
+      <p class="muted small">Төмендегі сілтемелер бастапқы data/sources.json тізілімінен алынды. Мұрағат құжаттары тіркелмеген жазба расталған дәлел болып саналмайды.</p>
+      {% for source in school_archive.sources %}
+      <article class="heritage-source">
+        <h3>{{ source.title }}</h3>
+        {% if source.id == 'src-mektep-muragat' %}
+        <p>Архив құжаттары әзірге тіркелмеген. 1943 жылды, алғашқы мұғалімдер мен оқушыларды растау үшін қосымша дерек қажет.</p>{{ badge('needs_data') }}
+        {% else %}<p>{{ source.description }}</p>
+        <a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">Дереккөзді ашу ↗</a>
+        {% endif %}
+        <p class="muted small"><a href="{{ url_for('sources_page') }}#{{ source.id }}">Жобадағы бастапқы дереккөз жазбасы</a></p>
+      </article>
+      {% endfor %}
+      <p class="muted small">Фото дереккөзі: {{ school_archive.building.provenance }}</p>
+    </section>
+  </div>
+</section>
+{{ archive_viewer() }}
+</div>
+{% endblock %}
+{% block page_js %}<script src="{{ url_for('static', filename='js/section-archive.js') }}"></script>{% endblock %}

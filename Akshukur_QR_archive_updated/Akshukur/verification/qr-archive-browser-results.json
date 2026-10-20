@@ -1,0 +1,458 @@
+[
+  {
+    "test": "1440/tarikh_no_horizontal_overflow",
+    "passed": true
+  },
+  {
+    "test": "1440/tarikh_images_loaded",
+    "passed": true
+  },
+  {
+    "test": "1440/tarikh_no_local_http_error",
+    "passed": true
+  },
+  {
+    "test": "1440/tarikh_no_js_errors",
+    "passed": true
+  },
+  {
+    "test": "1440_3_qr_cards",
+    "passed": true
+  },
+  {
+    "test": "1440_qr_static",
+    "passed": true
+  },
+  {
+    "test": "1440_qr_readable_size",
+    "passed": true
+  },
+  {
+    "test": "1440/tarikh/foto-arkhivi_no_horizontal_overflow",
+    "passed": true
+  },
+  {
+    "test": "1440/tarikh/foto-arkhivi_images_loaded",
+    "passed": true
+  },
+  {
+    "test": "1440/tarikh/foto-arkhivi_no_local_http_error",
+    "passed": true
+  },
+  {
+    "test": "1440/tarikh/foto-arkhivi_no_js_errors",
+    "passed": true
+  },
+  {
+    "test": "1440_all_20_photos",
+    "passed": true
+  },
+  {
+    "test": "1440_archive_search",
+    "passed": true
+  },
+  {
+    "test": "1440_archive_no_results",
+    "passed": true
+  },
+  {
+    "test": "1440_archive_filter",
+    "passed": true
+  },
+  {
+    "test": "1440_viewer_opens",
+    "passed": true
+  },
+  {
+    "test": "1440_viewer_next",
+    "passed": true
+  },
+  {
+    "test": "1440_viewer_closes",
+    "passed": true
+  },
+  {
+    "test": "1440/auyzsha-tarikh_no_horizontal_overflow",
+    "passed": true
+  },
+  {
+    "test": "1440/auyzsha-tarikh_images_loaded",
+    "passed": true
+  },
+  {
+    "test": "1440/auyzsha-tarikh_no_local_http_error",
+    "passed": true
+  },
+  {
+    "test": "1440/auyzsha-tarikh_no_js_errors",
+    "passed": true
+  },
+  {
+    "test": "1440/muragat_no_horizontal_overflow",
+    "passed": true
+  },
+  {
+    "test": "1440/muragat_images_loaded",
+    "passed": true
+  },
+  {
+    "test": "1440/muragat_no_local_http_error",
+    "passed": true
+  },
+  {
+    "test": "1440/muragat_no_js_errors",
+    "passed": true
+  },
+  {
+    "test": "1440/mektep_no_horizontal_overflow",
+    "passed": true
+  },
+  {
+    "test": "1440/mektep_images_loaded",
+    "passed": true
+  },
+  {
+    "test": "1440/mektep_no_local_http_error",
+    "passed": true
+  },
+  {
+    "test": "1440/mektep_no_js_errors",
+    "passed": true
+  },
+  {
+    "test": "1440/karta_no_horizontal_overflow",
+    "passed": true
+  },
+  {
+    "test": "1440/karta_images_loaded",
+    "passed": true
+  },
+  {
+    "test": "1440/karta_no_local_http_error",
+    "passed": true
+  },
+  {
+    "test": "1440/karta_no_js_errors",
+    "passed": true
+  },
+  {
+    "test": "1440_reduced_motion_content_visible",
+    "passed": true
+  },
+  {
+    "test": "1440_reduced_motion_scroll",
+    "passed": true
+  },
+  {
+    "test": "390/tarikh_no_horizontal_overflow",
+    "passed": true
+  },
+  {
+    "test": "390/tarikh_images_loaded",
+    "passed": true
+  },
+  {
+    "test": "390/tarikh_no_local_http_error",
+    "passed": true
+  },
+  {
+    "test": "390/tarikh_no_js_errors",
+    "passed": true
+  },
+  {
+    "test": "390_3_qr_cards",
+    "passed": true
+  },
+  {
+    "test": "390_qr_static",
+    "passed": true
+  },
+  {
+    "test": "390_qr_readable_size",
+    "passed": true
+  },
+  {
+    "test": "390/tarikh/foto-arkhivi_no_horizontal_overflow",
+    "passed": true
+  },
+  {
+    "test": "390/tarikh/foto-arkhivi_images_loaded",
+    "passed": true
+  },
+  {
+    "test": "390/tarikh/foto-arkhivi_no_local_http_error",
+    "passed": true
+  },
+  {
+    "test": "390/tarikh/foto-arkhivi_no_js_errors",
+    "passed": true
+  },
+  {
+    "test": "390_all_20_photos",
+    "passed": true
+  },
+  {
+    "test": "390_archive_search",
+    "passed": true
+  },
+  {
+    "test": "390_archive_no_results",
+    "passed": true
+  },
+  {
+    "test": "390_archive_filter",
+    "passed": true
+  },
+  {
+    "test": "390_viewer_opens",
+    "passed": true
+  },
+  {
+    "test": "390_viewer_next",
+    "passed": true
+  },
+  {
+    "test": "390_viewer_closes",
+    "passed": true
+  },
+  {
+    "test": "390/auyzsha-tarikh_no_horizontal_overflow",
+    "passed": true
+  },
+  {
+    "test": "390/auyzsha-tarikh_images_loaded",
+    "passed": true
+  },
+  {
+    "test": "390/auyzsha-tarikh_no_local_http_error",
+    "passed": true
+  },
+  {
+    "test": "390/auyzsha-tarikh_no_js_errors",
+    "passed": true
+  },
+  {
+    "test": "390/muragat_no_horizontal_overflow",
+    "passed": true
+  },
+  {
+    "test": "390/muragat_images_loaded",
+    "passed": true
+  },
+  {
+    "test": "390/muragat_no_local_http_error",
+    "passed": true
+  },
+  {
+    "test": "390/muragat_no_js_errors",
+    "passed": true
+  },
+  {
+    "test": "390/mektep_no_horizontal_overflow",
+    "passed": true
+  },
+  {
+    "test": "390/mektep_images_loaded",
+    "passed": true
+  },
+  {
+    "test": "390/mektep_no_local_http_error",
+    "passed": true
+  },
+  {
+    "test": "390/mektep_no_js_errors",
+    "passed": true
+  },
+  {
+    "test": "390/karta_no_horizontal_overflow",
+    "passed": true
+  },
+  {
+    "test": "390/karta_images_loaded",
+    "passed": true
+  },
+  {
+    "test": "390/karta_no_local_http_error",
+    "passed": true
+  },
+  {
+    "test": "390/karta_no_js_errors",
+    "passed": true
+  },
+  {
+    "test": "390_reduced_motion_content_visible",
+    "passed": true
+  },
+  {
+    "test": "390_reduced_motion_scroll",
+    "passed": true
+  },
+  {
+    "test": "390_mobile_menu",
+    "passed": true
+  },
+  {
+    "test": "390_mobile_navigation",
+    "passed": true
+  },
+  {
+    "test": "320/tarikh_no_horizontal_overflow",
+    "passed": true
+  },
+  {
+    "test": "320/tarikh_images_loaded",
+    "passed": true
+  },
+  {
+    "test": "320/tarikh_no_local_http_error",
+    "passed": true
+  },
+  {
+    "test": "320/tarikh_no_js_errors",
+    "passed": true
+  },
+  {
+    "test": "320_3_qr_cards",
+    "passed": true
+  },
+  {
+    "test": "320_qr_static",
+    "passed": true
+  },
+  {
+    "test": "320_qr_readable_size",
+    "passed": true
+  },
+  {
+    "test": "320/tarikh/foto-arkhivi_no_horizontal_overflow",
+    "passed": true
+  },
+  {
+    "test": "320/tarikh/foto-arkhivi_images_loaded",
+    "passed": true
+  },
+  {
+    "test": "320/tarikh/foto-arkhivi_no_local_http_error",
+    "passed": true
+  },
+  {
+    "test": "320/tarikh/foto-arkhivi_no_js_errors",
+    "passed": true
+  },
+  {
+    "test": "320_all_20_photos",
+    "passed": true
+  },
+  {
+    "test": "320_archive_search",
+    "passed": true
+  },
+  {
+    "test": "320_archive_no_results",
+    "passed": true
+  },
+  {
+    "test": "320_archive_filter",
+    "passed": true
+  },
+  {
+    "test": "320_viewer_opens",
+    "passed": true
+  },
+  {
+    "test": "320_viewer_next",
+    "passed": true
+  },
+  {
+    "test": "320_viewer_closes",
+    "passed": true
+  },
+  {
+    "test": "320/auyzsha-tarikh_no_horizontal_overflow",
+    "passed": true
+  },
+  {
+    "test": "320/auyzsha-tarikh_images_loaded",
+    "passed": true
+  },
+  {
+    "test": "320/auyzsha-tarikh_no_local_http_error",
+    "passed": true
+  },
+  {
+    "test": "320/auyzsha-tarikh_no_js_errors",
+    "passed": true
+  },
+  {
+    "test": "320/muragat_no_horizontal_overflow",
+    "passed": true
+  },
+  {
+    "test": "320/muragat_images_loaded",
+    "passed": true
+  },
+  {
+    "test": "320/muragat_no_local_http_error",
+    "passed": true
+  },
+  {
+    "test": "320/muragat_no_js_errors",
+    "passed": true
+  },
+  {
+    "test": "320/mektep_no_horizontal_overflow",
+    "passed": true
+  },
+  {
+    "test": "320/mektep_images_loaded",
+    "passed": true
+  },
+  {
+    "test": "320/mektep_no_local_http_error",
+    "passed": true
+  },
+  {
+    "test": "320/mektep_no_js_errors",
+    "passed": true
+  },
+  {
+    "test": "320/karta_no_horizontal_overflow",
+    "passed": true
+  },
+  {
+    "test": "320/karta_images_loaded",
+    "passed": true
+  },
+  {
+    "test": "320/karta_no_local_http_error",
+    "passed": true
+  },
+  {
+    "test": "320/karta_no_js_errors",
+    "passed": true
+  },
+  {
+    "test": "320_reduced_motion_content_visible",
+    "passed": true
+  },
+  {
+    "test": "320_reduced_motion_scroll",
+    "passed": true
+  },
+  {
+    "test": "320_mobile_menu",
+    "passed": true
+  },
+  {
+    "test": "320_mobile_navigation",
+    "passed": true
+  },
+  {
+    "test": "no_js_gallery_visible",
+    "passed": true
+  },
+  {
+    "test": "no_js_qr_visible",
+    "passed": true
+  }
+]

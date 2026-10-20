@@ -1,0 +1,94 @@
+[
+  {
+    "path": "/",
+    "status": 200
+  },
+  {
+    "path": "/tarikh",
+    "status": 200
+  },
+  {
+    "path": "/tulghalar",
+    "status": 200
+  },
+  {
+    "path": "/mashyryq",
+    "status": 200
+  },
+  {
+    "path": "/karta",
+    "status": 200
+  },
+  {
+    "path": "/rekonstrukciya",
+    "status": 200
+  },
+  {
+    "path": "/mektep",
+    "status": 200
+  },
+  {
+    "path": "/muragat",
+    "status": 200
+  },
+  {
+    "path": "/auyzsha-tarikh",
+    "status": 200
+  },
+  {
+    "path": "/eksursiya",
+    "status": 200
+  },
+  {
+    "path": "/zertteu",
+    "status": 200
+  },
+  {
+    "path": "/derek-kozder",
+    "status": 200
+  },
+  {
+    "path": "/api/history",
+    "status": 200
+  },
+  {
+    "path": "/api/places",
+    "status": 200
+  },
+  {
+    "path": "/api/sources",
+    "status": 200
+  },
+  {
+    "path": "/api/interviews",
+    "status": 200
+  },
+  {
+    "path": "/api/persons",
+    "status": 200
+  },
+  {
+    "path": "/api/search",
+    "status": 200
+  },
+  {
+    "path": "/tarikh/zhoba",
+    "status": 200
+  },
+  {
+    "path": "/zhoba",
+    "status": 200
+  },
+  {
+    "path": "/tarikh/foto-arkhivi",
+    "status": 200
+  },
+  {
+    "path": "/foto-arkhivi",
+    "status": 200
+  },
+  {
+    "path": "/izdeu",
+    "status": 200
+  }
+]

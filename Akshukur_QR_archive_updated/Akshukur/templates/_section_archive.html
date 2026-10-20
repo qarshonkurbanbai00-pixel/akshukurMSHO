@@ -1,0 +1,36 @@
+{# Used only by map.html and school.html; no changes to shared site macros. #}
+{% macro archive_image(item, group, compact=false) %}
+<figure class="heritage-photo {{ 'heritage-photo-compact' if compact }}">
+  {% if item.url %}
+  <button type="button" class="heritage-zoom" data-archive-photo data-gallery="{{ group }}"
+          data-src="{{ item.url }}" data-caption="{{ item.caption }}" data-note="{{ item.note }}"
+          data-provenance="{{ item.provenance }}" aria-label="Үлкейту: {{ item.caption }}">
+    <img src="{{ item.url }}" alt="{{ item.caption }}" loading="lazy" decoding="async">
+    <span class="heritage-zoom-label">Фотоны үлкейту ↗</span>
+  </button>
+  {% else %}
+  <div class="img-placeholder">Фото қолжетімсіз. Қосымша дерек қажет.</div>
+  {% endif %}
+  <figcaption>{{ item.caption }}<small>{{ item.note }}</small></figcaption>
+</figure>
+{% endmacro %}
+
+{% macro archive_viewer() %}
+<dialog class="heritage-viewer" id="archiveViewer" aria-labelledby="archiveViewerTitle">
+  <div class="heritage-viewer-head">
+    <h2 id="archiveViewerTitle">Фотогалерея</h2>
+    <button type="button" class="filter-btn" data-viewer-close aria-label="Фотогалереяны жабу">Жабу ✕</button>
+  </div>
+  <img id="archiveViewerImage" alt="">
+  <p id="archiveViewerCaption"></p>
+  <p id="archiveViewerNote" class="muted small"></p>
+  <p id="archiveViewerSource" class="muted small"></p>
+  <p id="archiveViewerError" class="muted" hidden>Фото жүктелмеді. Қосымша дерек қажет.</p>
+  <div class="heritage-viewer-controls">
+    <button type="button" class="filter-btn" data-viewer-prev aria-label="Алдыңғы фото">← Алдыңғы</button>
+    <span id="archiveViewerCount" aria-live="polite"></span>
+    <button type="button" class="filter-btn" data-viewer-next aria-label="Келесі фото">Келесі →</button>
+  </div>
+  <p class="muted small">← → — ауыстыру · Esc — жабу</p>
+</dialog>
+{% endmacro %}

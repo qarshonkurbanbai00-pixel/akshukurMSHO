@@ -1,0 +1,1516 @@
+{
+  "http": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/tarikh",
+      "status": 200
+    },
+    {
+      "path": "/tulghalar",
+      "status": 200
+    },
+    {
+      "path": "/mashyryq",
+      "status": 200
+    },
+    {
+      "path": "/karta",
+      "status": 200
+    },
+    {
+      "path": "/rekonstrukciya",
+      "status": 200
+    },
+    {
+      "path": "/mektep",
+      "status": 200
+    },
+    {
+      "path": "/muragat",
+      "status": 200
+    },
+    {
+      "path": "/auyzsha-tarikh",
+      "status": 200
+    },
+    {
+      "path": "/eksursiya",
+      "status": 200
+    },
+    {
+      "path": "/zertteu",
+      "status": 200
+    },
+    {
+      "path": "/derek-kozder",
+      "status": 200
+    },
+    {
+      "path": "/api/history",
+      "status": 200
+    },
+    {
+      "path": "/api/places",
+      "status": 200
+    },
+    {
+      "path": "/api/sources",
+      "status": 200
+    },
+    {
+      "path": "/api/interviews",
+      "status": 200
+    },
+    {
+      "path": "/api/persons",
+      "status": 200
+    },
+    {
+      "path": "/api/search",
+      "status": 200
+    }
+  ],
+  "browser": [
+    {
+      "viewport": "desktop",
+      "path": "/",
+      "errors": [],
+      "failed_requests": [],
+      "broken_images": [],
+      "horizontal_overflow": false,
+      "http_errors": [],
+      "console_errors": []
+    },
+    {
+      "viewport": "desktop",
+      "path": "/tarikh",
+      "errors": [],
+      "failed_requests": [],
+      "broken_images": [],
+      "horizontal_overflow": false,
+      "http_errors": [],
+      "console_errors": []
+    },
+    {
+      "viewport": "desktop",
+      "path": "/tulghalar",
+      "errors": [],
+      "failed_requests": [],
+      "broken_images": [],
+      "horizontal_overflow": false,
+      "http_errors": [],
+      "console_errors": []
+    },
+    {
+      "viewport": "desktop",
+      "path": "/karta",
+      "errors": [],
+      "failed_requests": [
+        {
+          "url": "https://a.tile.openstreetmap.org/13/5257/2984.png",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://b.tile.openstreetmap.org/13/5258/2984.png",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://c.tile.openstreetmap.org/13/5257/2986.png",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://a.tile.openstreetmap.org/13/5258/2986.png",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://a.tile.openstreetmap.org/13/5256/2985.png",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://a.tile.openstreetmap.org/13/5259/2985.png",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://c.tile.openstreetmap.org/13/5256/2984.png",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://c.tile.openstreetmap.org/13/5259/2984.png",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://b.tile.openstreetmap.org/13/5256/2986.png",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://b.tile.openstreetmap.org/13/5259/2986.png",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "broken_images": [],
+      "horizontal_overflow": false,
+      "http_errors": [],
+      "console_errors": [],
+      "leaflet_loaded": true,
+      "marker_count": 5
+    },
+    {
+      "viewport": "desktop",
+      "path": "/mashyryq",
+      "errors": [],
+      "failed_requests": [],
+      "broken_images": [],
+      "horizontal_overflow": false,
+      "http_errors": [],
+      "console_errors": []
+    },
+    {
+      "viewport": "desktop",
+      "path": "/eksursiya",
+      "errors": [],
+      "failed_requests": [],
+      "broken_images": [],
+      "horizontal_overflow": false,
+      "http_errors": [],
+      "console_errors": []
+    },
+    {
+      "viewport": "desktop",
+      "path": "/mektep",
+      "errors": [],
+      "failed_requests": [],
+      "broken_images": [],
+      "horizontal_overflow": false,
+      "http_errors": [],
+      "console_errors": []
+    },
+    {
+      "viewport": "desktop",
+      "path": "/muragat",
+      "errors": [],
+      "failed_requests": [],
+      "broken_images": [],
+      "horizontal_overflow": false,
+      "http_errors": [],
+      "console_errors": []
+    },
+    {
+      "viewport": "desktop",
+      "path": "/rekonstrukciya",
+      "errors": [],
+      "failed_requests": [],
+      "broken_images": [],
+      "horizontal_overflow": false,
+      "http_errors": [
+        {
+          "url": "http://127.0.0.1:5000/static/models/mashyryq.glb",
+          "status": 404
+        }
+      ],
+      "console_errors": [
+        "Failed to load resource: the server responded with a status of 404 (NOT FOUND)"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "path": "/auyzsha-tarikh",
+      "errors": [],
+      "failed_requests": [],
+      "broken_images": [],
+      "horizontal_overflow": false,
+      "http_errors": [],
+      "console_errors": []
+    },
+    {
+      "viewport": "desktop",
+      "path": "/zertteu",
+      "errors": [],
+      "failed_requests": [],
+      "broken_images": [],
+      "horizontal_overflow": false,
+      "http_errors": [],
+      "console_errors": []
+    },
+    {
+      "viewport": "desktop",
+      "path": "/derek-kozder",
+      "errors": [],
+      "failed_requests": [],
+      "broken_images": [],
+      "horizontal_overflow": false,
+      "http_errors": [],
+      "console_errors": []
+    },
+    {
+      "viewport": "mobile",
+      "path": "/",
+      "errors": [],
+      "failed_requests": [],
+      "broken_images": [],
+      "horizontal_overflow": false,
+      "http_errors": [],
+      "console_errors": []
+    },
+    {
+      "viewport": "mobile",
+      "path": "/tarikh",
+      "errors": [],
+      "failed_requests": [],
+      "broken_images": [],
+      "horizontal_overflow": false,
+      "http_errors": [],
+      "console_errors": []
+    },
+    {
+      "viewport": "mobile",
+      "path": "/tulghalar",
+      "errors": [],
+      "failed_requests": [],
+      "broken_images": [],
+      "horizontal_overflow": false,
+      "http_errors": [],
+      "console_errors": []
+    },
+    {
+      "viewport": "mobile",
+      "path": "/karta",
+      "errors": [],
+      "failed_requests": [
+        {
+          "url": "https://b.tile.openstreetmap.org/13/5257/2985.png",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://c.tile.openstreetmap.org/13/5258/2985.png",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://a.tile.openstreetmap.org/13/5257/2984.png",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://b.tile.openstreetmap.org/13/5258/2984.png",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://c.tile.openstreetmap.org/13/5257/2986.png",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://a.tile.openstreetmap.org/13/5258/2986.png",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "broken_images": [],
+      "horizontal_overflow": false,
+      "http_errors": [],
+      "console_errors": [],
+      "leaflet_loaded": true,
+      "marker_count": 5
+    },
+    {
+      "viewport": "mobile",
+      "path": "/mashyryq",
+      "errors": [],
+      "failed_requests": [],
+      "broken_images": [],
+      "horizontal_overflow": false,
+      "http_errors": [],
+      "console_errors": []
+    },
+    {
+      "viewport": "mobile",
+      "path": "/eksursiya",
+      "errors": [],
+      "failed_requests": [],
+      "broken_images": [],
+      "horizontal_overflow": false,
+      "http_errors": [],
+      "console_errors": []
+    },
+    {
+      "viewport": "mobile",
+      "path": "/mektep",
+      "errors": [],
+      "failed_requests": [],
+      "broken_images": [],
+      "horizontal_overflow": false,
+      "http_errors": [],
+      "console_errors": []
+    },
+    {
+      "viewport": "mobile",
+      "path": "/muragat",
+      "errors": [],
+      "failed_requests": [],
+      "broken_images": [],
+      "horizontal_overflow": false,
+      "http_errors": [],
+      "console_errors": []
+    },
+    {
+      "viewport": "mobile",
+      "path": "/rekonstrukciya",
+      "errors": [],
+      "failed_requests": [],
+      "broken_images": [],
+      "horizontal_overflow": false,
+      "http_errors": [
+        {
+          "url": "http://127.0.0.1:5000/static/models/mashyryq.glb",
+          "status": 404
+        }
+      ],
+      "console_errors": [
+        "Failed to load resource: the server responded with a status of 404 (NOT FOUND)"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "path": "/auyzsha-tarikh",
+      "errors": [],
+      "failed_requests": [],
+      "broken_images": [],
+      "horizontal_overflow": false,
+      "http_errors": [],
+      "console_errors": []
+    },
+    {
+      "viewport": "mobile",
+      "path": "/zertteu",
+      "errors": [],
+      "failed_requests": [],
+      "broken_images": [],
+      "horizontal_overflow": false,
+      "http_errors": [],
+      "console_errors": []
+    },
+    {
+      "viewport": "mobile",
+      "path": "/derek-kozder",
+      "errors": [],
+      "failed_requests": [],
+      "broken_images": [],
+      "horizontal_overflow": false,
+      "http_errors": [],
+      "console_errors": []
+    }
+  ],
+  "assertions": [
+    {
+      "test": "HTTP /",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/after.jpeg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/after.jpeg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/before.jpeg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/after.jpeg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/Koshkar-Ata-2.jpg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/before.jpeg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/WhatsApp%20Image%202026-10-12%20at%2016.19.43%20(1).jpeg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/b14fde01-4c2f-4b31-8946-ac22f61af7cb.jpg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/display/WhatsApp%20Image%202026-10-12%20at%2016.19.36.png",
+      "passed": true
+    },
+    {
+      "test": "HTTP /tarikh",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/Koshkar-Ata-2.jpg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/after.jpeg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/Koshkar-Ata-2.jpg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/WhatsApp%20Image%202026-10-12%20at%2016.19.33.jpeg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/display/WhatsApp%20Image%202026-10-12%20at%2016.19.35%20(1).png",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/display/WhatsApp%20Image%202026-10-12%20at%2016.19.35.png",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/display/WhatsApp%20Image%202026-10-12%20at%2016.19.36.png",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/display/WhatsApp%20Image%202026-10-12%20at%2016.19.41.png",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/display/WhatsApp%20Image%202026-10-12%20at%2016.19.42.png",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/WhatsApp%20Image%202026-10-12%20at%2016.19.43%20(1).jpeg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/WhatsApp%20Image%202026-10-12%20at%2016.19.43%20(3).jpeg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/WhatsApp%20Image%202026-10-12%20at%2016.19.44.jpeg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/WhatsApp%20Image%202026-10-14%20at%2019.45.05.jpeg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/after.jpeg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/anar-shamshadinova.jpg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/b14fde01-4c2f-4b31-8946-ac22f61af7cb.jpg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/before.jpeg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/e4d9218c-94a4-48d8-9510-b2ab987c5d54.jpg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/galery.jpg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/marshal-abdihalikov.jpg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/display/nurbaev-omirzaq.png",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/display/qozhashova-balanzhan.png",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/display/sarsenov-burkitbay.png",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/tamara-asar.jpg",
+      "passed": true
+    },
+    {
+      "test": "HTTP /tulghalar",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/Koshkar-Ata-2.jpg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/marshal-abdihalikov.jpg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/display/qozhashova-balanzhan.png",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/tamara-asar.jpg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/display/nurbaev-omirzaq.png",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/anar-shamshadinova.jpg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/display/sarsenov-burkitbay.png",
+      "passed": true
+    },
+    {
+      "test": "HTTP /mashyryq",
+      "passed": true
+    },
+    {
+      "test": "HTTP /karta",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/after.jpeg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/Koshkar-Ata-2.jpg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/after.jpeg",
+      "passed": true
+    },
+    {
+      "test": "HTTP /rekonstrukciya",
+      "passed": true
+    },
+    {
+      "test": "HTTP /mektep",
+      "passed": true
+    },
+    {
+      "test": "HTTP /muragat",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/Koshkar-Ata-2.jpg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/WhatsApp%20Image%202026-10-12%20at%2016.19.33.jpeg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/display/WhatsApp%20Image%202026-10-12%20at%2016.19.35%20(1).png",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/display/WhatsApp%20Image%202026-10-12%20at%2016.19.35.png",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/display/WhatsApp%20Image%202026-10-12%20at%2016.19.36.png",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/display/WhatsApp%20Image%202026-10-12%20at%2016.19.41.png",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/display/WhatsApp%20Image%202026-10-12%20at%2016.19.42.png",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/WhatsApp%20Image%202026-10-12%20at%2016.19.43%20(1).jpeg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/WhatsApp%20Image%202026-10-12%20at%2016.19.43%20(3).jpeg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/WhatsApp%20Image%202026-10-12%20at%2016.19.44.jpeg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/WhatsApp%20Image%202026-10-14%20at%2019.45.05.jpeg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/after.jpeg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/anar-shamshadinova.jpg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/b14fde01-4c2f-4b31-8946-ac22f61af7cb.jpg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/before.jpeg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/e4d9218c-94a4-48d8-9510-b2ab987c5d54.jpg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/galery.jpg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/marshal-abdihalikov.jpg",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/display/nurbaev-omirzaq.png",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/display/qozhashova-balanzhan.png",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/display/sarsenov-burkitbay.png",
+      "passed": true
+    },
+    {
+      "test": "image /static/images/tamara-asar.jpg",
+      "passed": true
+    },
+    {
+      "test": "HTTP /auyzsha-tarikh",
+      "passed": true
+    },
+    {
+      "test": "HTTP /eksursiya",
+      "passed": true
+    },
+    {
+      "test": "HTTP /zertteu",
+      "passed": true
+    },
+    {
+      "test": "HTTP /derek-kozder",
+      "passed": true
+    },
+    {
+      "test": "HTTP /api/history",
+      "passed": true
+    },
+    {
+      "test": "HTTP /api/places",
+      "passed": true
+    },
+    {
+      "test": "HTTP /api/sources",
+      "passed": true
+    },
+    {
+      "test": "HTTP /api/interviews",
+      "passed": true
+    },
+    {
+      "test": "HTTP /api/persons",
+      "passed": true
+    },
+    {
+      "test": "HTTP /api/search",
+      "passed": true
+    },
+    {
+      "test": "one Qoshqar exact coordinate",
+      "passed": true
+    },
+    {
+      "test": "distinct school culture coordinates",
+      "passed": true
+    },
+    {
+      "test": "coordinate source place-school-now",
+      "passed": true
+    },
+    {
+      "test": "coordinate source place-culture",
+      "passed": true
+    },
+    {
+      "test": "all original place ids retained",
+      "passed": true
+    },
+    {
+      "test": "unchanged coordinate place-akshukur",
+      "passed": true
+    },
+    {
+      "test": "unchanged coordinate place-mashyryq",
+      "passed": true
+    },
+    {
+      "test": "unchanged coordinate place-medrese",
+      "passed": true
+    },
+    {
+      "test": "unchanged coordinate place-school-1943",
+      "passed": true
+    },
+    {
+      "test": "unchanged coordinate place-modern",
+      "passed": true
+    },
+    {
+      "test": "protected byte-identical templates/base.html",
+      "passed": true
+    },
+    {
+      "test": "protected byte-identical templates/reconstruction.html",
+      "passed": true
+    },
+    {
+      "test": "protected byte-identical static/js/3d.js",
+      "passed": true
+    },
+    {
+      "test": "protected byte-identical static/js/main.js",
+      "passed": true
+    },
+    {
+      "test": "protected byte-identical templates/oral-history.html",
+      "passed": true
+    },
+    {
+      "test": "history content unchanged era-01",
+      "passed": true
+    },
+    {
+      "test": "history content unchanged era-02",
+      "passed": true
+    },
+    {
+      "test": "history content unchanged era-03",
+      "passed": true
+    },
+    {
+      "test": "history content unchanged era-04",
+      "passed": true
+    },
+    {
+      "test": "history content unchanged era-05",
+      "passed": true
+    },
+    {
+      "test": "history content unchanged era-06",
+      "passed": true
+    },
+    {
+      "test": "history content unchanged era-07",
+      "passed": true
+    },
+    {
+      "test": "history content unchanged era-08",
+      "passed": true
+    },
+    {
+      "test": "history content unchanged era-09",
+      "passed": true
+    },
+    {
+      "test": "history content unchanged era-10",
+      "passed": true
+    },
+    {
+      "test": "history content unchanged era-11",
+      "passed": true
+    },
+    {
+      "test": "original image preserved WhatsApp Image 2026-10-12 at 16.19.43 (1).jpeg",
+      "passed": true
+    },
+    {
+      "test": "original image preserved galery.jpg",
+      "passed": true
+    },
+    {
+      "test": "original image preserved WhatsApp Image 2026-10-12 at 16.19.41.jpeg",
+      "passed": true
+    },
+    {
+      "test": "original image preserved Koshkar-Ata-2.jpg",
+      "passed": true
+    },
+    {
+      "test": "original image preserved qozhashova-balanzhan.jpg",
+      "passed": true
+    },
+    {
+      "test": "original image preserved nurbaev-omirzaq.jpg",
+      "passed": true
+    },
+    {
+      "test": "original image preserved sarsenov-burkitbay.jpg",
+      "passed": true
+    },
+    {
+      "test": "original image preserved after.jpeg",
+      "passed": true
+    },
+    {
+      "test": "original image preserved marshal-abdihalikov.jpg",
+      "passed": true
+    },
+    {
+      "test": "original image preserved tamara-asar.jpg",
+      "passed": true
+    },
+    {
+      "test": "original image preserved WhatsApp Image 2026-10-12 at 16.19.43 (3).jpeg",
+      "passed": true
+    },
+    {
+      "test": "original image preserved WhatsApp Image 2026-10-12 at 16.19.36.jpeg",
+      "passed": true
+    },
+    {
+      "test": "original image preserved WhatsApp Image 2026-10-12 at 16.19.44.jpeg",
+      "passed": true
+    },
+    {
+      "test": "original image preserved e4d9218c-94a4-48d8-9510-b2ab987c5d54.jpg",
+      "passed": true
+    },
+    {
+      "test": "original image preserved anar-shamshadinova.jpg",
+      "passed": true
+    },
+    {
+      "test": "original image preserved WhatsApp Image 2026-10-12 at 16.19.35.jpeg",
+      "passed": true
+    },
+    {
+      "test": "original image preserved WhatsApp Image 2026-10-12 at 16.19.42.jpeg",
+      "passed": true
+    },
+    {
+      "test": "original image preserved WhatsApp Image 2026-10-12 at 16.19.35 (1).jpeg",
+      "passed": true
+    },
+    {
+      "test": "original image preserved WhatsApp Image 2026-10-14 at 19.45.05.jpeg",
+      "passed": true
+    },
+    {
+      "test": "original image preserved before.jpeg",
+      "passed": true
+    },
+    {
+      "test": "original image preserved WhatsApp Image 2026-10-12 at 16.19.33.jpeg",
+      "passed": true
+    },
+    {
+      "test": "original image preserved b14fde01-4c2f-4b31-8946-ac22f61af7cb.jpg",
+      "passed": true
+    },
+    {
+      "test": "all 22 photos cataloged",
+      "passed": true
+    },
+    {
+      "test": "API image place-akshukur",
+      "passed": true
+    },
+    {
+      "test": "API image place-qoshqar",
+      "passed": true
+    },
+    {
+      "test": "API image place-modern",
+      "passed": true
+    },
+    {
+      "test": "desktop comparison slider",
+      "passed": true
+    },
+    {
+      "test": "desktop no broken images /",
+      "passed": true
+    },
+    {
+      "test": "desktop no page errors /",
+      "passed": true
+    },
+    {
+      "test": "desktop no overflow /",
+      "passed": true
+    },
+    {
+      "test": "desktop no new HTTP errors /",
+      "passed": true
+    },
+    {
+      "test": "desktop full photo catalog rendered",
+      "passed": true
+    },
+    {
+      "test": "desktop timeline filtering",
+      "passed": true
+    },
+    {
+      "test": "desktop photo lightbox",
+      "passed": true
+    },
+    {
+      "test": "desktop no broken images /tarikh",
+      "passed": true
+    },
+    {
+      "test": "desktop no page errors /tarikh",
+      "passed": true
+    },
+    {
+      "test": "desktop no overflow /tarikh",
+      "passed": true
+    },
+    {
+      "test": "desktop no new HTTP errors /tarikh",
+      "passed": true
+    },
+    {
+      "test": "desktop no broken images /tulghalar",
+      "passed": true
+    },
+    {
+      "test": "desktop no page errors /tulghalar",
+      "passed": true
+    },
+    {
+      "test": "desktop no overflow /tulghalar",
+      "passed": true
+    },
+    {
+      "test": "desktop no new HTTP errors /tulghalar",
+      "passed": true
+    },
+    {
+      "test": "desktop popup place-qoshqar",
+      "passed": true
+    },
+    {
+      "test": "desktop popup place-school-now",
+      "passed": true
+    },
+    {
+      "test": "desktop popup place-culture",
+      "passed": true
+    },
+    {
+      "test": "desktop marker count",
+      "passed": true
+    },
+    {
+      "test": "desktop map filter madeniet",
+      "passed": true
+    },
+    {
+      "test": "desktop map filter mektep",
+      "passed": true
+    },
+    {
+      "test": "desktop map filter qorym",
+      "passed": true
+    },
+    {
+      "test": "desktop map filter all",
+      "passed": true
+    },
+    {
+      "test": "desktop no broken images /karta",
+      "passed": true
+    },
+    {
+      "test": "desktop no page errors /karta",
+      "passed": true
+    },
+    {
+      "test": "desktop no overflow /karta",
+      "passed": true
+    },
+    {
+      "test": "desktop no new HTTP errors /karta",
+      "passed": true
+    },
+    {
+      "test": "desktop no broken images /mashyryq",
+      "passed": true
+    },
+    {
+      "test": "desktop no page errors /mashyryq",
+      "passed": true
+    },
+    {
+      "test": "desktop no overflow /mashyryq",
+      "passed": true
+    },
+    {
+      "test": "desktop no new HTTP errors /mashyryq",
+      "passed": true
+    },
+    {
+      "test": "desktop tour name place-akshukur",
+      "passed": true
+    },
+    {
+      "test": "desktop tour name place-qoshqar",
+      "passed": true
+    },
+    {
+      "test": "desktop tour target",
+      "passed": true
+    },
+    {
+      "test": "desktop tour name place-mashyryq",
+      "passed": true
+    },
+    {
+      "test": "desktop tour name place-medrese",
+      "passed": true
+    },
+    {
+      "test": "desktop tour name place-school-1943",
+      "passed": true
+    },
+    {
+      "test": "desktop tour name place-school-now",
+      "passed": true
+    },
+    {
+      "test": "desktop tour name place-modern",
+      "passed": true
+    },
+    {
+      "test": "desktop tour name place-culture",
+      "passed": true
+    },
+    {
+      "test": "desktop no broken images /eksursiya",
+      "passed": true
+    },
+    {
+      "test": "desktop no page errors /eksursiya",
+      "passed": true
+    },
+    {
+      "test": "desktop no overflow /eksursiya",
+      "passed": true
+    },
+    {
+      "test": "desktop no new HTTP errors /eksursiya",
+      "passed": true
+    },
+    {
+      "test": "desktop no broken images /mektep",
+      "passed": true
+    },
+    {
+      "test": "desktop no page errors /mektep",
+      "passed": true
+    },
+    {
+      "test": "desktop no overflow /mektep",
+      "passed": true
+    },
+    {
+      "test": "desktop no new HTTP errors /mektep",
+      "passed": true
+    },
+    {
+      "test": "desktop no broken images /muragat",
+      "passed": true
+    },
+    {
+      "test": "desktop no page errors /muragat",
+      "passed": true
+    },
+    {
+      "test": "desktop no overflow /muragat",
+      "passed": true
+    },
+    {
+      "test": "desktop no new HTTP errors /muragat",
+      "passed": true
+    },
+    {
+      "test": "desktop 3D canvas rendered",
+      "passed": true
+    },
+    {
+      "test": "desktop 3D rotation toggle",
+      "passed": true
+    },
+    {
+      "test": "desktop no broken images /rekonstrukciya",
+      "passed": true
+    },
+    {
+      "test": "desktop no page errors /rekonstrukciya",
+      "passed": true
+    },
+    {
+      "test": "desktop no overflow /rekonstrukciya",
+      "passed": true
+    },
+    {
+      "test": "desktop no new HTTP errors /rekonstrukciya",
+      "passed": true
+    },
+    {
+      "test": "desktop no broken images /auyzsha-tarikh",
+      "passed": true
+    },
+    {
+      "test": "desktop no page errors /auyzsha-tarikh",
+      "passed": true
+    },
+    {
+      "test": "desktop no overflow /auyzsha-tarikh",
+      "passed": true
+    },
+    {
+      "test": "desktop no new HTTP errors /auyzsha-tarikh",
+      "passed": true
+    },
+    {
+      "test": "desktop no broken images /zertteu",
+      "passed": true
+    },
+    {
+      "test": "desktop no page errors /zertteu",
+      "passed": true
+    },
+    {
+      "test": "desktop no overflow /zertteu",
+      "passed": true
+    },
+    {
+      "test": "desktop no new HTTP errors /zertteu",
+      "passed": true
+    },
+    {
+      "test": "desktop no broken images /derek-kozder",
+      "passed": true
+    },
+    {
+      "test": "desktop no page errors /derek-kozder",
+      "passed": true
+    },
+    {
+      "test": "desktop no overflow /derek-kozder",
+      "passed": true
+    },
+    {
+      "test": "desktop no new HTTP errors /derek-kozder",
+      "passed": true
+    },
+    {
+      "test": "mobile menu opens",
+      "passed": true
+    },
+    {
+      "test": "mobile comparison slider",
+      "passed": true
+    },
+    {
+      "test": "mobile no broken images /",
+      "passed": true
+    },
+    {
+      "test": "mobile no page errors /",
+      "passed": true
+    },
+    {
+      "test": "mobile no overflow /",
+      "passed": true
+    },
+    {
+      "test": "mobile no new HTTP errors /",
+      "passed": true
+    },
+    {
+      "test": "mobile full photo catalog rendered",
+      "passed": true
+    },
+    {
+      "test": "mobile timeline filtering",
+      "passed": true
+    },
+    {
+      "test": "mobile photo lightbox",
+      "passed": true
+    },
+    {
+      "test": "mobile no broken images /tarikh",
+      "passed": true
+    },
+    {
+      "test": "mobile no page errors /tarikh",
+      "passed": true
+    },
+    {
+      "test": "mobile no overflow /tarikh",
+      "passed": true
+    },
+    {
+      "test": "mobile no new HTTP errors /tarikh",
+      "passed": true
+    },
+    {
+      "test": "mobile no broken images /tulghalar",
+      "passed": true
+    },
+    {
+      "test": "mobile no page errors /tulghalar",
+      "passed": true
+    },
+    {
+      "test": "mobile no overflow /tulghalar",
+      "passed": true
+    },
+    {
+      "test": "mobile no new HTTP errors /tulghalar",
+      "passed": true
+    },
+    {
+      "test": "mobile popup place-qoshqar",
+      "passed": true
+    },
+    {
+      "test": "mobile popup place-school-now",
+      "passed": true
+    },
+    {
+      "test": "mobile popup place-culture",
+      "passed": true
+    },
+    {
+      "test": "mobile marker count",
+      "passed": true
+    },
+    {
+      "test": "mobile map filter madeniet",
+      "passed": true
+    },
+    {
+      "test": "mobile map filter mektep",
+      "passed": true
+    },
+    {
+      "test": "mobile map filter qorym",
+      "passed": true
+    },
+    {
+      "test": "mobile map filter all",
+      "passed": true
+    },
+    {
+      "test": "mobile no broken images /karta",
+      "passed": true
+    },
+    {
+      "test": "mobile no page errors /karta",
+      "passed": true
+    },
+    {
+      "test": "mobile no overflow /karta",
+      "passed": true
+    },
+    {
+      "test": "mobile no new HTTP errors /karta",
+      "passed": true
+    },
+    {
+      "test": "mobile no broken images /mashyryq",
+      "passed": true
+    },
+    {
+      "test": "mobile no page errors /mashyryq",
+      "passed": true
+    },
+    {
+      "test": "mobile no overflow /mashyryq",
+      "passed": true
+    },
+    {
+      "test": "mobile no new HTTP errors /mashyryq",
+      "passed": true
+    },
+    {
+      "test": "mobile tour name place-akshukur",
+      "passed": true
+    },
+    {
+      "test": "mobile tour name place-qoshqar",
+      "passed": true
+    },
+    {
+      "test": "mobile tour target",
+      "passed": true
+    },
+    {
+      "test": "mobile tour name place-mashyryq",
+      "passed": true
+    },
+    {
+      "test": "mobile tour name place-medrese",
+      "passed": true
+    },
+    {
+      "test": "mobile tour name place-school-1943",
+      "passed": true
+    },
+    {
+      "test": "mobile tour name place-school-now",
+      "passed": true
+    },
+    {
+      "test": "mobile tour name place-modern",
+      "passed": true
+    },
+    {
+      "test": "mobile tour name place-culture",
+      "passed": true
+    },
+    {
+      "test": "mobile no broken images /eksursiya",
+      "passed": true
+    },
+    {
+      "test": "mobile no page errors /eksursiya",
+      "passed": true
+    },
+    {
+      "test": "mobile no overflow /eksursiya",
+      "passed": true
+    },
+    {
+      "test": "mobile no new HTTP errors /eksursiya",
+      "passed": true
+    },
+    {
+      "test": "mobile no broken images /mektep",
+      "passed": true
+    },
+    {
+      "test": "mobile no page errors /mektep",
+      "passed": true
+    },
+    {
+      "test": "mobile no overflow /mektep",
+      "passed": true
+    },
+    {
+      "test": "mobile no new HTTP errors /mektep",
+      "passed": true
+    },
+    {
+      "test": "mobile no broken images /muragat",
+      "passed": true
+    },
+    {
+      "test": "mobile no page errors /muragat",
+      "passed": true
+    },
+    {
+      "test": "mobile no overflow /muragat",
+      "passed": true
+    },
+    {
+      "test": "mobile no new HTTP errors /muragat",
+      "passed": true
+    },
+    {
+      "test": "mobile 3D canvas rendered",
+      "passed": true
+    },
+    {
+      "test": "mobile 3D rotation toggle",
+      "passed": true
+    },
+    {
+      "test": "mobile no broken images /rekonstrukciya",
+      "passed": true
+    },
+    {
+      "test": "mobile no page errors /rekonstrukciya",
+      "passed": true
+    },
+    {
+      "test": "mobile no overflow /rekonstrukciya",
+      "passed": true
+    },
+    {
+      "test": "mobile no new HTTP errors /rekonstrukciya",
+      "passed": true
+    },
+    {
+      "test": "mobile no broken images /auyzsha-tarikh",
+      "passed": true
+    },
+    {
+      "test": "mobile no page errors /auyzsha-tarikh",
+      "passed": true
+    },
+    {
+      "test": "mobile no overflow /auyzsha-tarikh",
+      "passed": true
+    },
+    {
+      "test": "mobile no new HTTP errors /auyzsha-tarikh",
+      "passed": true
+    },
+    {
+      "test": "mobile no broken images /zertteu",
+      "passed": true
+    },
+    {
+      "test": "mobile no page errors /zertteu",
+      "passed": true
+    },
+    {
+      "test": "mobile no overflow /zertteu",
+      "passed": true
+    },
+    {
+      "test": "mobile no new HTTP errors /zertteu",
+      "passed": true
+    },
+    {
+      "test": "mobile no broken images /derek-kozder",
+      "passed": true
+    },
+    {
+      "test": "mobile no page errors /derek-kozder",
+      "passed": true
+    },
+    {
+      "test": "mobile no overflow /derek-kozder",
+      "passed": true
+    },
+    {
+      "test": "mobile no new HTTP errors /derek-kozder",
+      "passed": true
+    }
+  ]
+}

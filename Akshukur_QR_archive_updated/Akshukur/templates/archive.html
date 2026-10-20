@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% from "_macros.html" import badge, photo with context %}
+
+{% block title %}Цифрлық архив — ЦИФРЛЫҚ ШЕЖІРЕ{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="container">
+    <p class="hero-kicker reveal">Материалдар қоры</p>
+    <h1 class="page-title reveal">Цифрлық архив</h1>
+    <p class="page-lead reveal">Құжаттар, мақалалар, фотолар, карталар мен сұхбаттар — сүзгі және іздеу арқылы шолыңыз.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="archive-toolbar reveal">
+      <input type="search" id="archiveSearch" placeholder="Архивтен іздеу…" aria-label="Архивтен іздеу">
+      <div class="filter-bar" id="archiveFilters">
+        <button class="filter-btn active" data-cat="all">Барлығы</button>
+        {% for cat in categories %}
+        <button class="filter-btn" data-cat="{{ cat }}">{{ cat }}</button>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="cards-grid" id="archiveGrid">
+      {% for s in sources %}
+      <article class="nav-card glass archive-card reveal"
+               data-cat="{{ s.type }}"
+               data-search="{{ (s.title ~ ' ' ~ s.description ~ ' ' ~ s.year ~ ' ' ~ s.type_label)|lower }}">
+        <div class="tl-head"><span class="tl-years">{{ s.year }}</span>{{ badge(s.evidence) }}</div>
+        <h3>{{ s.title }}</h3>
+        <p class="muted small">{{ s.type_label }}</p>
+        <p>{{ s.description[:180] }}{% if s.description|length > 180 %}…{% endif %}</p>
+        <div class="hero-actions">
+          <button type="button" class="btn btn-ghost btn-sm"
+                  data-modal-open
+                  data-title="{{ s.title }}"
+                  data-body="<p>{{ s.description }}</p><p><strong>Жылы:</strong> {{ s.year }} · <strong>Түрі:</strong> {{ s.type_label }}</p><p><strong>Дереккөз:</strong> {{ s.source_reference }}</p>{% if s.url %}<p><a href='{{ s.url }}' target='_blank' rel='noopener'>Сілтеме ашу ↗</a></p>{% endif %}">
+            Толығырақ
+          </button>
+          {% if s.url %}<a class="btn btn-gold btn-sm" href="{{ s.url }}" target="_blank" rel="noopener">Сілтеме ↗</a>{% endif %}
+        </div>
+        {% if s.file %}<p class="muted small">Файл: {{ s.file }}</p>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+    <p class="muted" id="archiveEmpty" hidden>Іздеуіңізге сәйкес материал табылмады.</p>
+
+    <div class="notice glass reveal">
+      <strong>Архивті толықтыру:</strong> жаңа материал қосу үшін <code>data/sources.json</code> файлына жаңа жазба енгізіңіз — карточка осы бетте автоматты пайда болады. Құжат сканерін <code>static/images/archive/</code> папкасына салыңыз.
+    </div>
+  </div>
+</section>
+{% include '_photo_archive.html' %}
+{% include '_qr_videos.html' %}
+{% endblock %}
+
+{% block page_js %}
+<script>
+// Архив сүзгісі + іздеуі (клиенттік)
+(function () {
+  const cards = [...document.querySelectorAll('.archive-card')];
+  const empty = document.getElementById('archiveEmpty');
+  const search = document.getElementById('archiveSearch');
+  let cat = 'all';
+  function apply() {
+    const q = (search.value || '').toLowerCase();
+    let visible = 0;
+    cards.forEach(c => {
+      const okCat = cat === 'all' || c.dataset.cat === cat;
+      const okQ = !q || c.dataset.search.includes(q);
+      const show = okCat && okQ;
+      c.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    empty.hidden = visible > 0;
+  }
+  document.getElementById('archiveFilters').addEventListener('click', e => {
+    const btn = e.target.closest('.filter-btn'); if (!btn) return;
+    document.querySelectorAll('#archiveFilters .filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active'); cat = btn.dataset.cat; apply();
+  });
+  search.addEventListener('input', apply);
+})();
+</script>
+{% endblock %}

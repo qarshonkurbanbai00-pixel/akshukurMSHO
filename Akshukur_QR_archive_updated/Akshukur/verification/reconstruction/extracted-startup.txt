@@ -1,0 +1,36 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 607-114-957
+127.0.0.1 - - [18/Oct/2026 16:50:54] "GET /rekonstrukciya HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:54] "GET /tarikh HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:54] "GET /tulghalar HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:54] "GET /mashyryq HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:54] "GET /karta HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:54] "GET /rekonstrukciya HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:54] "GET /mektep HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:55] "GET /muragat HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:55] "GET /auyzsha-tarikh HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:55] "GET /eksursiya HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:55] "GET /zertteu HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:55] "GET /derek-kozder HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:55] "GET /api/history HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:55] "GET /api/places HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:55] "GET /api/sources HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:55] "GET /api/interviews HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:55] "GET /api/persons HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:55] "GET /api/search HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:55] "GET /rekonstrukciya HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:55] "GET /static/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:55] "GET /static/css/reconstruction.css HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:55] "GET /static/js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:55] "GET /static/images/after.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:55] "GET /static/js/3d.js HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:55] "GET /static/vendor/three-r128/OrbitControls.js HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:55] "GET /static/vendor/three-r128/three.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:50:55] "GET /static/data/reconstruction.json HTTP/1.1" 200 -

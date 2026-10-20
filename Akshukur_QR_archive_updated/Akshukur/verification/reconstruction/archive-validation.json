@@ -1,0 +1,85 @@
+{
+  "status": "passed",
+  "crc_test": "all entries passed zipfile.testzip",
+  "root_folder": "akshukur-digital-chronicle",
+  "requirements_path": "akshukur-digital-chronicle/requirements.txt",
+  "fresh_requirements_install_exit_code": 0,
+  "fresh_venv_unit_tests": "17/17 passed",
+  "browser_suite": "60/60 passed",
+  "extracted_startup": {
+    "process_command": "python app.py",
+    "cwd": "extracted root with Unicode and spaces",
+    "http_routes": {
+      "/": 200,
+      "/tarikh": 200,
+      "/tulghalar": 200,
+      "/mashyryq": 200,
+      "/karta": 200,
+      "/rekonstrukciya": 200,
+      "/mektep": 200,
+      "/muragat": 200,
+      "/auyzsha-tarikh": 200,
+      "/eksursiya": 200,
+      "/zertteu": 200,
+      "/derek-kozder": 200,
+      "/api/history": 200,
+      "/api/places": 200,
+      "/api/sources": 200,
+      "/api/interviews": 200,
+      "/api/persons": 200,
+      "/api/search": 200
+    },
+    "browser_offline_smoke_objects": [
+      "mosque",
+      "tree",
+      "well",
+      "coast"
+    ],
+    "external_requests": [],
+    "javascript_exceptions": []
+  },
+  "windows_execution": "not available; launcher statically verified only",
+  "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "zip_no_nested_archives": true,
+  "zip_no_cache_files": true,
+  "source_scope": {
+    "original_files": 74,
+    "unchanged": 68,
+    "modified": 6,
+    "deleted": 0
+  },
+  "final_archive_reextract": "passed; full byte comparison; exact app.py startup; all 18 HTTP routes; four 3D selections in offline browser",
+  "file_count": 95,
+  "final_extracted_startup": {
+    "process_command": "python app.py",
+    "cwd": "extracted root with Unicode and spaces",
+    "http_routes": {
+      "/": 200,
+      "/tarikh": 200,
+      "/tulghalar": 200,
+      "/mashyryq": 200,
+      "/karta": 200,
+      "/rekonstrukciya": 200,
+      "/mektep": 200,
+      "/muragat": 200,
+      "/auyzsha-tarikh": 200,
+      "/eksursiya": 200,
+      "/zertteu": 200,
+      "/derek-kozder": 200,
+      "/api/history": 200,
+      "/api/places": 200,
+      "/api/sources": 200,
+      "/api/interviews": 200,
+      "/api/persons": 200,
+      "/api/search": 200
+    },
+    "browser_offline_smoke_objects": [
+      "mosque",
+      "tree",
+      "well",
+      "coast"
+    ],
+    "external_requests": [],
+    "javascript_exceptions": []
+  }
+}

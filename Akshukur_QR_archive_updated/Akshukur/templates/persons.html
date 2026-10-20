@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% from "_macros.html" import badge, photo with context %}
+
+{% block title %}Тұлғалар — ЦИФРЛЫҚ ШЕЖІРЕ{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="container">
+    <p class="hero-kicker reveal">Ауыл тарихындағы адамдар</p>
+    <h1 class="page-title reveal">Тұлғалар</h1>
+    <p class="page-lead reveal">Тек нақты дереккөзбен расталған тұлғалар ғана осы бөлімге енгізіледі. Тексерілмеген өмірбаяндар факт ретінде жарияланбайды.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cards-grid persons-grid">
+      {% for p in persons %}
+      <article class="nav-card glass reveal" id="{{ p.id }}">
+        <div class="interview-head">
+          <div class="avatar-placeholder" aria-hidden="true">{{ p.name[0] }}</div>
+          <div>
+            <h3>{{ p.name }}</h3>
+            <p class="muted small">{{ p.role }}</p>
+          </div>
+        </div>
+        <div class="person-photo-frame">
+          {% if p.image %}
+          <img class="ph-photo" src="{{ image_url(p.image) }}" alt="{{ p.name }}" loading="lazy" width="600" height="800">
+          {% else %}
+          {{ photo(p.image, p.name, 'Портрет/сурет қосу қажет') }}
+          {% endif %}
+        </div>
+        <p>{{ p.summary }}</p>
+        <details class="tl-details">
+          <summary>Толығырақ</summary>
+          <p>{{ p.bio }}</p>
+        </details>
+        <div class="badge-row">{{ badge(p.evidence) }}</div>
+        {% if p.sources %}
+        <p class="muted small">Дереккөз:
+          {% for sid in p.sources %}<a class="src-chip" href="{{ url_for('sources_page') }}#{{ sid }}">{{ sid }}</a> {% endfor %}
+        </p>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+
+    <div class="notice glass reveal">
+      <strong>Жаңа тұлға қосу:</strong> нақты жазба дерек табылған адам туралы мәліметті <code>app.py</code> ішіндегі <code>PERSONS</code> тізіміне қосыңыз — карточка осы бетте автоматты пайда болады.
+    </div>
+  </div>
+</section>
+{% endblock %}

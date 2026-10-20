@@ -1,0 +1,92 @@
+{
+  "dedicated_qr_images": [
+    {
+      "image": "images/aksakal_memories.jpeg",
+      "title": "Ақсақалдар естеліктері — QR материал 1",
+      "description": "Бастапқы архивтегі QR-код суреті. Тақырып файл атауы бойынша берілген; видео мазмұны расталмаған.",
+      "category": "memories",
+      "youtube_url": null,
+      "status": "unresolved",
+      "verification": "ZXing-C++, OpenCV және ZBar декодерлері арқылы сілтеме анықталмады."
+    },
+    {
+      "image": "images/aksakal_memories (2).jpeg",
+      "title": "Ақсақалдар естеліктері — QR материал 2",
+      "description": "YouTube белгісі бар бастапқы QR-код. Видео атауы мен мазмұны тәуелсіз расталмаған.",
+      "category": "memories",
+      "youtube_url": null,
+      "status": "unresolved",
+      "verification": "ZXing-C++, OpenCV және ZBar декодерлері арқылы сілтеме анықталмады."
+    },
+    {
+      "image": "images/qoshkar-ata.jpeg",
+      "title": "Қошқар ата — QR материал",
+      "description": "Бастапқы архивтегі Қошқар ата деп аталған QR-код. Нақты видео мазмұны расталмаған.",
+      "category": "qoshkar",
+      "youtube_url": null,
+      "status": "unresolved",
+      "verification": "ZXing-C++, OpenCV және ZBar декодерлері арқылы сілтеме анықталмады."
+    }
+  ],
+  "decoders": [
+    "ZXing-C++",
+    "OpenCV QRCodeDetector",
+    "ZBar"
+  ],
+  "methods": [
+    "Original bytes",
+    "Resized images",
+    "Grayscale / contrast",
+    "White borders",
+    "90-degree rotation"
+  ],
+  "result": "Three dedicated QR images were not decoded. No YouTube URLs were invented. Original bytes are unchanged.",
+  "other_embedded_codes": [
+    {
+      "file": "images/school.jpeg",
+      "text": "https://me-qr.com/Yt8LEIeL",
+      "format": "QR Code",
+      "size": [
+        4032,
+        2268
+      ]
+    },
+    {
+      "file": "images/school.jpeg",
+      "text": "https://me-qr.com/BhQlKGGX",
+      "format": "QR Code",
+      "size": [
+        4032,
+        2268
+      ]
+    },
+    {
+      "file": "images/school.jpeg",
+      "text": "https://me-qr.com/r1htZZeR",
+      "format": "QR Code",
+      "size": [
+        4032,
+        2268
+      ]
+    },
+    {
+      "file": "images/school.jpeg",
+      "text": "https://me-qr.com/b2ejRDJQ",
+      "format": "QR Code",
+      "size": [
+        4032,
+        2268
+      ]
+    },
+    {
+      "file": "images/school.jpeg",
+      "text": "https://me-qr.com/CkV9LhQq",
+      "format": "QR Code",
+      "size": [
+        4032,
+        2268
+      ]
+    }
+  ],
+  "embedded_note": "school.jpeg contains five me-qr.com redirect codes. They are not standalone video QR assets; their final YouTube destinations were not verified. The school image and section are unchanged."
+}

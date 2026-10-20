@@ -1,0 +1,14 @@
+test_all_original_photos_preserved_and_displayed (test_regression.WebsiteRegression.test_all_original_photos_preserved_and_displayed) ... ok
+test_api_image_paths_and_legacy_urls (test_regression.WebsiteRegression.test_api_image_paths_and_legacy_urls) ... ok
+test_historic_places_preserved (test_regression.WebsiteRegression.test_historic_places_preserved) ... ok
+test_historical_text_and_persons_unchanged (test_regression.WebsiteRegression.test_historical_text_and_persons_unchanged) ... ok
+test_protected_files_unchanged (test_regression.WebsiteRegression.test_protected_files_unchanged) ... ok
+test_qoshqar_unique_and_exact (test_regression.WebsiteRegression.test_qoshqar_unique_and_exact) ... ok
+test_routes_and_rendered_images (test_regression.WebsiteRegression.test_routes_and_rendered_images) ... ok
+test_search_keeps_both_village_objects (test_regression.WebsiteRegression.test_search_keeps_both_village_objects) ... ok
+test_separate_verified_village_objects (test_regression.WebsiteRegression.test_separate_verified_village_objects) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.179s
+
+OK

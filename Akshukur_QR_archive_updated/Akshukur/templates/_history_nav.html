@@ -1,0 +1,5 @@
+<nav class="history-subnav" aria-label="Тарих бөлімінің ішкі беттері">
+  <a href="{{ url_for('history') }}" {% if request.endpoint == 'history' %}aria-current="page"{% endif %}>Тарихи кезеңдер</a>
+  <a href="{{ url_for('project_page') }}" {% if request.endpoint == 'project_page' %}aria-current="page"{% endif %}>Жоба</a>
+  <a href="{{ url_for('photo_archive_page') }}" {% if request.endpoint == 'photo_archive_page' %}aria-current="page"{% endif %}>Фото архиві</a>
+</nav>

@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% from "_macros.html" import badge with context %}
+{% from "_section_archive.html" import archive_image, archive_viewer %}
+{% block title %}Тарихи орындар — ЦИФРЛЫҚ ШЕЖІРЕ{% endblock %}
+{% block page_css %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/section-archive.css') }}">
+{% endblock %}
+{% block content %}
+<div class="heritage-section">
+<section class="page-hero">
+  <div class="container">
+    <p class="hero-kicker reveal">Интерактивті карта · Фотоархив</p>
+    <h1 class="page-title reveal">Тарихи орындар</h1>
+    <p class="page-lead reveal">Картадан нысанды таңдаңыз немесе карточканы басыңыз. Фотоларды үлкейтіп, сипаттамасы мен дереккөздерін бірге қараңыз.</p>
+    <p class="muted small heritage-note">Бастапқы карта нүктелері сақталған. Жаңа координаталар қосылған жоқ; расталмаған орындарға маркер қойылмайды.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="filter-bar reveal" id="mapFilters" role="group" aria-label="Орындар санаты">
+      <button type="button" class="filter-btn active" data-cat="all" aria-pressed="true">Барлығы · {{ places|length }}</button>
+      {% for cat in categories %}
+      <button type="button" class="filter-btn" data-cat="{{ cat }}" aria-pressed="false">{{ (places|selectattr('category', 'equalto', cat)|first).category_label }}</button>
+      {% endfor %}
+    </div>
+    <p id="placeSelectionStatus" class="muted small heritage-status" role="status">Маркерді немесе карточканы таңдаңыз.</p>
+    <div class="map-layout">
+      <div class="map-frame glass reveal">
+        <div id="map" aria-label="Ақшұқыр тарихи орындарының картасы"></div>
+        <div class="map-fallback" id="mapFallback" hidden>
+          <h3>Карта жүктелмеді</h3>
+          <p>Картаға интернет қосылымы қажет. Санат сүзгісі, карточкалар мен фотогалерея карта жүктелмесе де жұмыс істейді.</p>
+        </div>
+        <p id="mapTileNotice" class="muted small heritage-note" hidden>Картаның фондық қабаты жүктелмеді. Маркерлер мен карточкалар қолжетімді; интернет қосылымын тексеріңіз.</p>
+        <p class="muted small heritage-note">Бір координатадағы белгілер көрінуі үшін жанастыра көрсетіледі; географиялық координаталары өзгермейді.</p>
+      </div>
+      <aside class="map-side reveal" aria-label="Орындар тізімі">
+        <h2 class="heritage-side-title">Нүктелер</h2>
+        <div class="place-list" id="placeList">
+          {% for p in places %}
+          <button type="button" class="place-item glass" data-place="{{ p.id }}" data-cat="{{ p.category }}"
+                  data-lat="{{ p.lat if p.lat is not none else '' }}" data-lng="{{ p.lng if p.lng is not none else '' }}">
+            <span class="place-cat place-cat-{{ p.category }}" aria-hidden="true"></span>
+            <span class="place-name">{{ p.name }}</span>
+            {% if p.lat is none or p.lng is none %}<span class="place-noloc">Координатасы нақтылануда</span>{% endif %}
+          </button>
+          {% endfor %}
+        </div>
+      </aside>
+    </div>
+    <h2 class="section-title reveal heritage-heading">Орындар мұрағаты</h2>
+    <div class="cards-grid place-cards" id="placeCards">
+      {% for p in places %}
+      <article class="nav-card glass reveal place-card" id="card-{{ p.id }}" data-place="{{ p.id }}" data-cat="{{ p.category }}" tabindex="0" aria-label="{{ p.name }}: картадан таңдау">
+        {% if p.gallery %}
+          {{ archive_image(p.gallery[0], p.id) }}
+        {% else %}
+          <div class="img-placeholder">{{ p.photo_note or 'Нысанның расталған фотосы жоқ. Қосымша дерек қажет.' }}</div>
+        {% endif %}
+        <h3>{{ p.name }}</h3>
+        <p class="muted small">{{ p.category_label }}</p>
+        <p>{{ p.summary }}</p>
+        {{ badge(p.evidence) }}
+        <div class="heritage-actions">
+          <button type="button" class="filter-btn" data-show-on-map>{{ 'Картадан көру' if p.lat is not none and p.lng is not none else 'Ақпаратты таңдау' }}</button>
+        </div>
+        <details class="tl-details">
+          <summary>Толығырақ</summary>
+          <p>{{ p.description }}</p>
+          <p class="muted small">{{ p.coordinate_note }}</p>
+          {% if p.lat is not none and p.lng is not none %}<p class="muted small">Бастапқы координата: {{ p.lat }}, {{ p.lng }}</p>{% endif %}
+          {% if p.gallery|length > 1 %}
+          <h4 class="heritage-subheading">Қосымша фотолар</h4>
+          {% for item in p.gallery[1:] %}{{ archive_image(item, p.id, true) }}{% endfor %}
+          {% endif %}
+          {% if p.source_details %}
+          <h4 class="heritage-subheading">Дереккөздер</h4>
+          {% for source in p.source_details %}
+          <p class="small"><a href="{{ url_for('sources_page') }}#{{ source.id }}">{{ source.title }}</a></p>
+          {% endfor %}
+          {% else %}<p class="muted small">Тексерілетін жазба дереккөз тіркелмеген. Қосымша дерек қажет.</p>{% endif %}
+          {% if p.gallery %}<p class="muted small">{{ p.gallery[0].provenance }}</p>{% endif %}
+        </details>
+      </article>
+      {% endfor %}
+    </div>
+    <section class="glass panel heritage-pending" aria-labelledby="pendingPlacePhotos">
+      <h2 id="pendingPlacePhotos">Сәйкестендіруді қажет ететін фото</h2>
+      <p class="muted">Бұл материал нақты тарихи нысанға байланыстырылмайды. Қосымша дерек қажет.</p>
+      <div class="heritage-pending-photo">{{ archive_image(unverified_photo, 'unverified-place') }}</div>
+      <p class="muted small">qoshkar-ata.jpeg файлы бар, бірақ ол тарихи фото емес — QR-код. Қошқар ата фотогалереясында бастапқы Koshkar-Ata-2.jpeg фотосы сақталды.</p>
+    </section>
+  </div>
+</section>
+{% set qr_category = 'qoshkar' %}{% include '_qr_videos.html' %}
+{{ archive_viewer() }}
+</div>
+{% endblock %}
+{% block page_js %}
+<script id="archivePlacesData" type="application/json">{{ places|tojson }}</script>
+<script src="{{ url_for('static', filename='js/section-archive.js') }}"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="{{ url_for('static', filename='js/map.js') }}"></script>
+{% endblock %}

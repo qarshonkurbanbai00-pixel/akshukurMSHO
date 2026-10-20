@@ -1,0 +1,13 @@
+test_all_routes_and_local_assets (test_qr_archive_update.QRArchiveUpdate.test_all_routes_and_local_assets) ... ok
+test_exact_original_qr_files_and_no_fabricated_links (test_qr_archive_update.QRArchiveUpdate.test_exact_original_qr_files_and_no_fabricated_links) ... ok
+test_motion_and_small_script_changes (test_qr_archive_update.QRArchiveUpdate.test_motion_and_small_script_changes) ... ok
+test_only_existing_photos_no_empty_cards (test_qr_archive_update.QRArchiveUpdate.test_only_existing_photos_no_empty_cards) ... ok
+test_original_images_and_protected_features (test_qr_archive_update.QRArchiveUpdate.test_original_images_and_protected_features) ... ok
+test_original_route_map_and_no_new_dependencies (test_qr_archive_update.QRArchiveUpdate.test_original_route_map_and_no_new_dependencies) ... ok
+test_search_preserved (test_qr_archive_update.QRArchiveUpdate.test_search_preserved) ... ok
+test_templates_and_python_syntax (test_qr_archive_update.QRArchiveUpdate.test_templates_and_python_syntax) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.926s
+
+OK

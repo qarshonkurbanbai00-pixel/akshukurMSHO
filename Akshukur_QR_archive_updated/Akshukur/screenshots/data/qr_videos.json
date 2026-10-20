@@ -1,0 +1,39 @@
+[
+  {
+    "image": "images/aksakal_interview.png",
+    "title": "Қариямен сұхбат",
+    "description": "Ақшұқырдың ауызша тарихы мен өмір жолы туралы құрастырылған QR-код.",
+    "category": "interview",
+    "youtube_url": "https://youtu.be/K8VOvyn9OVM?si=AhRM_rs7u27dvrZ-",
+    "youtube_urls": [
+      "https://youtu.be/K8VOvyn9OVM?si=AhRM_rs7u27dvrZ-"
+    ],
+    "status": "prepared",
+    "verification": "Сурет файлы қолданыстағы static/images каталогынан тексерілді."
+  },
+  {
+    "image": "images/aksakal_memories.png",
+    "title": "Қарияның естеліктері",
+    "description": "Жергілікті естеліктер мен ауыл тарихына қатысты дайын QR-код.",
+    "category": "memories",
+    "youtube_url": "https://youtu.be/eEqo5-RcZ7U?si=IyGBG2NA1tJZOii0",
+    "youtube_urls": [
+      "https://youtu.be/eEqo5-RcZ7U?si=IyGBG2NA1tJZOii0"
+    ],
+    "status": "prepared",
+    "verification": "Сурет файлы қолданыстағы static/images каталогынан тексерілді."
+  },
+  {
+    "image": "images/qoshkar_ata.png",
+    "title": "Қошқар ата туралы деректер",
+    "description": "Қошқар ата қорымымен байланысты тарихи деректер мен топонимділік мағлұматтарды қамтитын QR-код.",
+    "category": "qoshkar",
+    "youtube_url": "https://youtube.com/shorts/Obhf4SKlVs0?si=8RmRmIeenkKO5gfF",
+    "youtube_urls": [
+      "https://youtube.com/shorts/Obhf4SKlVs0?si=8RmRmIeenkKO5gfF",
+      "https://youtu.be/SWpF1o3642Q?si=so8UyfvK3iTWS50b"
+    ],
+    "status": "prepared",
+    "verification": "Сурет файлы қолданыстағы static/images каталогынан тексерілді."
+  }
+]
