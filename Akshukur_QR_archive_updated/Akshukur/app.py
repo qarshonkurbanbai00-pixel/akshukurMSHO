@@ -9,13 +9,36 @@ Flask backend: барлық деректер data/ папкасындағы JSON
 
 import json
 import os
+import shutil
 
 from flask import Flask, jsonify, render_template, request, send_from_directory, url_for
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
+STATIC_DATA_DIR = os.path.join(BASE_DIR, "static", "data")
 
-app = Flask(__name__)
+
+def ensure_project_data():
+    """Support partial ZIP extractions and Vercel packaging by restoring the missing root data folder."""
+    os.makedirs(DATA_DIR, exist_ok=True)
+    fallback_dirs = [
+        os.path.join(BASE_DIR, "screenshots", "data"),
+        STATIC_DATA_DIR,
+    ]
+    for fallback_dir in fallback_dirs:
+        if not os.path.isdir(fallback_dir):
+            continue
+        for name in os.listdir(fallback_dir):
+            source = os.path.join(fallback_dir, name)
+            target = os.path.join(DATA_DIR, name)
+            if os.path.isfile(source) and not os.path.exists(target):
+                shutil.copy2(source, target)
+    return DATA_DIR
+
+
+ensure_project_data()
+
+app = Flask(__name__, static_folder="static", template_folder="templates")
 # Қазақша әріптер JSON жауаптарда дұрыс көрсетілуі үшін
 try:
     app.json.ensure_ascii = False          # Flask >= 2.2
@@ -147,14 +170,23 @@ SITE_NAME = "АҚШҰҚЫР — ЦИФРЛЫҚ ШЕЖІРЕ"
 
 
 def load_data(filename):
-    """data/ папкасынан JSON файлды қауіпсіз оқу."""
-    path = os.path.join(DATA_DIR, filename)
-    try:
-        with open(path, encoding="utf-8") as f:
-            return json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError) as exc:
-        app.logger.warning("Дерек файлы оқылмады (%s): %s", filename, exc)
-        return []
+    """JSON файлын root data/ ішінен оқиды; Vercel/ZIP жеткіліксіздігі болса резервті каталогтан алады."""
+    candidates = [
+        os.path.join(DATA_DIR, filename),
+        os.path.join(BASE_DIR, "screenshots", "data", filename),
+        os.path.join(STATIC_DATA_DIR, filename),
+    ]
+    for path in candidates:
+        if not os.path.isfile(path):
+            continue
+        try:
+            with open(path, encoding="utf-8") as f:
+                return json.load(f)
+        except (TypeError, ValueError, json.JSONDecodeError) as exc:
+            app.logger.warning("Дерек файлы дұрыс емес (%s): %s", filename, exc)
+            return []
+    app.logger.warning("Дерек файлы табылмады (%s)", filename)
+    return []
 
 
 def image_url(image):
